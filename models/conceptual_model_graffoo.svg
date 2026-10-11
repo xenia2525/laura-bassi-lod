@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1300" viewBox="0 0 1760 1300">
+<defs>
+  <marker id="objEnd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f4fbf"/></marker>
+  <marker id="objStart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7"><circle cx="5" cy="5" r="4" fill="#1f4fbf"/></marker>
+  <marker id="dataEnd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 z" fill="#fff" stroke="#2b8a3e" stroke-width="1.4"/></marker>
+  <marker id="dataStart" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8"><circle cx="5" cy="5" r="3.6" fill="#fff" stroke="#2b8a3e" stroke-width="1.4"/></marker>
+  <marker id="axEnd" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+</defs>
+<rect width="1760" height="1300" fill="#fff"/>
+<rect x="12" y="12" width="1736" height="1276" fill="none" stroke="#333" stroke-dasharray="2 4" stroke-width="1.5"/>
+<rect x="12" y="12" width="560" height="30" fill="#cfe2ff" stroke="#333" stroke-dasharray="2 4"/>
+<text x="24.0" y="32.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#111" >Ontology: https://xenia2525.github.io/laura-bassi-lod/ontology</text>
+<path d="M715.7,542.0 Q280.0,365.0 715.7,188.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="532.7" y="439.8" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:spouse</text>
+<path d="M729.5,542.0 Q430.0,365.0 729.5,188.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="579.8" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:colleague</text>
+<path d="M749.8,542.0 Q650.0,365.0 749.8,188.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="699.9" y="369.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">rel:mentorOf</text>
+<path d="M770.2,542.0 Q870.0,365.0 770.2,188.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="820.1" y="399.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">lbo:patronOf</text>
+<path d="M790.5,542.0 Q1090.0,365.0 790.5,188.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="940.2" y="369.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">lbo:correspondedWith</text>
+<path d="M804.3,542.0 Q1240.0,365.0 804.3,188.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="987.3" y="439.8" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">lbo:precededBy</text>
+<path d="M809.3,542.0 Q1075.0,445.0 1340.7,348.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1101.6" y="439.3" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:memberOf</text>
+<path d="M813.8,546.0 Q1160.4,455.7 1378.0,782.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1156.1" y="576.7" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:birthPlace</text>
+<path d="M813.8,567.1 Q1103.5,605.2 1363.5,782.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1123.5" y="655.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:deathPlace</text>
+<path d="M786.5,578.0 Q1046.5,754.8 1328.6,791.9" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1079.2" y="734.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dbo:restingPlace</text>
+<path d="M772.0,578.0 Q989.6,904.3 1328.6,816.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1048.1" y="815.5" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:nationality</text>
+<path d="M1390.0,348.0 Q1390.0,565.0 1390.0,782.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1390.0" y="569.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:location</text>
+<path d="M1451.4,792 C1541.4,722 1541.4,878 1451.4,808" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1529.4" y="804.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">crm:P89_falls_within</text>
+<path d="M760.0,982.0 Q760.0,780.0 760.0,578.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="760.0" y="784.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">crm:P11_had_participant</text>
+<path d="M788.7,982.0 Q1162.4,747.2 1380.2,348.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1286.8" y="505.1" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">crm:P14_carried_out_by</text>
+<path d="M816.7,982.0 Q1075.0,900.0 1333.3,818.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1075.0" y="904.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">crm:P7_took_place_at</text>
+<path d="M713.5,982.0 Q426.6,870.9 260.2,578.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="434.4" y="808.8" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">crm:P16_used_specific_object</text>
+<path d="M702.4,1000.0 Q505.0,1000.0 307.6,1000.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="505.0" y="1004.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:subject</text>
+<path d="M322.8,560.0 Q505.0,560.0 706.2,560.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="509.8" y="564.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:creator</text>
+<path d="M250.0,578.0 Q250.0,780.0 250.0,982.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="250.0" y="784.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:subject</text>
+<path d="M420.0,352.0 Q420.0,300.0 420.0,248.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="420.0" y="304.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:isPartOf</text>
+<path d="M372.8,115.4 Q534.3,105.2 706.2,154.6" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="536.9" y="124.1" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:creator</text>
+<path d="M362.7,138.0 Q525.7,184.8 706.2,173.4" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="530.1" y="174.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:about</text>
+<path d="M751.5,578.0 Q603.0,893.6 307.6,982.6" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="588.1" y="820.1" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:knowsAbout</text>
+<path d="M506.0,1192.0 Q390.0,1105.0 274.0,1018.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="390.0" y="1109.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:subject</text>
+<path d="M536.4,1192.0 Q645.0,885.0 753.6,578.0" fill="none" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="579.8" y="1073.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#1f4fbf" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:subject</text>
+<path d="M740.3,578.0 Q634.3,675.0 526.0,704.7" fill="none" stroke="#2b8a3e" stroke-width="1.6" marker-start="url(#dataStart)" marker-end="url(#dataEnd)"/>
+<text x="633.7" y="662.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#2b8a3e" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:birthDate</text>
+<path d="M706.2,574.7 Q595.7,605.0 488.6,703.0" fill="none" stroke="#2b8a3e" stroke-width="1.6" marker-start="url(#dataStart)" marker-end="url(#dataEnd)"/>
+<text x="596.5" y="625.9" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#2b8a3e" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:deathDate</text>
+<path d="M274.8,578.0 Q360.0,640.0 446.6,703.0" fill="none" stroke="#2b8a3e" stroke-width="1.6" marker-start="url(#dataStart)" marker-end="url(#dataEnd)"/>
+<text x="368.9" y="650.5" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#2b8a3e" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:date</text>
+<path d="M807.1,1018.0 Q930.0,1065.0 1055.5,1113.0" fill="none" stroke="#2b8a3e" stroke-width="1.6" marker-start="url(#dataStart)" marker-end="url(#dataEnd)"/>
+<text x="930.7" y="1069.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#2b8a3e" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:date</text>
+<path d="M228.1,578.0 Q165.0,630.0 100.6,683.0" fill="none" stroke="#2b8a3e" stroke-width="1.6" marker-start="url(#dataStart)" marker-end="url(#dataEnd)"/>
+<text x="164.7" y="634.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#2b8a3e" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">dcterms:title</text>
+<path d="M227.2,120.0 Q195.0,120.0 155.6,120.0" fill="none" stroke="#2b8a3e" stroke-width="1.6" marker-start="url(#dataStart)" marker-end="url(#dataEnd)"/>
+<text x="193.2" y="124.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="normal" fill="#2b8a3e" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">schema:text</text>
+<path d="M109.7,388.0 Q172.5,465.0 235.3,542.0" fill="none" stroke="#222" stroke-width="1.6" marker-start="none" marker-end="url(#axEnd)"/>
+<text x="147.4" y="438.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#222" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">rdfs:subClassOf</text>
+<path d="M245.5,388.0 Q247.5,465.0 249.5,542.0" fill="none" stroke="#222" stroke-width="1.6" marker-start="none" marker-end="url(#axEnd)"/>
+<text x="248.0" y="487.5" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#222" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">rdfs:subClassOf</text>
+<path d="M403.9,388.0 Q335.0,465.0 266.1,542.0" fill="none" stroke="#222" stroke-width="1.6" marker-start="none" marker-end="url(#axEnd)"/>
+<text x="362.6" y="438.2" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" font-weight="bold" fill="#222" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round">rdfs:subClassOf</text>
+<rect x="706.2" y="542.0" width="107.6" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="760.0" y="564.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >foaf:Person</text>
+<rect x="706.2" y="152.0" width="107.6" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="760.0" y="174.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >foaf:Person</text>
+<rect x="1313.4" y="312.0" width="153.2" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="1390.0" y="334.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >foaf:Organization</text>
+<rect x="1328.6" y="782.0" width="122.8" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="1390.0" y="804.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >crm:E53_Place</text>
+<rect x="702.4" y="982.0" width="115.2" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="760.0" y="1004.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >crm:E5_Event</text>
+<rect x="177.2" y="542.0" width="145.6" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="250.0" y="564.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >fabio:Expression</text>
+<rect x="37.4" y="352.0" width="115.2" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="95.0" y="374.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >fabio:Thesis</text>
+<rect x="195.0" y="352.0" width="100.0" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="245.0" y="374.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >fabio:Book</text>
+<rect x="332.0" y="352.0" width="176.0" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="420.0" y="374.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >fabio:JournalArticle</text>
+<rect x="358.6" y="212.0" width="122.8" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="420.0" y="234.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >fabio:Journal</text>
+<rect x="227.2" y="102.0" width="145.6" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="300.0" y="124.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >schema:Quotation</text>
+<rect x="192.4" y="982.0" width="115.2" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="250.0" y="1004.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >skos:Concept</text>
+<rect x="468.6" y="1192.0" width="122.8" height="36" fill="#fff3a6" stroke="#111" stroke-width="1.4"/>
+<text x="530.0" y="1214.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >foaf:Document</text>
+<polygon points="424.0,703.0 526.0,703.0 516.0,737.0 414.0,737.0" fill="#b7e4c7" stroke="#111" stroke-width="1.4"/>
+<text x="470.0" y="724.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >xsd:date</text>
+<polygon points="1054.0,1113.0 1156.0,1113.0 1146.0,1147.0 1044.0,1147.0" fill="#b7e4c7" stroke="#111" stroke-width="1.4"/>
+<text x="1100.0" y="1134.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >xsd:date</text>
+<polygon points="24.400000000000006,683.0 145.6,683.0 135.6,717.0 14.400000000000006,717.0" fill="#b7e4c7" stroke="#111" stroke-width="1.4"/>
+<text x="80.0" y="704.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >rdfs:Literal</text>
+<polygon points="34.400000000000006,103.0 155.6,103.0 145.6,137.0 24.400000000000006,137.0" fill="#b7e4c7" stroke="#111" stroke-width="1.4"/>
+<text x="90.0" y="124.5" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#111" >rdfs:Literal</text>
+<path d="M30,1225 h228.0 l12,12 v36 h-240.0 z" fill="#dbeafe" stroke="#333" stroke-width="1"/>
+<path d="M258.0,1225 v12 h12" fill="none" stroke="#333" stroke-width="1"/>
+<text x="40" y="1247" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">Class: foaf:Person</text>
+<text x="40" y="1264" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  EquivalentTo: crm:E21_Person</text>
+<path d="M1250,160 h220.8 l12,12 v36 h-232.8 z" fill="#dbeafe" stroke="#333" stroke-width="1"/>
+<path d="M1470.8,160 v12 h12" fill="none" stroke="#333" stroke-width="1"/>
+<text x="1260" y="182" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">Class: foaf:Organization</text>
+<text x="1260" y="199" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  EquivalentTo: crm:E74_Group</text>
+<path d="M1250,905 h213.6 l12,12 v36 h-225.6 z" fill="#dbeafe" stroke="#333" stroke-width="1"/>
+<path d="M1463.6,905 v12 h12" fill="none" stroke="#333" stroke-width="1"/>
+<text x="1260" y="927" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">Class: crm:E53_Place</text>
+<text x="1260" y="944" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  EquivalentTo: schema:Place</text>
+<path d="M1000,20 h271.2 l12,12 v121 h-283.2 z" fill="#dbeafe" stroke="#333" stroke-width="1"/>
+<path d="M1271.2,20 v12 h12" fill="none" stroke="#333" stroke-width="1"/>
+<text x="1010" y="42" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">ObjectProperty: lbo:patronOf</text>
+<text x="1010" y="59" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  SubPropertyOf: foaf:knows</text>
+<text x="1010" y="76" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">ObjectProperty: lbo:correspondedWith</text>
+<text x="1010" y="93" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  Characteristics: Symmetric</text>
+<text x="1010" y="110" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  SubPropertyOf: foaf:knows</text>
+<text x="1010" y="127" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">ObjectProperty: lbo:precededBy</text>
+<text x="1010" y="144" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  SubPropertyOf: dcterms:relation</text>
+<path d="M30,1130 h343.2 l12,12 v53 h-355.2 z" fill="#dbeafe" stroke="#333" stroke-width="1"/>
+<path d="M373.2,1130 v12 h12" fill="none" stroke="#333" stroke-width="1"/>
+<text x="40" y="1152" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">Every individual is linked to authority files:</text>
+<text x="40" y="1169" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  owl:sameAs  → Wikidata, VIAF</text>
+<text x="40" y="1186" font-family="Menlo, Consolas, monospace" font-size="12" fill="#111" xml:space="preserve">  skos:exactMatch → LCSH (concepts)</text>
+<rect x="1225" y="1015" width="515" height="194" fill="#fff" stroke="#333"/>
+<rect x="1225" y="1015" width="515" height="22" fill="#eee" stroke="#333"/>
+<text x="1235.0" y="1031.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="bold" fill="#111" >Prefixes</text>
+<text x="1235" y="1055" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">lbo:     &lt;https://xenia2525.github.io/laura-bassi-lod/ontology#&gt;</text>
+<text x="1235" y="1071" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;</text>
+<text x="1235" y="1087" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">schema:  &lt;https://schema.org/&gt;</text>
+<text x="1235" y="1103" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">crm:     &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;</text>
+<text x="1235" y="1119" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">fabio:   &lt;http://purl.org/spar/fabio/&gt;</text>
+<text x="1235" y="1135" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">skos:    &lt;http://www.w3.org/2004/02/skos/core#&gt;</text>
+<text x="1235" y="1151" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">dcterms: &lt;http://purl.org/dc/terms/&gt;</text>
+<text x="1235" y="1167" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">rel:     &lt;http://purl.org/vocab/relationship/&gt;</text>
+<text x="1235" y="1183" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">dbo:     &lt;http://dbpedia.org/ontology/&gt;</text>
+<text x="1235" y="1199" font-family="Menlo, Consolas, monospace" font-size="11" fill="#111" xml:space="preserve">xsd:     &lt;http://www.w3.org/2001/XMLSchema#&gt;</text>
+<line x1="1225" y1="1225" x2="1275" y2="1225" stroke="#1f4fbf" stroke-width="1.6" marker-start="url(#objStart)" marker-end="url(#objEnd)"/>
+<text x="1285.0" y="1229.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#111" >object property</text>
+<line x1="1405" y1="1225" x2="1455" y2="1225" stroke="#2b8a3e" stroke-width="1.6" marker-start="url(#dataStart)" marker-end="url(#dataEnd)"/>
+<text x="1465.0" y="1229.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#111" >data property</text>
+<line x1="1575" y1="1225" x2="1625" y2="1225" stroke="#222" stroke-width="1.6" marker-end="url(#axEnd)"/>
+<text x="1635.0" y="1229.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="start" font-weight="normal" fill="#111" >class axiom</text>
+<text x="1225.0" y="1255.0" font-family="Helvetica, Arial, sans-serif" font-size="11" text-anchor="start" font-weight="normal" fill="#555" >Graffoo notation · the two foaf:Person boxes are the same class</text>
+</svg>

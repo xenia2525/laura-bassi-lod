@@ -1,0 +1,108 @@
+@prefix lbo:    <https://xenia2525.github.io/laura-bassi-lod/ontology#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms:<http://purl.org/dc/terms/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix crm:    <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix fabio:  <http://purl.org/spar/fabio/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix rel:    <http://purl.org/vocab/relationship/> .
+@prefix dbo:    <http://dbpedia.org/ontology/> .
+
+#################################################################
+#  Conceptual model of the Laura Bassi LODLAM project
+#
+#  The model REUSES existing vocabularies (FOAF, schema.org,
+#  CIDOC CRM, FaBiO, SKOS, DC Terms, RELATIONSHIP, DBpedia).
+#  Only three new properties are defined in the lbo: namespace,
+#  because no existing term fits their meaning; each of them is
+#  anchored to an existing super-property.
+#################################################################
+
+<https://xenia2525.github.io/laura-bassi-lod/ontology>
+    a owl:Ontology ;
+    dcterms:title "Laura Bassi LOD – conceptual model"@en ;
+    dcterms:creator "Ksenia Hasanaj" ;
+    dcterms:description "Application profile for describing Laura Bassi (1711–1778), the people, places, institutions, events, works and concepts connected to her, as mentioned in the English Wikipedia page 'Laura Bassi'."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:versionInfo "0.1" .
+
+#################################################################
+#  New properties (only where nothing existing fits)
+#################################################################
+
+lbo:patronOf
+    a owl:ObjectProperty ;
+    rdfs:label "patron of"@en ;
+    rdfs:comment "A person who protects, supports and promotes the career of another person (e.g. Cardinal Lambertini for Laura Bassi). No patronage property exists in FOAF, schema.org or the RELATIONSHIP vocabulary."@en ;
+    rdfs:subPropertyOf foaf:knows ;
+    rdfs:domain foaf:Person ;
+    rdfs:range  foaf:Person .
+
+lbo:correspondedWith
+    a owl:ObjectProperty , owl:SymmetricProperty ;
+    rdfs:label "corresponded with"@en ;
+    rdfs:comment "Two persons exchanged letters. Specialisation of foaf:knows that keeps the epistolary nature of the relation."@en ;
+    rdfs:subPropertyOf foaf:knows ;
+    rdfs:domain foaf:Person ;
+    rdfs:range  foaf:Person .
+
+lbo:precededBy
+    a owl:ObjectProperty ;
+    rdfs:label "preceded by"@en ;
+    rdfs:comment "The subject achieved a milestone (e.g. a university degree for a woman) that the object had achieved before."@en ;
+    rdfs:subPropertyOf dcterms:relation ;
+    rdfs:domain foaf:Person ;
+    rdfs:range  foaf:Person .
+
+#################################################################
+#  Alignments between the reused vocabularies
+#################################################################
+
+foaf:Person        owl:equivalentClass crm:E21_Person .
+foaf:Organization  owl:equivalentClass crm:E74_Group .
+crm:E53_Place      owl:equivalentClass schema:Place .
+foaf:Agent         rdfs:subClassOf     crm:E39_Actor .
+
+fabio:Thesis        rdfs:subClassOf fabio:Expression .
+fabio:Book          rdfs:subClassOf fabio:Expression .
+fabio:JournalArticle rdfs:subClassOf fabio:Expression .
+
+#################################################################
+#  Usage of reused terms in this project (domain → range)
+#  Declared here as documentation; the terms keep their original
+#  semantics and are NOT redefined.
+#################################################################
+
+# Person ↔ Person
+schema:spouse   rdfs:comment "Laura Bassi – Giuseppe Veratti."@en .
+schema:colleague rdfs:comment "Laura Bassi – Luigi Galvani."@en .
+rel:mentorOf    rdfs:comment "Laura Bassi → Lazzaro Spallanzani; Gabriele Manfredi → Laura Bassi."@en .
+
+# Person → Organization / Place
+schema:memberOf rdfs:comment "Person → foaf:Organization (Academy of Sciences of Bologna, Arcadian Academy)."@en .
+schema:birthPlace rdfs:comment "Person → crm:E53_Place."@en .
+schema:deathPlace rdfs:comment "Person → crm:E53_Place."@en .
+dbo:restingPlace rdfs:comment "Person → crm:E53_Place (burial)."@en .
+schema:nationality rdfs:comment "Person → crm:E53_Place (Papal States)."@en .
+schema:knowsAbout rdfs:comment "Person → skos:Concept (fields of work: physics, electricity, Newtonianism…)."@en .
+
+# Events (CIDOC CRM)
+crm:P11_had_participant rdfs:comment "crm:E5_Event → foaf:Person."@en .
+crm:P14_carried_out_by  rdfs:comment "crm:E5_Event → foaf:Organization (University of Bologna)."@en .
+crm:P7_took_place_at    rdfs:comment "crm:E5_Event → crm:E53_Place."@en .
+crm:P16_used_specific_object rdfs:comment "crm:E5_Event → fabio:Expression (the theses defended in 1732)."@en .
+crm:P89_falls_within    rdfs:comment "crm:E53_Place → crm:E53_Place."@en .
+
+# Works (FaBiO + DC Terms)
+dcterms:creator  rdfs:comment "fabio:Expression | schema:Quotation → foaf:Person."@en .
+dcterms:subject  rdfs:comment "fabio:Expression | foaf:Document | crm:E5_Event → skos:Concept | foaf:Person."@en .
+dcterms:isPartOf rdfs:comment "fabio:JournalArticle → fabio:Journal."@en .
+schema:about     rdfs:comment "schema:Quotation → foaf:Person."@en .
+
+# Authority control
+owl:sameAs       rdfs:comment "Local resource → Wikidata / VIAF entity."@en .
+skos:exactMatch  rdfs:comment "Local skos:Concept → LCSH / Wikidata concept."@en .
