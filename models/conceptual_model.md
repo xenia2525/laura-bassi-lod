@@ -52,7 +52,11 @@ Following the project guidelines, **every term is reused from an existing vocabu
 | about / subject | `dcterms:subject` · `schema:about` | Expression, Event, Document → Concept / Person |
 | published in | `dcterms:isPartOf` | JournalArticle → Journal |
 | located in / part of | `schema:location` · `crm:P89_falls_within` | Organization → Place · Place → Place |
-| authority control | `owl:sameAs` (Wikidata, VIAF) · `skos:exactMatch` (LCSH) | resource → external URI |
+| authority control | `owl:sameAs` (Wikidata, VIAF, LC, DOI) · `skos:exactMatch` (Wikidata, LCSH) | resource → external URI |
+| daughter of | `schema:parent` | Person → Person |
+| names, occupations | `rdfs:label` · `foaf:name` · `skos:altLabel` · `schema:jobTitle` | resource → literal |
+| the page mentions… | `schema:mentions` | Document → any annotated entity |
+| quotation text | `schema:text` | Quotation → literal |
 
 ## New terms
 

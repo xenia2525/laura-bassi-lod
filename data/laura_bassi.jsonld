@@ -1,0 +1,2097 @@
+[
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/gabriele_manfredi",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://purl.org/vocab/relationship/mentorOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Gabriele Manfredi"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q3565991"
+      },
+      {
+        "@id": "https://viaf.org/viaf/27851061"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/no2009065882"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Gabriele Manfredi"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "mathematician"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/frize_2013",
+    "@type": [
+      "http://purl.org/spar/fabio/Book"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/6f0817e52fcbcdcf6c09687866c9d1fe"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2013"
+      }
+    ],
+    "http://purl.org/dc/terms/identifier": [
+      {
+        "@value": "ISBN 978-3-642-38684-8"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Laura Bassi and Science in 18th Century Europe: The Extraordinary Life and Role of Italy's Pioneering Female Professor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Laura Bassi and Science in 18th Century Europe: The Extraordinary Life and Role of Italy's Pioneering Female Professor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://doi.org/10.1007/978-3-642-38685-5"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/philosophica_studia",
+    "@type": [
+      "http://purl.org/spar/fabio/Thesis"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1732"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/natural_philosophy"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "la",
+        "@value": "Philosophica studia"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "la",
+        "@value": "Philosophica studia"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/paula_findlen",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Paula Findlen"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q28921839"
+      },
+      {
+        "@id": "https://viaf.org/viaf/9957596"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n93019516"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Paula Findlen"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "historian of science"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/unibo",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "University of Bologna"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q131262"
+      },
+      {
+        "@id": "https://viaf.org/viaf/155886025"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n79043915"
+      }
+    ],
+    "https://schema.org/location": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/isaac_newton",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Isaac Newton"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q935"
+      },
+      {
+        "@id": "https://viaf.org/viaf/22146457"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n79007443"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Isaac Newton"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "mathematician, physicist"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/lazzaro_spallanzani",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Lazzaro Spallanzani"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q213351"
+      },
+      {
+        "@id": "https://viaf.org/viaf/7405452"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n79077547"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Lazzaro Spallanzani"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "biologist, physiologist"
+      }
+    ],
+    "https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/cavazza_2009",
+    "@type": [
+      "http://purl.org/spar/fabio/JournalArticle"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/1b1a722c63ad0350d431b0b969666883"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2009"
+      }
+    ],
+    "http://purl.org/dc/terms/isPartOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/28a739c25e15c31df66c96f1130d1cf1"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Laura Bassi and Giuseppe Veratti: an electric couple during the Enlightenment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Laura Bassi and Giuseppe Veratti: an electric couple during the Enlightenment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://doi.org/10.2436/20.7010.01.67"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/giuseppe_veratti",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Giuseppe Veratti"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q131245050"
+      },
+      {
+        "@id": "https://viaf.org/viaf/275491168"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Giuseppe Veratti"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "physician, lecturer in anatomy"
+      }
+    ],
+    "https://schema.org/spouse": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/thesis_defence_1732",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1732-04-17"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/unibo"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/philosophica_studia"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/sala_anziani"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Public defence of the forty-nine philosophical theses"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/b8dc1bb34791f851c6a96320d7091b16",
+    "@type": [
+      "http://purl.org/spar/fabio/Journal"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Isis"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Isis"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/cavazza_2020",
+    "@type": [
+      "http://purl.org/spar/fabio/Book"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/1b1a722c63ad0350d431b0b969666883"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "2020"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "it",
+        "@value": "Laura Bassi. Donne, genere e scienza nell'Italia del Settecento"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Laura Bassi. Donne, genere e scienza nell'Italia del Settecento"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Subjects of the Laura Bassi project"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://dbpedia.org/ontology/restingPlace": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/corpus_domini"
+      }
+    ],
+    "http://purl.org/vocab/relationship/mentorOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/lazzaro_spallanzani"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Laura Bassi"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q541652"
+      },
+      {
+        "@id": "https://viaf.org/viaf/42647435"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n85824830"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Laura Maria Caterina Bassi Veratti"
+      },
+      {
+        "@value": "Laura Bassi"
+      }
+    ],
+    "https://schema.org/birthDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1711-10-29"
+      }
+    ],
+    "https://schema.org/birthPlace": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "https://schema.org/colleague": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/luigi_galvani"
+      }
+    ],
+    "https://schema.org/deathDate": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1778-02-20"
+      }
+    ],
+    "https://schema.org/deathPlace": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "physicist"
+      },
+      {
+        "@language": "en",
+        "@value": "university professor"
+      }
+    ],
+    "https://schema.org/knowsAbout": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/newtonianism"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/experimental_physics"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/natural_philosophy"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/electricity"
+      }
+    ],
+    "https://schema.org/memberOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/academy_sciences_bologna"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedettini"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/arcadian_academy"
+      }
+    ],
+    "https://schema.org/nationality": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/papal_states"
+      }
+    ],
+    "https://schema.org/parent": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/giuseppe_bassi"
+      }
+    ],
+    "https://schema.org/spouse": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/giuseppe_veratti"
+      }
+    ],
+    "https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/voltaire"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/francesco_algarotti"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/alessandro_volta"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/lazzaro_spallanzani"
+      }
+    ],
+    "https://xenia2525.github.io/laura-bassi-lod/ontology#precededBy": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/elena_cornaro"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/appointment_1732",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYearMonth",
+        "@value": "1732-12"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/natural_philosophy"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/unibo"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Appointment as professor of natural philosophy"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedict_xiv",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Prospero Lambertini"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q126711"
+      },
+      {
+        "@id": "https://viaf.org/viaf/76327169"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n80104086"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Prospero Lambertini"
+      },
+      {
+        "@value": "Pope Benedict XIV"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "Archbishop of Bologna, Pope (1740–1758)"
+      }
+    ],
+    "https://xenia2525.github.io/laura-bassi-lod/ontology#patronOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/corpus_domini",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Church of Corpus Domini"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q55107446"
+      },
+      {
+        "@id": "https://viaf.org/viaf/167797325"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/no2002039920"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "it",
+        "@value": "Santuario del Corpus Domini"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/sala_anziani",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/palazzo_accursio"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Sala degli Anziani"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/newtonianism",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://purl.org/dc/terms/relation": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/isaac_newton"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Newtonianism (Newtonian mechanics)"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q17123497"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Newtonianism (Newtonian mechanics)"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/marriage_1738",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1738-02-07"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/giuseppe_veratti"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Marriage of Laura Bassi and Giuseppe Veratti"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/papal_states",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Papal States"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q170174"
+      },
+      {
+        "@id": "https://viaf.org/viaf/124322284"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n79066158"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/papal_states"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Bologna"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q1891"
+      },
+      {
+        "@id": "https://viaf.org/viaf/144875967"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n79021394"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/6f0817e52fcbcdcf6c09687866c9d1fe",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Monique Frize"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/physics",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Physics"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q413"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/subjects/sh85101653"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Physics"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/electricity",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Electricity"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q12725"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/subjects/sh85042065"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Electricity"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/alessandro_volta",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Alessandro Volta"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q680"
+      },
+      {
+        "@id": "https://viaf.org/viaf/9950567"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n80149535"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Alessandro Volta"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "physicist, chemist"
+      }
+    ],
+    "https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/archiginnasio",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Archiginnasio"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q1476981"
+      },
+      {
+        "@id": "https://viaf.org/viaf/126175387"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/no2012045125"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/palazzo_accursio",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P89_falls_within": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Palazzo Pubblico"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q2267154"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n2019007877"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Palazzo d'Accursio"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/elena_1991",
+    "@type": [
+      "http://purl.org/spar/fabio/JournalArticle"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/2032f2463daf1dd12d85eeb1cc1f07b0"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1991"
+      }
+    ],
+    "http://purl.org/dc/terms/isPartOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/b8dc1bb34791f851c6a96320d7091b16"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "\"In lode della filosofessa di Bologna\": An Introduction to Laura Bassi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "\"In lode della filosofessa di Bologna\": An Introduction to Laura Bassi"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://doi.org/10.1086/355839"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/source_page",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Document"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2026-08-30T01:23:59+00:00"
+      }
+    ],
+    "http://purl.org/dc/terms/license": [
+      {
+        "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/women_in_science"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/enlightenment"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/physics"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Laura Bassi – Wikipedia"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Wikipedia page 'Laura Bassi'"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/page": [
+      {
+        "@id": "https://en.wikipedia.org/w/index.php?title=Laura_Bassi&oldid=1372047911"
+      }
+    ],
+    "https://schema.org/mentions": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/physics"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/minerva"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/doctorate"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/unibo"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/academy_sciences_bologna"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedict_xiv"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/thesis_defence_1732"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/philosophica_studia"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/doctorate_1732"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/newtonianism"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedettini"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/chair_1776"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/experimental_physics"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/corpus_domini"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/papal_states"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/giuseppe_bassi"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/gaetano_tacconi"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/academy_election_1732"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/sala_anziani"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/palazzo_accursio"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/elena_cornaro"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/isaac_newton"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/jacopo_beccari"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/gabriele_manfredi"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/marriage_1738"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/giuseppe_veratti"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/institute_of_sciences"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/archiginnasio"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/appointment_1732"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/natural_philosophy"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/de_aqua"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/electricity"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/lazzaro_spallanzani"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedettini_1745"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/voltaire"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/francesco_algarotti"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/alessandro_volta"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/newtonianismo_dame"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/luigi_galvani"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/arcadian_academy"
+      },
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/de_aeris_compressione"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/luigi_galvani",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Luigi Galvani"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q1589"
+      },
+      {
+        "@id": "https://viaf.org/viaf/74068991"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n82254793"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Luigi Galvani"
+      }
+    ],
+    "https://schema.org/colleague": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "physician, physicist"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/natural_philosophy",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Natural philosophy"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q269323"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/subjects/sh85101004"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Natural philosophy"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/de_aqua",
+    "@type": [
+      "http://purl.org/spar/fabio/Thesis"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1732"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/natural_philosophy"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "la",
+        "@value": "De aqua corpore naturali elemento aliorum corporum parte universi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "la",
+        "@value": "De aqua corpore naturali elemento aliorum corporum parte universi"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/jacopo_beccari",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://purl.org/vocab/relationship/mentorOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Jacopo Bartolomeo Beccari"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q3210669"
+      },
+      {
+        "@id": "https://viaf.org/viaf/34724361"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n2007184156"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Jacopo Bartolomeo Beccari"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "scientist"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/francesco_algarotti",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Francesco Algarotti"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q439081"
+      },
+      {
+        "@id": "https://viaf.org/viaf/68955699"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n82110127"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Francesco Algarotti"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "philosopher, writer"
+      }
+    ],
+    "https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/de_aeris_compressione",
+    "@type": [
+      "http://purl.org/spar/fabio/Expression"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1745"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/physics"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "la",
+        "@value": "De aeris compressione"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "la",
+        "@value": "De aeris compressione"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q96906094"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/elena_cornaro",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Elena Cornaro Piscopia"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q466851"
+      },
+      {
+        "@id": "https://viaf.org/viaf/50133485"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/nr95046943"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Elena Cornaro Piscopia"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "philosopher"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/experimental_physics",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Experimental physics"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q18366"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Experimental physics"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/2032f2463daf1dd12d85eeb1cc1f07b0",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Alberto Elena"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedettini_1745",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1745"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedict_xiv"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Admission to the Benedettini as additional (25th) member"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/voltaire_quote",
+    "@type": [
+      "https://schema.org/Quotation"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/voltaire"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Quotation: There is no Bassi in London, and I would be much happier to…"
+      }
+    ],
+    "https://schema.org/about": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "https://schema.org/text": [
+      {
+        "@language": "en",
+        "@value": "There is no Bassi in London, and I would be much happier to be added to your Academy of Bologna than that of the English, even though it has produced a Newton"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/voltaire",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Voltaire"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q9068"
+      },
+      {
+        "@id": "https://viaf.org/viaf/36925746"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n80126267"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Voltaire"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "writer, philosopher"
+      }
+    ],
+    "https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/28a739c25e15c31df66c96f1130d1cf1",
+    "@type": [
+      "http://purl.org/spar/fabio/Journal"
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@value": "Contributions to Science"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Contributions to Science"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/giuseppe_bassi",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Giuseppe Bassi"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q102288986"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Giuseppe Bassi"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "lawyer"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/findlen_1993",
+    "@type": [
+      "http://purl.org/spar/fabio/JournalArticle"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/paula_findlen"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1993"
+      }
+    ],
+    "http://purl.org/dc/terms/isPartOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/b8dc1bb34791f851c6a96320d7091b16"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "en",
+        "@value": "Science as a career in Enlightenment Italy: The strategies of Laura Bassi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Science as a career in Enlightenment Italy: The strategies of Laura Bassi"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "https://doi.org/10.1086/356547"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/newtonianismo_dame",
+    "@type": [
+      "http://purl.org/spar/fabio/Book"
+    ],
+    "http://purl.org/dc/terms/creator": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/francesco_algarotti"
+      }
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1737"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/newtonianism"
+      }
+    ],
+    "http://purl.org/dc/terms/title": [
+      {
+        "@language": "it",
+        "@value": "Il Newtonianismo per le dame"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "it",
+        "@value": "Il Newtonianismo per le dame"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/doctorate",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Doctor of Philosophy"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q752297"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/subjects/sh85038715"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Doctor of Philosophy"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/1b1a722c63ad0350d431b0b969666883",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Marta Cavazza"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/benedettini",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Benedettini"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Accademia Benedettina"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/doctorate_1732",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1732-05-12"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/doctorate"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/unibo"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Doctorate in philosophy awarded by the University of Bologna"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/academy_election_1732",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "1732-03-20"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/academy_sciences_bologna"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Election to the Academy of Sciences of the Institute of Bologna"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/arcadian_academy",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Accademia degli Arcadi"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q338478"
+      },
+      {
+        "@id": "https://viaf.org/viaf/168958973"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n85090892"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "en",
+        "@value": "Arcadian Academy"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/enlightenment",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Age of Enlightenment"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q12539"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/subjects/sh85044032"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Age of Enlightenment"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/academy_sciences_bologna",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Academy of Sciences of the Institute of Bologna"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q4671532"
+      },
+      {
+        "@id": "https://viaf.org/viaf/127702994"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/n80107489"
+      }
+    ],
+    "https://schema.org/location": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/chair_1776",
+    "@type": [
+      "http://www.cidoc-crm.org/cidoc-crm/E5_Event"
+    ],
+    "http://purl.org/dc/terms/date": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+        "@value": "1776"
+      }
+    ],
+    "http://purl.org/dc/terms/subject": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/experimental_physics"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P11_had_participant": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/institute_of_sciences"
+      }
+    ],
+    "http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Appointment to the Chair of Experimental Physics"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/minerva",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Minerva, Roman goddess of wisdom"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q126916"
+      },
+      {
+        "@id": "http://id.loc.gov/authorities/names/no2018111002"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Minerva, Roman goddess of wisdom"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/institute_of_sciences",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Organization"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Institute of Sciences"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel": [
+      {
+        "@language": "it",
+        "@value": "Istituto delle Scienze di Bologna"
+      }
+    ],
+    "https://schema.org/location": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/bologna"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/gaetano_tacconi",
+    "@type": [
+      "http://xmlns.com/foaf/0.1/Person"
+    ],
+    "http://purl.org/vocab/relationship/mentorOf": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/laura_bassi"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Gaetano Tacconi"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q115856535"
+      },
+      {
+        "@id": "https://viaf.org/viaf/20594945"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name": [
+      {
+        "@value": "Gaetano Tacconi"
+      }
+    ],
+    "https://schema.org/jobTitle": [
+      {
+        "@language": "en",
+        "@value": "physician, professor of medicine"
+      }
+    ]
+  },
+  {
+    "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/women_in_science",
+    "@type": [
+      "http://www.w3.org/2004/02/skos/core#Concept"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "en",
+        "@value": "Women in science"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#exactMatch": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q113616"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme": [
+      {
+        "@id": "https://xenia2525.github.io/laura-bassi-lod/resource/subjects"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel": [
+      {
+        "@language": "en",
+        "@value": "Women in science"
+      }
+    ]
+  }
+]
