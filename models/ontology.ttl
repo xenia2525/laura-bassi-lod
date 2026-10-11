@@ -25,7 +25,7 @@
 <https://xenia2525.github.io/laura-bassi-lod/ontology>
     a owl:Ontology ;
     dcterms:title "Laura Bassi LOD – conceptual model"@en ;
-    dcterms:creator "Ksenia Hasanaj" ;
+    dcterms:creator "Polyxeni Chasanai" ;
     dcterms:description "Application profile for describing Laura Bassi (1711–1778), the people, places, institutions, events, works and concepts connected to her, as mentioned in the English Wikipedia page 'Laura Bassi'."@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     owl:versionInfo "0.1" .
