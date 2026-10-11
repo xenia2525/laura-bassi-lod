@@ -384,6 +384,9 @@
       <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#findlen_1993 #elena_1991 #cavazza_2009 #frize_2013 #cavazza_2020" passive="#laura_bassi"/>
       <relation name="relation" ref="http://purl.org/dc/terms/relation" active="#newtonianism" passive="#isaac_newton"/>
 
+      <!-- the quotation -->
+      <relation name="about" ref="https://schema.org/about" active="#voltaire_quote" passive="#laura_bassi"/>
+
       <!-- the source page itself -->
       <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#source_page" passive="#laura_bassi #women_in_science #enlightenment #physics"/>
     </listRelation>

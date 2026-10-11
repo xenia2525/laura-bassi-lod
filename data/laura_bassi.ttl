@@ -1,0 +1,499 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix lb: <https://xenia2525.github.io/laura-bassi-lod/resource/> .
+@prefix lbo: <https://xenia2525.github.io/laura-bassi-lod/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel: <http://purl.org/vocab/relationship/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lb:cavazza_2009 a fabio:JournalArticle ;
+    rdfs:label "Laura Bassi and Giuseppe Veratti: an electric couple during the Enlightenment"@en ;
+    dcterms:creator lb:1b1a722c63ad0350d431b0b969666883 ;
+    dcterms:date "2009"^^xsd:gYear ;
+    dcterms:isPartOf lb:28a739c25e15c31df66c96f1130d1cf1 ;
+    dcterms:subject lb:laura_bassi ;
+    dcterms:title "Laura Bassi and Giuseppe Veratti: an electric couple during the Enlightenment"@en ;
+    owl:sameAs <https://doi.org/10.2436/20.7010.01.67> .
+
+lb:cavazza_2020 a fabio:Book ;
+    rdfs:label "Laura Bassi. Donne, genere e scienza nell'Italia del Settecento"@it ;
+    dcterms:creator lb:1b1a722c63ad0350d431b0b969666883 ;
+    dcterms:date "2020"^^xsd:gYear ;
+    dcterms:subject lb:laura_bassi ;
+    dcterms:title "Laura Bassi. Donne, genere e scienza nell'Italia del Settecento"@it .
+
+lb:elena_1991 a fabio:JournalArticle ;
+    rdfs:label "\"In lode della filosofessa di Bologna\": An Introduction to Laura Bassi"@en ;
+    dcterms:creator lb:2032f2463daf1dd12d85eeb1cc1f07b0 ;
+    dcterms:date "1991"^^xsd:gYear ;
+    dcterms:isPartOf lb:b8dc1bb34791f851c6a96320d7091b16 ;
+    dcterms:subject lb:laura_bassi ;
+    dcterms:title "\"In lode della filosofessa di Bologna\": An Introduction to Laura Bassi"@en ;
+    owl:sameAs <https://doi.org/10.1086/355839> .
+
+lb:findlen_1993 a fabio:JournalArticle ;
+    rdfs:label "Science as a career in Enlightenment Italy: The strategies of Laura Bassi"@en ;
+    dcterms:creator lb:paula_findlen ;
+    dcterms:date "1993"^^xsd:gYear ;
+    dcterms:isPartOf lb:b8dc1bb34791f851c6a96320d7091b16 ;
+    dcterms:subject lb:laura_bassi ;
+    dcterms:title "Science as a career in Enlightenment Italy: The strategies of Laura Bassi"@en ;
+    owl:sameAs <https://doi.org/10.1086/356547> .
+
+lb:frize_2013 a fabio:Book ;
+    rdfs:label "Laura Bassi and Science in 18th Century Europe: The Extraordinary Life and Role of Italy's Pioneering Female Professor"@en ;
+    dcterms:creator lb:6f0817e52fcbcdcf6c09687866c9d1fe ;
+    dcterms:date "2013"^^xsd:gYear ;
+    dcterms:identifier "ISBN 978-3-642-38684-8" ;
+    dcterms:subject lb:laura_bassi ;
+    dcterms:title "Laura Bassi and Science in 18th Century Europe: The Extraordinary Life and Role of Italy's Pioneering Female Professor"@en ;
+    owl:sameAs <https://doi.org/10.1007/978-3-642-38685-5> .
+
+lb:source_page a foaf:Document ;
+    rdfs:label "Wikipedia page 'Laura Bassi'"@en ;
+    dcterms:date "2026-08-30T01:23:59+00:00"^^xsd:dateTime ;
+    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dcterms:subject lb:enlightenment,
+        lb:laura_bassi,
+        lb:physics,
+        lb:women_in_science ;
+    dcterms:title "Laura Bassi – Wikipedia"@en ;
+    foaf:page <https://en.wikipedia.org/w/index.php?title=Laura_Bassi&oldid=1372047911> ;
+    schema:mentions lb:academy_election_1732,
+        lb:academy_sciences_bologna,
+        lb:alessandro_volta,
+        lb:appointment_1732,
+        lb:arcadian_academy,
+        lb:archiginnasio,
+        lb:benedettini,
+        lb:benedettini_1745,
+        lb:benedict_xiv,
+        lb:bologna,
+        lb:chair_1776,
+        lb:corpus_domini,
+        lb:de_aeris_compressione,
+        lb:de_aqua,
+        lb:doctorate,
+        lb:doctorate_1732,
+        lb:electricity,
+        lb:elena_cornaro,
+        lb:experimental_physics,
+        lb:francesco_algarotti,
+        lb:gabriele_manfredi,
+        lb:gaetano_tacconi,
+        lb:giuseppe_bassi,
+        lb:giuseppe_veratti,
+        lb:institute_of_sciences,
+        lb:isaac_newton,
+        lb:jacopo_beccari,
+        lb:laura_bassi,
+        lb:lazzaro_spallanzani,
+        lb:luigi_galvani,
+        lb:marriage_1738,
+        lb:minerva,
+        lb:natural_philosophy,
+        lb:newtonianism,
+        lb:newtonianismo_dame,
+        lb:palazzo_accursio,
+        lb:papal_states,
+        lb:philosophica_studia,
+        lb:physics,
+        lb:sala_anziani,
+        lb:thesis_defence_1732,
+        lb:unibo,
+        lb:voltaire .
+
+lb:voltaire_quote a schema:Quotation ;
+    rdfs:label "Quotation: There is no Bassi in London, and I would be much happier to…"@en ;
+    dcterms:creator lb:voltaire ;
+    schema:about lb:laura_bassi ;
+    schema:text "There is no Bassi in London, and I would be much happier to be added to your Academy of Bologna than that of the English, even though it has produced a Newton"@en .
+
+lb:2032f2463daf1dd12d85eeb1cc1f07b0 a foaf:Person ;
+    rdfs:label "Alberto Elena" .
+
+lb:28a739c25e15c31df66c96f1130d1cf1 a fabio:Journal ;
+    rdfs:label "Contributions to Science" ;
+    dcterms:title "Contributions to Science" .
+
+lb:6f0817e52fcbcdcf6c09687866c9d1fe a foaf:Person ;
+    rdfs:label "Monique Frize" .
+
+lb:academy_election_1732 a crm:E5_Event ;
+    rdfs:label "Election to the Academy of Sciences of the Institute of Bologna"@en ;
+    dcterms:date "1732-03-20"^^xsd:date ;
+    crm:P11_had_participant lb:laura_bassi ;
+    crm:P14_carried_out_by lb:academy_sciences_bologna ;
+    crm:P7_took_place_at lb:bologna .
+
+lb:appointment_1732 a crm:E5_Event ;
+    rdfs:label "Appointment as professor of natural philosophy"@en ;
+    dcterms:date "1732-12"^^xsd:gYearMonth ;
+    dcterms:subject lb:natural_philosophy ;
+    crm:P11_had_participant lb:laura_bassi ;
+    crm:P14_carried_out_by lb:unibo ;
+    crm:P7_took_place_at lb:bologna .
+
+lb:archiginnasio a crm:E53_Place ;
+    rdfs:label "Archiginnasio"@en ;
+    crm:P89_falls_within lb:bologna ;
+    owl:sameAs <http://id.loc.gov/authorities/names/no2012045125>,
+        <http://www.wikidata.org/entity/Q1476981>,
+        <https://viaf.org/viaf/126175387> .
+
+lb:benedettini_1745 a crm:E5_Event ;
+    rdfs:label "Admission to the Benedettini as additional (25th) member"@en ;
+    dcterms:date "1745"^^xsd:gYear ;
+    crm:P11_had_participant lb:laura_bassi ;
+    crm:P14_carried_out_by lb:benedict_xiv .
+
+lb:chair_1776 a crm:E5_Event ;
+    rdfs:label "Appointment to the Chair of Experimental Physics"@en ;
+    dcterms:date "1776"^^xsd:gYear ;
+    dcterms:subject lb:experimental_physics ;
+    crm:P11_had_participant lb:laura_bassi ;
+    crm:P14_carried_out_by lb:institute_of_sciences ;
+    crm:P7_took_place_at lb:bologna .
+
+lb:de_aeris_compressione a fabio:Expression ;
+    rdfs:label "De aeris compressione"@la ;
+    dcterms:creator lb:laura_bassi ;
+    dcterms:date "1745"^^xsd:gYear ;
+    dcterms:subject lb:physics ;
+    dcterms:title "De aeris compressione"@la ;
+    owl:sameAs <http://www.wikidata.org/entity/Q96906094> .
+
+lb:de_aqua a fabio:Thesis ;
+    rdfs:label "De aqua corpore naturali elemento aliorum corporum parte universi"@la ;
+    dcterms:creator lb:laura_bassi ;
+    dcterms:date "1732"^^xsd:gYear ;
+    dcterms:subject lb:natural_philosophy ;
+    dcterms:title "De aqua corpore naturali elemento aliorum corporum parte universi"@la .
+
+lb:doctorate_1732 a crm:E5_Event ;
+    rdfs:label "Doctorate in philosophy awarded by the University of Bologna"@en ;
+    dcterms:date "1732-05-12"^^xsd:date ;
+    dcterms:subject lb:doctorate ;
+    crm:P11_had_participant lb:laura_bassi ;
+    crm:P14_carried_out_by lb:unibo ;
+    crm:P7_took_place_at lb:bologna .
+
+lb:enlightenment a skos:Concept ;
+    rdfs:label "Age of Enlightenment"@en ;
+    skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85044032>,
+        <http://www.wikidata.org/entity/Q12539> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Age of Enlightenment"@en .
+
+lb:gabriele_manfredi a foaf:Person ;
+    rdfs:label "Gabriele Manfredi"@en ;
+    rel:mentorOf lb:laura_bassi ;
+    owl:sameAs <http://id.loc.gov/authorities/names/no2009065882>,
+        <http://www.wikidata.org/entity/Q3565991>,
+        <https://viaf.org/viaf/27851061> ;
+    foaf:name "Gabriele Manfredi" ;
+    schema:jobTitle "mathematician"@en .
+
+lb:gaetano_tacconi a foaf:Person ;
+    rdfs:label "Gaetano Tacconi"@en ;
+    rel:mentorOf lb:laura_bassi ;
+    owl:sameAs <http://www.wikidata.org/entity/Q115856535>,
+        <https://viaf.org/viaf/20594945> ;
+    foaf:name "Gaetano Tacconi" ;
+    schema:jobTitle "physician, professor of medicine"@en .
+
+lb:jacopo_beccari a foaf:Person ;
+    rdfs:label "Jacopo Bartolomeo Beccari"@en ;
+    rel:mentorOf lb:laura_bassi ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n2007184156>,
+        <http://www.wikidata.org/entity/Q3210669>,
+        <https://viaf.org/viaf/34724361> ;
+    foaf:name "Jacopo Bartolomeo Beccari" ;
+    schema:jobTitle "scientist"@en .
+
+lb:marriage_1738 a crm:E5_Event ;
+    rdfs:label "Marriage of Laura Bassi and Giuseppe Veratti"@en ;
+    dcterms:date "1738-02-07"^^xsd:date ;
+    crm:P11_had_participant lb:giuseppe_veratti,
+        lb:laura_bassi ;
+    crm:P7_took_place_at lb:bologna .
+
+lb:minerva a skos:Concept ;
+    rdfs:label "Minerva, Roman goddess of wisdom"@en ;
+    skos:exactMatch <http://id.loc.gov/authorities/names/no2018111002>,
+        <http://www.wikidata.org/entity/Q126916> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Minerva, Roman goddess of wisdom"@en .
+
+lb:newtonianismo_dame a fabio:Book ;
+    rdfs:label "Il Newtonianismo per le dame"@it ;
+    dcterms:creator lb:francesco_algarotti ;
+    dcterms:date "1737"^^xsd:gYear ;
+    dcterms:subject lb:newtonianism ;
+    dcterms:title "Il Newtonianismo per le dame"@it .
+
+lb:paula_findlen a foaf:Person ;
+    rdfs:label "Paula Findlen"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n93019516>,
+        <http://www.wikidata.org/entity/Q28921839>,
+        <https://viaf.org/viaf/9957596> ;
+    foaf:name "Paula Findlen" ;
+    schema:jobTitle "historian of science"@en .
+
+lb:thesis_defence_1732 a crm:E5_Event ;
+    rdfs:label "Public defence of the forty-nine philosophical theses"@en ;
+    dcterms:date "1732-04-17"^^xsd:date ;
+    crm:P11_had_participant lb:laura_bassi ;
+    crm:P14_carried_out_by lb:unibo ;
+    crm:P16_used_specific_object lb:philosophica_studia ;
+    crm:P7_took_place_at lb:sala_anziani .
+
+lb:women_in_science a skos:Concept ;
+    rdfs:label "Women in science"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q113616> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Women in science"@en .
+
+lb:1b1a722c63ad0350d431b0b969666883 a foaf:Person ;
+    rdfs:label "Marta Cavazza" .
+
+lb:alessandro_volta a foaf:Person ;
+    rdfs:label "Alessandro Volta"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n80149535>,
+        <http://www.wikidata.org/entity/Q680>,
+        <https://viaf.org/viaf/9950567> ;
+    foaf:name "Alessandro Volta" ;
+    schema:jobTitle "physicist, chemist"@en ;
+    lbo:correspondedWith lb:laura_bassi .
+
+lb:arcadian_academy a foaf:Organization ;
+    rdfs:label "Accademia degli Arcadi"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n85090892>,
+        <http://www.wikidata.org/entity/Q338478>,
+        <https://viaf.org/viaf/168958973> ;
+    skos:altLabel "Arcadian Academy"@en .
+
+lb:b8dc1bb34791f851c6a96320d7091b16 a fabio:Journal ;
+    rdfs:label "Isis" ;
+    dcterms:title "Isis" .
+
+lb:benedettini a foaf:Organization ;
+    rdfs:label "Benedettini"@en ;
+    skos:altLabel "Accademia Benedettina"@en .
+
+lb:benedict_xiv a foaf:Person ;
+    rdfs:label "Prospero Lambertini"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n80104086>,
+        <http://www.wikidata.org/entity/Q126711>,
+        <https://viaf.org/viaf/76327169> ;
+    foaf:name "Pope Benedict XIV",
+        "Prospero Lambertini" ;
+    schema:jobTitle "Archbishop of Bologna, Pope (1740–1758)"@en ;
+    lbo:patronOf lb:laura_bassi .
+
+lb:corpus_domini a crm:E53_Place ;
+    rdfs:label "Church of Corpus Domini"@en ;
+    crm:P89_falls_within lb:bologna ;
+    owl:sameAs <http://id.loc.gov/authorities/names/no2002039920>,
+        <http://www.wikidata.org/entity/Q55107446>,
+        <https://viaf.org/viaf/167797325> ;
+    skos:altLabel "Santuario del Corpus Domini"@it .
+
+lb:doctorate a skos:Concept ;
+    rdfs:label "Doctor of Philosophy"@en ;
+    skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85038715>,
+        <http://www.wikidata.org/entity/Q752297> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Doctor of Philosophy"@en .
+
+lb:electricity a skos:Concept ;
+    rdfs:label "Electricity"@en ;
+    skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85042065>,
+        <http://www.wikidata.org/entity/Q12725> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Electricity"@en .
+
+lb:elena_cornaro a foaf:Person ;
+    rdfs:label "Elena Cornaro Piscopia"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/nr95046943>,
+        <http://www.wikidata.org/entity/Q466851>,
+        <https://viaf.org/viaf/50133485> ;
+    foaf:name "Elena Cornaro Piscopia" ;
+    schema:jobTitle "philosopher"@en .
+
+lb:giuseppe_bassi a foaf:Person ;
+    rdfs:label "Giuseppe Bassi"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q102288986> ;
+    foaf:name "Giuseppe Bassi" ;
+    schema:jobTitle "lawyer"@en .
+
+lb:institute_of_sciences a foaf:Organization ;
+    rdfs:label "Institute of Sciences"@en ;
+    skos:altLabel "Istituto delle Scienze di Bologna"@it ;
+    schema:location lb:bologna .
+
+lb:isaac_newton a foaf:Person ;
+    rdfs:label "Isaac Newton"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n79007443>,
+        <http://www.wikidata.org/entity/Q935>,
+        <https://viaf.org/viaf/22146457> ;
+    foaf:name "Isaac Newton" ;
+    schema:jobTitle "mathematician, physicist"@en .
+
+lb:luigi_galvani a foaf:Person ;
+    rdfs:label "Luigi Galvani"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n82254793>,
+        <http://www.wikidata.org/entity/Q1589>,
+        <https://viaf.org/viaf/74068991> ;
+    foaf:name "Luigi Galvani" ;
+    schema:colleague lb:laura_bassi ;
+    schema:jobTitle "physician, physicist"@en .
+
+lb:palazzo_accursio a crm:E53_Place ;
+    rdfs:label "Palazzo Pubblico"@en ;
+    crm:P89_falls_within lb:bologna ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n2019007877>,
+        <http://www.wikidata.org/entity/Q2267154> ;
+    skos:altLabel "Palazzo d'Accursio"@en .
+
+lb:philosophica_studia a fabio:Thesis ;
+    rdfs:label "Philosophica studia"@la ;
+    dcterms:creator lb:laura_bassi ;
+    dcterms:date "1732"^^xsd:gYear ;
+    dcterms:subject lb:natural_philosophy ;
+    dcterms:title "Philosophica studia"@la .
+
+lb:sala_anziani a crm:E53_Place ;
+    rdfs:label "Sala degli Anziani"@en ;
+    crm:P89_falls_within lb:palazzo_accursio .
+
+lb:academy_sciences_bologna a foaf:Organization ;
+    rdfs:label "Academy of Sciences of the Institute of Bologna"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n80107489>,
+        <http://www.wikidata.org/entity/Q4671532>,
+        <https://viaf.org/viaf/127702994> ;
+    schema:location lb:bologna .
+
+lb:experimental_physics a skos:Concept ;
+    rdfs:label "Experimental physics"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q18366> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Experimental physics"@en .
+
+lb:francesco_algarotti a foaf:Person ;
+    rdfs:label "Francesco Algarotti"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n82110127>,
+        <http://www.wikidata.org/entity/Q439081>,
+        <https://viaf.org/viaf/68955699> ;
+    foaf:name "Francesco Algarotti" ;
+    schema:jobTitle "philosopher, writer"@en ;
+    lbo:correspondedWith lb:laura_bassi .
+
+lb:giuseppe_veratti a foaf:Person ;
+    rdfs:label "Giuseppe Veratti"@en ;
+    owl:sameAs <http://www.wikidata.org/entity/Q131245050>,
+        <https://viaf.org/viaf/275491168> ;
+    foaf:name "Giuseppe Veratti" ;
+    schema:jobTitle "physician, lecturer in anatomy"@en ;
+    schema:spouse lb:laura_bassi .
+
+lb:lazzaro_spallanzani a foaf:Person ;
+    rdfs:label "Lazzaro Spallanzani"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n79077547>,
+        <http://www.wikidata.org/entity/Q213351>,
+        <https://viaf.org/viaf/7405452> ;
+    foaf:name "Lazzaro Spallanzani" ;
+    schema:jobTitle "biologist, physiologist"@en ;
+    lbo:correspondedWith lb:laura_bassi .
+
+lb:newtonianism a skos:Concept ;
+    rdfs:label "Newtonianism (Newtonian mechanics)"@en ;
+    dcterms:relation lb:isaac_newton ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q17123497> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Newtonianism (Newtonian mechanics)"@en .
+
+lb:papal_states a crm:E53_Place ;
+    rdfs:label "Papal States"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n79066158>,
+        <http://www.wikidata.org/entity/Q170174>,
+        <https://viaf.org/viaf/124322284> .
+
+lb:physics a skos:Concept ;
+    rdfs:label "Physics"@en ;
+    skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85101653>,
+        <http://www.wikidata.org/entity/Q413> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Physics"@en .
+
+lb:voltaire a foaf:Person ;
+    rdfs:label "Voltaire"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n80126267>,
+        <http://www.wikidata.org/entity/Q9068>,
+        <https://viaf.org/viaf/36925746> ;
+    foaf:name "Voltaire" ;
+    schema:jobTitle "writer, philosopher"@en ;
+    lbo:correspondedWith lb:laura_bassi .
+
+lb:unibo a foaf:Organization ;
+    rdfs:label "University of Bologna"@en ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n79043915>,
+        <http://www.wikidata.org/entity/Q131262>,
+        <https://viaf.org/viaf/155886025> ;
+    schema:location lb:bologna .
+
+lb:natural_philosophy a skos:Concept ;
+    rdfs:label "Natural philosophy"@en ;
+    skos:exactMatch <http://id.loc.gov/authorities/subjects/sh85101004>,
+        <http://www.wikidata.org/entity/Q269323> ;
+    skos:inScheme lb:subjects ;
+    skos:prefLabel "Natural philosophy"@en .
+
+lb:subjects a skos:ConceptScheme ;
+    rdfs:label "Subjects of the Laura Bassi project"@en .
+
+lb:bologna a crm:E53_Place ;
+    rdfs:label "Bologna"@en ;
+    crm:P89_falls_within lb:papal_states ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n79021394>,
+        <http://www.wikidata.org/entity/Q1891>,
+        <https://viaf.org/viaf/144875967> .
+
+lb:laura_bassi a foaf:Person ;
+    rdfs:label "Laura Bassi"@en ;
+    dbo:restingPlace lb:corpus_domini ;
+    rel:mentorOf lb:lazzaro_spallanzani ;
+    owl:sameAs <http://id.loc.gov/authorities/names/n85824830>,
+        <http://www.wikidata.org/entity/Q541652>,
+        <https://viaf.org/viaf/42647435> ;
+    foaf:name "Laura Bassi",
+        "Laura Maria Caterina Bassi Veratti" ;
+    schema:birthDate "1711-10-29"^^xsd:date ;
+    schema:birthPlace lb:bologna ;
+    schema:colleague lb:luigi_galvani ;
+    schema:deathDate "1778-02-20"^^xsd:date ;
+    schema:deathPlace lb:bologna ;
+    schema:jobTitle "physicist"@en,
+        "university professor"@en ;
+    schema:knowsAbout lb:electricity,
+        lb:experimental_physics,
+        lb:natural_philosophy,
+        lb:newtonianism ;
+    schema:memberOf lb:academy_sciences_bologna,
+        lb:arcadian_academy,
+        lb:benedettini ;
+    schema:nationality lb:papal_states ;
+    schema:parent lb:giuseppe_bassi ;
+    schema:spouse lb:giuseppe_veratti ;
+    lbo:correspondedWith lb:alessandro_volta,
+        lb:francesco_algarotti,
+        lb:lazzaro_spallanzani,
+        lb:voltaire ;
+    lbo:precededBy lb:elena_cornaro .
+
