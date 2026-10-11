@@ -1,38 +1,53 @@
-id,label,type,role_in_page,wikidata,viaf,lc,notes
-laura_bassi,Laura Bassi,Person,main topic,Q541652,42647435,n85824830,1711-10-29 Bologna – 1778-02-20 Bologna
-giuseppe_veratti,Giovanni Giuseppe Veratti,Person,spouse,Q131245050,275491168,,physician and lecturer in anatomy; married 1738-02-07
-benedict_xiv,Pope Benedict XIV (Prospero Lambertini),Person,patron,Q126711,76327169,n80104086,cardinal archbishop of Bologna before becoming pope (1740)
-voltaire,Voltaire,Person,correspondent,Q9068,36925746,n80126267,quoted in the page
-lazzaro_spallanzani,Lazzaro Spallanzani,Person,student and cousin,Q213351,7405452,n79077547,
-luigi_galvani,Luigi Galvani,Person,colleague,Q1589,74068991,n82254793,
-alessandro_volta,Alessandro Volta,Person,correspondent,Q680,9950567,n80149535,
-gabriele_manfredi,Gabriele Manfredi,Person,teacher,Q3565991,27851061,no2009065882,from Wikidata (student of)
-elena_cornaro,Elena Cornaro Piscopia,Person,precedent (first woman graduate),Q466851,50133485,nr95046943,
-isaac_newton,Isaac Newton,Person,indirect (Newtonian physics),Q935,22146457,n79007443,
-francesco_algarotti,Francesco Algarotti,Person,correspondent,Q439081,68955699,n82110127,author of Il Newtonianismo per le dame (1737)
-paula_findlen,Paula Findlen,Person,author of a cited source,Q28921839,9957596,n93019516,
-bologna,Bologna,Place,birth/death/work place,Q1891,144875967,n79021394,
-palazzo_accursio,Palazzo d'Accursio (Palazzo Pubblico),Place,thesis defence venue,Q2267154,,n2019007877,
-corpus_domini,Santuario del Corpus Domini,Place,burial place,Q55107446,167797325,no2002039920,
-archiginnasio,Archiginnasio of Bologna,Place,university seat,Q1476981,126175387,no2012045125,
-papal_states,Papal States,Place,country of citizenship,Q170174,124322284,n79066158,
-unibo,University of Bologna,Organization,degree and employer,Q131262,155886025,n79043915,
-academy_sciences_bologna,Academy of Sciences of the Institute of Bologna,Organization,membership,Q4671532,127702994,n80107489,
-arcadian_academy,Arcadian Academy,Organization,membership,Q338478,168958973,n85090892,from Wikidata (member of)
-thesis_defence_1732,Public defence of the 49 theses,Event,1732-04-17,,,,minted URI
-doctorate_1732,Doctorate,Event,1732-05-12,,,,minted URI
-appointment_1732,Appointment as professor of natural philosophy,Event,1732-12,,,,minted URI
-marriage_1738,Marriage to Giuseppe Veratti,Event,1738-02-07,,,,minted URI
-chair_1776,Chair of Experimental Physics,Event,1776,,,,minted URI
-philosophica_studia,Philosophica Studia (49 theses),Work,1732,,,,minted URI
-de_aeris_compressione,De aeris compressione (On air compression),Work,1745,Q96906094,,,
-newtonianismo_dame,Il Newtonianismo per le dame,Work,1737,,,,minted URI; by Algarotti
-findlen_1993,"Findlen, P. (1993) Science as a Career in Enlightenment Italy: The Strategies of Laura Bassi. Isis 84(3)",Work (bibliography),cited source,,,,published in Isis (Q689414)
-newtonianism,Newtonianism,Concept,subject,Q17123497,,,
-experimental_physics,Experimental physics,Concept,subject,Q18366,,,
-physics,Physics,Concept,subject,Q413,,sh85101653,AAT 300054559
-natural_philosophy,Natural philosophy,Concept,subject,Q269323,,sh85101004,
-electricity,Electricity,Concept,subject,Q12725,,sh85042065,
-enlightenment,Age of Enlightenment,Concept,period,Q12539,,sh85044032,AAT 300055781
-women_in_science,Women in science,Concept,subject,Q113616,,,
-voltaire_quote,"""There is no Bassi in London...""",Quotation,textual phenomenon,,,,Voltaire letter to Bassi
+id,label,type,wikidata,viaf,lc_or_lcsh,mentions_in_text
+laura_bassi,Laura Maria Caterina Bassi Veratti,Person,Q541652,42647435,n85824830,3
+giuseppe_veratti,Giuseppe Veratti,Person,Q131245050,275491168,,2
+giuseppe_bassi,Giuseppe Bassi,Person,Q102288986,,,1
+benedict_xiv,Prospero Lambertini,Person,Q126711,76327169,n80104086,9
+gaetano_tacconi,Gaetano Tacconi,Person,Q115856535,20594945,,1
+gabriele_manfredi,Gabriele Manfredi,Person,Q3565991,27851061,no2009065882,1
+jacopo_beccari,Jacopo Bartolomeo Beccari,Person,Q3210669,34724361,n2007184156,1
+elena_cornaro,Elena Cornaro Piscopia,Person,Q466851,50133485,nr95046943,1
+isaac_newton,Isaac Newton,Person,Q935,22146457,n79007443,3
+lazzaro_spallanzani,Lazzaro Spallanzani,Person,Q213351,7405452,n79077547,2
+voltaire,Voltaire,Person,Q9068,36925746,n80126267,2
+francesco_algarotti,Francesco Algarotti,Person,Q439081,68955699,n82110127,2
+alessandro_volta,Alessandro Volta,Person,Q680,9950567,n80149535,1
+luigi_galvani,Luigi Galvani,Person,Q1589,74068991,n82254793,1
+paula_findlen,Paula Findlen,Person,Q28921839,9957596,n93019516,0
+unibo,University of Bologna,Organization,Q131262,155886025,n79043915,8
+academy_sciences_bologna,Academy of Sciences of the Institute of Bologna,Organization,Q4671532,127702994,n80107489,5
+institute_of_sciences,Institute of Sciences,Organization,,,,4
+benedettini,Benedettini,Organization,,,,4
+arcadian_academy,Accademia degli Arcadi,Organization,Q338478,168958973,n85090892,1
+bologna,Bologna,Place,Q1891,144875967,n79021394,8
+papal_states,Papal States,Place,Q170174,124322284,n79066158,1
+palazzo_accursio,Palazzo Pubblico,Place,Q2267154,,n2019007877,1
+sala_anziani,Sala degli Anziani,Place,,,,1
+archiginnasio,Archiginnasio,Place,Q1476981,126175387,no2012045125,1
+corpus_domini,Church of Corpus Domini,Place,Q55107446,167797325,no2002039920,2
+academy_election_1732,Election to the Academy of Sciences of the Institute of Bologna (1732-03-20),Event,,,,1
+thesis_defence_1732,Public defence of the forty-nine philosophical theses (1732-04-17),Event,,,,2
+doctorate_1732,Doctorate in philosophy awarded by the University of Bologna (1732-05-12),Event,,,,2
+appointment_1732,Appointment as professor of natural philosophy (1732-12),Event,,,,1
+marriage_1738,Marriage of Laura Bassi and Giuseppe Veratti (1738-02-07),Event,,,,1
+benedettini_1745,Admission to the Benedettini as additional (25th) member (1745),Event,,,,1
+chair_1776,Appointment to the Chair of Experimental Physics (1776),Event,,,,2
+philosophica_studia,Philosophica studia,Work (thesis),,,,2
+de_aqua,De aqua corpore naturali elemento aliorum corporum parte universi,Work (thesis),,,,2
+de_aeris_compressione,De aeris compressione,Work (article),Q96906094,,,1
+newtonianismo_dame,Il Newtonianismo per le dame,Work (book),,,,1
+findlen_1993,Science as a career in Enlightenment Italy: The strategies of Laura Bassi,Work (journalArticle),,,,0
+elena_1991,"""In lode della filosofessa di Bologna"": An Introduction to Laura Bassi",Work (journalArticle),,,,0
+cavazza_2009,Laura Bassi and Giuseppe Veratti: an electric couple during the Enlightenment,Work (journalArticle),,,,0
+frize_2013,Laura Bassi and Science in 18th Century Europe: The Extraordinary Life and Role of Italy's Pioneering Female Professor,Work (book),,,,0
+cavazza_2020,"Laura Bassi. Donne, genere e scienza nell'Italia del Settecento",Work (book),,,,0
+physics,Physics,Concept,Q413,,sh85101653,1
+experimental_physics,Experimental physics,Concept,Q18366,,,4
+newtonianism,Newtonianism (Newtonian mechanics),Concept,Q17123497,,,2
+natural_philosophy,Natural philosophy,Concept,Q269323,,sh85101004,2
+electricity,Electricity,Concept,Q12725,,sh85042065,3
+enlightenment,Age of Enlightenment,Concept,Q12539,,sh85044032,0
+women_in_science,Women in science,Concept,Q113616,,,0
+doctorate,Doctor of Philosophy,Concept,Q752297,,sh85038715,2
+minerva,"Minerva, Roman goddess of wisdom",Concept,Q126916,,no2018111002,3
+voltaire_quote,"""There is no Bassi in London…""",Quotation,,,,1
