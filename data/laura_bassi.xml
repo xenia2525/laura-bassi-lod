@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Laura Bassi: a TEI encoding of the English Wikipedia page</title>
+        <respStmt>
+          <resp>TEI encoding, entity annotation and reconciliation</resp>
+          <name xml:id="encoder">Polyxeni Chasanai</name>
+        </respStmt>
+        <funder>Information Science and Cultural Heritage, DHDK, University of Bologna, a.y. 2025/2026</funder>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Polyxeni Chasanai</publisher>
+        <pubPlace>Bologna</pubPlace>
+        <date when="2026-10">2026</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">The text is derived from Wikipedia and is distributed under the Creative Commons Attribution-ShareAlike 4.0 licence.</licence>
+        </availability>
+        <idno type="URI">https://xenia2525.github.io/laura-bassi-lod/data/laura_bassi.xml</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="source_page" type="webPage">
+          <title>Laura Bassi</title>
+          <publisher>Wikipedia, The Free Encyclopedia</publisher>
+          <date when="2026-08-30T01:23:59Z">30 August 2026</date>
+          <idno type="revision">1372047911</idno>
+          <ptr target="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <projectDesc>
+        <p>Individual LODLAM project. The text of the Wikipedia page is encoded in TEI; people, places, organisations, events, works and concepts are annotated in the text and described in the lists of the <gi>standOff</gi> section, where they are reconciled to Wikidata, VIAF and the Library of Congress authorities.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>The prose of every section of the page is transcribed. The sections "See also", "References", "Further reading" and "External links" are not transcribed as text: the cited works are described in <gi>listBibl</gi> instead. Footnote markers are omitted.</p>
+        <p>Reconciliation: <att>sameAs</att> points to the Wikidata entity URI; further authority identifiers are given in <gi>idno</gi> elements (type VIAF, LC). On categories, <att>corresp</att> points to the Library of Congress Subject Heading.</p>
+        <p>Relations: every <gi>relation</gi> carries in <att>ref</att> the URI of the ontology property that expresses it (see the conceptual model), so that the RDF transformation can use it directly.</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="subjects">
+          <bibl>Subjects and fields of study, aligned to Wikidata and LCSH</bibl>
+          <category xml:id="physics" sameAs="http://www.wikidata.org/entity/Q413" corresp="http://id.loc.gov/authorities/subjects/sh85101653"><catDesc>Physics</catDesc></category>
+          <category xml:id="experimental_physics" sameAs="http://www.wikidata.org/entity/Q18366"><catDesc>Experimental physics</catDesc></category>
+          <category xml:id="newtonianism" sameAs="http://www.wikidata.org/entity/Q17123497"><catDesc>Newtonianism (Newtonian mechanics)</catDesc></category>
+          <category xml:id="natural_philosophy" sameAs="http://www.wikidata.org/entity/Q269323" corresp="http://id.loc.gov/authorities/subjects/sh85101004"><catDesc>Natural philosophy</catDesc></category>
+          <category xml:id="electricity" sameAs="http://www.wikidata.org/entity/Q12725" corresp="http://id.loc.gov/authorities/subjects/sh85042065"><catDesc>Electricity</catDesc></category>
+          <category xml:id="enlightenment" sameAs="http://www.wikidata.org/entity/Q12539" corresp="http://id.loc.gov/authorities/subjects/sh85044032"><catDesc>Age of Enlightenment</catDesc></category>
+          <category xml:id="women_in_science" sameAs="http://www.wikidata.org/entity/Q113616"><catDesc>Women in science</catDesc></category>
+          <category xml:id="doctorate" sameAs="http://www.wikidata.org/entity/Q752297" corresp="http://id.loc.gov/authorities/subjects/sh85038715"><catDesc>Doctor of Philosophy</catDesc></category>
+          <category xml:id="minerva" sameAs="http://www.wikidata.org/entity/Q126916" corresp="http://id.loc.gov/authorities/names/no2018111002"><catDesc>Minerva, Roman goddess of wisdom</catDesc></category>
+        </taxonomy>
+      </classDecl>
+    </encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="en">English</language>
+        <language ident="la">Latin</language>
+        <language ident="it">Italian</language>
+      </langUsage>
+      <textClass>
+        <catRef scheme="#subjects" target="#physics #experimental_physics #newtonianism #women_in_science #enlightenment"/>
+      </textClass>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2026-10-12" who="#encoder">First complete encoding of revision 1372047911.</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <!-- ============================================================ -->
+  <!--  STAND-OFF: description and reconciliation of the entities    -->
+  <!-- ============================================================ -->
+  <standOff>
+    <listPerson>
+      <person xml:id="laura_bassi" sex="F" sameAs="http://www.wikidata.org/entity/Q541652">
+        <persName type="full"><forename>Laura</forename> <forename>Maria</forename> <forename>Caterina</forename> <surname>Bassi</surname> <surname>Veratti</surname></persName>
+        <persName type="short">Laura Bassi</persName>
+        <birth when="1711-10-29"><placeName ref="#bologna">Bologna</placeName></birth>
+        <death when="1778-02-20"><placeName ref="#bologna">Bologna</placeName></death>
+        <occupation>physicist</occupation>
+        <occupation>university professor</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/42647435</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n85824830</idno>
+      </person>
+      <person xml:id="giuseppe_veratti" sex="M" sameAs="http://www.wikidata.org/entity/Q131245050">
+        <persName>Giuseppe Veratti</persName>
+        <occupation>physician, lecturer in anatomy</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/275491168</idno>
+      </person>
+      <person xml:id="giuseppe_bassi" sex="M" sameAs="http://www.wikidata.org/entity/Q102288986">
+        <persName>Giuseppe Bassi</persName>
+        <occupation>lawyer</occupation>
+      </person>
+      <person xml:id="benedict_xiv" sex="M" sameAs="http://www.wikidata.org/entity/Q126711">
+        <persName type="birth">Prospero Lambertini</persName>
+        <persName type="papal">Pope Benedict XIV</persName>
+        <occupation>Archbishop of Bologna, Pope (1740–1758)</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/76327169</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n80104086</idno>
+      </person>
+      <person xml:id="gaetano_tacconi" sex="M" sameAs="http://www.wikidata.org/entity/Q115856535">
+        <persName>Gaetano Tacconi</persName>
+        <occupation>physician, professor of medicine</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/20594945</idno>
+      </person>
+      <person xml:id="gabriele_manfredi" sex="M" sameAs="http://www.wikidata.org/entity/Q3565991">
+        <persName>Gabriele Manfredi</persName>
+        <occupation>mathematician</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/27851061</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/no2009065882</idno>
+      </person>
+      <person xml:id="jacopo_beccari" sex="M" sameAs="http://www.wikidata.org/entity/Q3210669">
+        <persName>Jacopo Bartolomeo Beccari</persName>
+        <occupation>scientist</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/34724361</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n2007184156</idno>
+      </person>
+      <person xml:id="elena_cornaro" sex="F" sameAs="http://www.wikidata.org/entity/Q466851">
+        <persName>Elena Cornaro Piscopia</persName>
+        <occupation>philosopher</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/50133485</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/nr95046943</idno>
+      </person>
+      <person xml:id="isaac_newton" sex="M" sameAs="http://www.wikidata.org/entity/Q935">
+        <persName>Isaac Newton</persName>
+        <occupation>mathematician, physicist</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/22146457</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n79007443</idno>
+      </person>
+      <person xml:id="lazzaro_spallanzani" sex="M" sameAs="http://www.wikidata.org/entity/Q213351">
+        <persName>Lazzaro Spallanzani</persName>
+        <occupation>biologist, physiologist</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/7405452</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n79077547</idno>
+      </person>
+      <person xml:id="voltaire" sex="M" sameAs="http://www.wikidata.org/entity/Q9068">
+        <persName>Voltaire</persName>
+        <occupation>writer, philosopher</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/36925746</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n80126267</idno>
+      </person>
+      <person xml:id="francesco_algarotti" sex="M" sameAs="http://www.wikidata.org/entity/Q439081">
+        <persName>Francesco Algarotti</persName>
+        <occupation>philosopher, writer</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/68955699</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n82110127</idno>
+      </person>
+      <person xml:id="alessandro_volta" sex="M" sameAs="http://www.wikidata.org/entity/Q680">
+        <persName>Alessandro Volta</persName>
+        <occupation>physicist, chemist</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/9950567</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n80149535</idno>
+      </person>
+      <person xml:id="luigi_galvani" sex="M" sameAs="http://www.wikidata.org/entity/Q1589">
+        <persName>Luigi Galvani</persName>
+        <occupation>physician, physicist</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/74068991</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n82254793</idno>
+      </person>
+      <person xml:id="paula_findlen" sex="F" sameAs="http://www.wikidata.org/entity/Q28921839">
+        <persName>Paula Findlen</persName>
+        <occupation>historian of science</occupation>
+        <idno type="VIAF">https://viaf.org/viaf/9957596</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n93019516</idno>
+      </person>
+    </listPerson>
+
+    <listOrg>
+      <org xml:id="unibo" sameAs="http://www.wikidata.org/entity/Q131262">
+        <orgName>University of Bologna</orgName>
+        <idno type="VIAF">https://viaf.org/viaf/155886025</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n79043915</idno>
+      </org>
+      <org xml:id="academy_sciences_bologna" sameAs="http://www.wikidata.org/entity/Q4671532">
+        <orgName>Academy of Sciences of the Institute of Bologna</orgName>
+        <idno type="VIAF">https://viaf.org/viaf/127702994</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n80107489</idno>
+      </org>
+      <org xml:id="institute_of_sciences">
+        <orgName>Institute of Sciences</orgName>
+        <orgName xml:lang="it">Istituto delle Scienze di Bologna</orgName>
+        <note>No authority record found; local URI minted.</note>
+      </org>
+      <org xml:id="benedettini">
+        <orgName>Benedettini</orgName>
+        <orgName>Accademia Benedettina</orgName>
+        <note>Class of 24 (later 25) scholars within the Academy of Sciences, established by Benedict XIV in 1745.</note>
+      </org>
+      <org xml:id="arcadian_academy" sameAs="http://www.wikidata.org/entity/Q338478">
+        <orgName>Accademia degli Arcadi</orgName>
+        <orgName xml:lang="en">Arcadian Academy</orgName>
+        <idno type="VIAF">https://viaf.org/viaf/168958973</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n85090892</idno>
+      </org>
+    </listOrg>
+
+    <listPlace>
+      <place xml:id="bologna" sameAs="http://www.wikidata.org/entity/Q1891">
+        <placeName>Bologna</placeName>
+        <idno type="VIAF">https://viaf.org/viaf/144875967</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n79021394</idno>
+      </place>
+      <place xml:id="papal_states" sameAs="http://www.wikidata.org/entity/Q170174">
+        <placeName>Papal States</placeName>
+        <idno type="VIAF">https://viaf.org/viaf/124322284</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/n79066158</idno>
+      </place>
+      <place xml:id="palazzo_accursio" sameAs="http://www.wikidata.org/entity/Q2267154">
+        <placeName>Palazzo Pubblico</placeName>
+        <placeName>Palazzo d'Accursio</placeName>
+        <idno type="LC">http://id.loc.gov/authorities/names/n2019007877</idno>
+      </place>
+      <place xml:id="sala_anziani">
+        <placeName>Sala degli Anziani</placeName>
+        <note>Hall of the Palazzo Pubblico; local URI minted.</note>
+      </place>
+      <place xml:id="archiginnasio" sameAs="http://www.wikidata.org/entity/Q1476981">
+        <placeName>Archiginnasio</placeName>
+        <idno type="VIAF">https://viaf.org/viaf/126175387</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/no2012045125</idno>
+      </place>
+      <place xml:id="corpus_domini" sameAs="http://www.wikidata.org/entity/Q55107446">
+        <placeName>Church of Corpus Domini</placeName>
+        <placeName xml:lang="it">Santuario del Corpus Domini</placeName>
+        <idno type="VIAF">https://viaf.org/viaf/167797325</idno>
+        <idno type="LC">http://id.loc.gov/authorities/names/no2002039920</idno>
+      </place>
+    </listPlace>
+
+    <listEvent>
+      <event xml:id="academy_election_1732" when="1732-03-20">
+        <label>Election to the Academy of Sciences of the Institute of Bologna</label>
+      </event>
+      <event xml:id="thesis_defence_1732" when="1732-04-17">
+        <label>Public defence of the forty-nine philosophical theses</label>
+      </event>
+      <event xml:id="doctorate_1732" when="1732-05-12">
+        <label>Doctorate in philosophy awarded by the University of Bologna</label>
+      </event>
+      <event xml:id="appointment_1732" when="1732-12">
+        <label>Appointment as professor of natural philosophy</label>
+      </event>
+      <event xml:id="marriage_1738" when="1738-02-07">
+        <label>Marriage of Laura Bassi and Giuseppe Veratti</label>
+      </event>
+      <event xml:id="benedettini_1745" when="1745">
+        <label>Admission to the Benedettini as additional (25th) member</label>
+      </event>
+      <event xml:id="chair_1776" when="1776">
+        <label>Appointment to the Chair of Experimental Physics</label>
+      </event>
+    </listEvent>
+
+    <listBibl type="works">
+      <head>Works by Laura Bassi and works discussed in the page</head>
+      <bibl xml:id="philosophica_studia" type="thesis">
+        <author ref="#laura_bassi">Laura Bassi</author>
+        <title xml:lang="la">Philosophica studia</title>
+        <note>The forty-nine philosophical theses defended on 17 April 1732.</note>
+        <date when="1732">1732</date>
+      </bibl>
+      <bibl xml:id="de_aqua" type="thesis">
+        <author ref="#laura_bassi">Laura Bassi</author>
+        <title xml:lang="la">De aqua corpore naturali elemento aliorum corporum parte universi</title>
+        <date when="1732">1732</date>
+      </bibl>
+      <bibl xml:id="de_aeris_compressione" type="article" sameAs="http://www.wikidata.org/entity/Q96906094">
+        <author ref="#laura_bassi">Laura Bassi</author>
+        <title xml:lang="la">De aeris compressione</title>
+        <date when="1745">1745</date>
+        <relatedItem type="host"><bibl><title xml:lang="la">De Bononiensi Scientiarum et Artium Instituto atque Academia Commentarii</title></bibl></relatedItem>
+      </bibl>
+      <bibl xml:id="newtonianismo_dame" type="book">
+        <author ref="#francesco_algarotti">Francesco Algarotti</author>
+        <title xml:lang="it">Il Newtonianismo per le dame</title>
+        <date when="1737">1737</date>
+      </bibl>
+    </listBibl>
+
+    <listBibl type="references">
+      <head>Bibliography cited in the page (selection)</head>
+      <bibl xml:id="findlen_1993" type="journalArticle">
+        <author ref="#paula_findlen">Paula Findlen</author>
+        <title level="a">Science as a career in Enlightenment Italy: The strategies of Laura Bassi</title>
+        <title level="j">Isis</title>
+        <biblScope unit="volume">84</biblScope> <biblScope unit="issue">3</biblScope>
+        <biblScope unit="page" from="441" to="469">441–469</biblScope>
+        <date when="1993">1993</date>
+        <idno type="DOI">10.1086/356547</idno>
+      </bibl>
+      <bibl xml:id="elena_1991" type="journalArticle">
+        <author>Alberto Elena</author>
+        <title level="a">"In lode della filosofessa di Bologna": An Introduction to Laura Bassi</title>
+        <title level="j">Isis</title>
+        <biblScope unit="volume">82</biblScope> <biblScope unit="issue">3</biblScope>
+        <biblScope unit="page" from="510" to="518">510–518</biblScope>
+        <date when="1991">1991</date>
+        <idno type="DOI">10.1086/355839</idno>
+      </bibl>
+      <bibl xml:id="cavazza_2009" type="journalArticle">
+        <author>Marta Cavazza</author>
+        <title level="a">Laura Bassi and Giuseppe Veratti: an electric couple during the Enlightenment</title>
+        <title level="j">Contributions to Science</title>
+        <biblScope unit="volume">5</biblScope> <biblScope unit="issue">1</biblScope>
+        <biblScope unit="page" from="115" to="124">115–124</biblScope>
+        <date when="2009">2009</date>
+        <idno type="DOI">10.2436/20.7010.01.67</idno>
+      </bibl>
+      <bibl xml:id="frize_2013" type="book">
+        <author>Monique Frize</author>
+        <title level="m">Laura Bassi and Science in 18th Century Europe: The Extraordinary Life and Role of Italy's Pioneering Female Professor</title>
+        <publisher>Springer</publisher>
+        <pubPlace>Berlin, Heidelberg</pubPlace>
+        <date when="2013">2013</date>
+        <idno type="DOI">10.1007/978-3-642-38685-5</idno>
+        <idno type="ISBN">978-3-642-38684-8</idno>
+      </bibl>
+      <bibl xml:id="cavazza_2020" type="book">
+        <author>Marta Cavazza</author>
+        <title level="m" xml:lang="it">Laura Bassi. Donne, genere e scienza nell'Italia del Settecento</title>
+        <pubPlace>Milano</pubPlace>
+        <publisher>Editrice Bibliografica</publisher>
+        <date when="2020">2020</date>
+      </bibl>
+    </listBibl>
+
+    <listRelation>
+      <!-- person ↔ person -->
+      <relation name="spouse" ref="https://schema.org/spouse" mutual="#laura_bassi #giuseppe_veratti"/>
+      <relation name="parent" ref="https://schema.org/parent" active="#laura_bassi" passive="#giuseppe_bassi"/>
+      <relation name="patronOf" ref="https://xenia2525.github.io/laura-bassi-lod/ontology#patronOf" active="#benedict_xiv" passive="#laura_bassi"/>
+      <relation name="mentorOf" ref="http://purl.org/vocab/relationship/mentorOf" active="#gaetano_tacconi" passive="#laura_bassi"/>
+      <relation name="mentorOf" ref="http://purl.org/vocab/relationship/mentorOf" active="#gabriele_manfredi" passive="#laura_bassi"/>
+      <relation name="mentorOf" ref="http://purl.org/vocab/relationship/mentorOf" active="#jacopo_beccari" passive="#laura_bassi"/>
+      <relation name="mentorOf" ref="http://purl.org/vocab/relationship/mentorOf" active="#laura_bassi" passive="#lazzaro_spallanzani"/>
+      <relation name="correspondedWith" ref="https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith" mutual="#laura_bassi #voltaire"/>
+      <relation name="correspondedWith" ref="https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith" mutual="#laura_bassi #francesco_algarotti"/>
+      <relation name="correspondedWith" ref="https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith" mutual="#laura_bassi #alessandro_volta"/>
+      <relation name="correspondedWith" ref="https://xenia2525.github.io/laura-bassi-lod/ontology#correspondedWith" mutual="#laura_bassi #lazzaro_spallanzani"/>
+      <relation name="colleague" ref="https://schema.org/colleague" mutual="#laura_bassi #luigi_galvani"/>
+      <relation name="precededBy" ref="https://xenia2525.github.io/laura-bassi-lod/ontology#precededBy" active="#laura_bassi" passive="#elena_cornaro"/>
+
+      <!-- person → place / organisation -->
+      <relation name="birthPlace" ref="https://schema.org/birthPlace" active="#laura_bassi" passive="#bologna"/>
+      <relation name="deathPlace" ref="https://schema.org/deathPlace" active="#laura_bassi" passive="#bologna"/>
+      <relation name="restingPlace" ref="http://dbpedia.org/ontology/restingPlace" active="#laura_bassi" passive="#corpus_domini"/>
+      <relation name="nationality" ref="https://schema.org/nationality" active="#laura_bassi" passive="#papal_states"/>
+      <relation name="memberOf" ref="https://schema.org/memberOf" active="#laura_bassi" passive="#academy_sciences_bologna #benedettini #arcadian_academy"/>
+
+      <!-- person → concept -->
+      <relation name="knowsAbout" ref="https://schema.org/knowsAbout" active="#laura_bassi" passive="#newtonianism #experimental_physics #natural_philosophy #electricity"/>
+
+      <!-- places and organisations -->
+      <relation name="fallsWithin" ref="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within" active="#bologna" passive="#papal_states"/>
+      <relation name="fallsWithin" ref="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within" active="#palazzo_accursio" passive="#bologna"/>
+      <relation name="fallsWithin" ref="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within" active="#sala_anziani" passive="#palazzo_accursio"/>
+      <relation name="fallsWithin" ref="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within" active="#archiginnasio" passive="#bologna"/>
+      <relation name="fallsWithin" ref="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within" active="#corpus_domini" passive="#bologna"/>
+      <relation name="location" ref="https://schema.org/location" active="#unibo #academy_sciences_bologna #institute_of_sciences" passive="#bologna"/>
+
+      <!-- events (CIDOC CRM) -->
+      <relation name="hadParticipant" ref="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant" active="#academy_election_1732 #thesis_defence_1732 #doctorate_1732 #appointment_1732 #benedettini_1745 #chair_1776" passive="#laura_bassi"/>
+      <relation name="hadParticipant" ref="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant" active="#marriage_1738" passive="#laura_bassi #giuseppe_veratti"/>
+      <relation name="carriedOutBy" ref="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by" active="#academy_election_1732" passive="#academy_sciences_bologna"/>
+      <relation name="carriedOutBy" ref="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by" active="#thesis_defence_1732 #doctorate_1732 #appointment_1732" passive="#unibo"/>
+      <relation name="carriedOutBy" ref="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by" active="#benedettini_1745" passive="#benedict_xiv"/>
+      <relation name="carriedOutBy" ref="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by" active="#chair_1776" passive="#institute_of_sciences"/>
+      <relation name="tookPlaceAt" ref="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at" active="#thesis_defence_1732" passive="#sala_anziani"/>
+      <relation name="tookPlaceAt" ref="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at" active="#academy_election_1732 #doctorate_1732 #appointment_1732 #marriage_1738 #chair_1776" passive="#bologna"/>
+      <relation name="usedSpecificObject" ref="http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object" active="#thesis_defence_1732" passive="#philosophica_studia"/>
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#doctorate_1732" passive="#doctorate"/>
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#appointment_1732" passive="#natural_philosophy"/>
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#chair_1776" passive="#experimental_physics"/>
+
+      <!-- works -->
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#philosophica_studia #de_aqua" passive="#natural_philosophy"/>
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#de_aeris_compressione" passive="#physics"/>
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#newtonianismo_dame" passive="#newtonianism"/>
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#findlen_1993 #elena_1991 #cavazza_2009 #frize_2013 #cavazza_2020" passive="#laura_bassi"/>
+      <relation name="relation" ref="http://purl.org/dc/terms/relation" active="#newtonianism" passive="#isaac_newton"/>
+
+      <!-- the source page itself -->
+      <relation name="subject" ref="http://purl.org/dc/terms/subject" active="#source_page" passive="#laura_bassi #women_in_science #enlightenment #physics"/>
+    </listRelation>
+  </standOff>
+
+  <!-- ============================================================ -->
+  <!--  TEXT of the Wikipedia page                                   -->
+  <!-- ============================================================ -->
+  <text>
+    <body>
+      <div type="lead">
+        <head><persName ref="#laura_bassi">Laura Bassi</persName></head>
+        <p><persName ref="#laura_bassi">Laura Maria Caterina Bassi Veratti</persName> (<date when="1711-10-29">29 October 1711</date> – <date when="1778-02-20">20 February 1778</date>) was an Italian <term ref="#physics">physicist</term> and academic. Recognized and depicted as <soCalled>"<term ref="#minerva">Minerva</term>"</soCalled> (goddess of wisdom), she was the first woman to have a doctorate in science, and the second woman in the world to earn the <term ref="#doctorate">Doctor of Philosophy</term> degree. Working at the <orgName ref="#unibo">University of Bologna</orgName>, she was the first salaried female teacher in a university. At one time the highest paid employee of the university, by the end of her life Bassi held two other professorships. She was also the first female member of any scientific establishment, when she was elected to the <orgName ref="#academy_sciences_bologna">Academy of Sciences of the Institute of Bologna</orgName> in <date when="1732">1732</date> at 21.</p>
+        <p>Bassi did not receive formal education; instead, she was privately tutored from the age of five until she was twenty. By then, she was well-versed in major disciplines, including sciences and mathematics. Noticing her ability, <persName ref="#benedict_xiv">Prospero Lambertini</persName>, the Archbishop of <placeName ref="#bologna">Bologna</placeName> (later <persName ref="#benedict_xiv">Pope Benedict XIV</persName>), became her patron. With Lambertini's arrangement, she <rs type="event" ref="#thesis_defence_1732">publicly defended <title ref="#philosophica_studia">forty-nine theses</title> before professors of the <orgName ref="#unibo">University of Bologna</orgName> on <date when="1732-04-17">17 April 1732</date></rs>, for which she was <rs type="event" ref="#doctorate_1732">awarded a doctoral degree on <date when="1732-05-12">12 May</date></rs>. A month later, she was appointed by the university as its first female teacher, albeit with the restriction that she was not allowed to teach all-male classes. Lambertini, by then the Pope, helped her to receive permissions for private classes and experiments, which were granted by the university in <date when="1740">1740</date>.</p>
+        <p>Bassi became the most important populariser of <term ref="#newtonianism">Newtonian mechanics</term> in Italy. She was inducted by the Pope to the <orgName ref="#benedettini">Benedettini</orgName> (similar to modern Pontifical Academy of Sciences) as an additional member in <date when="1745">1745</date>. She took up the <rs type="event" ref="#chair_1776">Chair of <term ref="#experimental_physics">Experimental Physics</term> in <date when="1776">1776</date></rs>, the position she held until her death. She is interred at the <placeName ref="#corpus_domini">Church of Corpus Domini</placeName>, <placeName ref="#bologna">Bologna</placeName>.</p>
+      </div>
+
+      <div type="section" n="1">
+        <head>Early life</head>
+        <p><persName ref="#laura_bassi">Laura Maria Caterina Bassi</persName> was born on <date when="1711-10-29">29 October 1711</date> in <placeName ref="#bologna">Bologna</placeName>, then part of the <placeName ref="#papal_states">Papal States</placeName>. She was the only daughter of <persName>Maria Rosa Cesari</persName> and <persName ref="#giuseppe_bassi">Giuseppe Bassi</persName>, a lawyer originally from <placeName>Scandiano</placeName> in the <placeName>Duchy of Modena and Reggio</placeName>. Giuseppe Bassi had recently acquired citizenship in Bologna. Bassi's parents belonged to the city's lower middle class.</p>
+      </div>
+
+      <div type="section" n="2">
+        <head>Education</head>
+        <p>Bassi was educated at home rather than attending a school. From the age of five to thirteen, she studied Latin, French, and arithmetic with her cousin, Father <persName>Lorenzo Stegani</persName>. She learned to speak and write Latin as well as read it, and later used the language for her university lectures and publications.</p>
+        <p>From age thirteen to twenty, Bassi studied with <persName ref="#gaetano_tacconi">Gaetano Tacconi</persName>, her family's physician and a professor of medicine at the <orgName ref="#unibo">University of Bologna</orgName>. Her studies included philosophy, logic, metaphysics, mathematics, mechanics, chemistry, languages, and natural history. Tacconi also trained Bassi in academic debate.</p>
+        <p>As Bassi's reputation grew, Tacconi introduced her to Bologna's academic circles, where she demonstrated her knowledge in philosophical debates. Among the scholars who became interested in her work was <persName ref="#benedict_xiv">Prospero Lambertini</persName>, the archbishop of Bologna and later <persName ref="#benedict_xiv">Pope Benedict XIV</persName>. Lambertini became one of Bassi's principal supporters and helped her gain formal recognition from the city and university.</p>
+        <p><rs type="event" ref="#academy_election_1732">On <date when="1732-03-20">20 March 1732</date>, aged twenty, Bassi became the first woman elected to the <orgName ref="#academy_sciences_bologna">Academy of Sciences of the Institute of Bologna</orgName></rs>. Less than a month later, <rs type="event" ref="#thesis_defence_1732">on <date when="1732-04-17">17 April</date>, she publicly defended <title ref="#philosophica_studia">forty-nine philosophical theses</title> in the <placeName ref="#sala_anziani">Sala degli Anziani</placeName> of Bologna's <placeName ref="#palazzo_accursio">Palazzo Pubblico</placeName></rs>. The event drew a large audience that included university scholars and leading political and religious figures.</p>
+        <p><rs type="event" ref="#doctorate_1732">On <date when="1732-05-12">12 May</date>, the university awarded Bassi a <term ref="#doctorate">doctorate in philosophy</term></rs>. She became the second woman known to earn a doctorate in philosophy, fifty-four years after Venetian scholar <persName ref="#elena_cornaro">Elena Cornaro Piscopia</persName> received one in <date when="1678">1678</date>, and the first woman to receive a doctorate in science. She also became an honorary member of the university's College of Philosophers. Her achievements made her famous in Bologna, where she became known as the <soCalled>"Bolognese <term ref="#minerva">Minerva</term>"</soCalled>, after the Roman goddess of wisdom.</p>
+        <p>Bassi continued her education after receiving her doctorate. She studied the works of <persName ref="#isaac_newton">Isaac Newton</persName> with Italian scientist <persName ref="#jacopo_beccari">Jacopo Bartolomeo Beccari</persName> and mathematical analysis with Italian mathematician <persName ref="#gabriele_manfredi">Gabriele Manfredi</persName>.</p>
+      </div>
+
+      <div type="section" n="3">
+        <head>Marriage and family</head>
+        <p><rs type="event" ref="#marriage_1738">On <date when="1738-02-07">7 February 1738</date>, Bassi married <persName ref="#giuseppe_veratti">Giuseppe Veratti</persName></rs>, a doctor of medicine and a fellow lecturer in anatomy at the <orgName ref="#unibo">University of Bologna</orgName>. They shared a sophisticated working relationship; it is argued that through their marriage, Bassi was inspired to begin studying <term ref="#experimental_physics">experimental physics</term>. The exact number of their children is not clear, as some reports say it is eight, while others say twelve. Baptismal records held only eight. Caterina (born 1739), Caterina (born 1742), and Flaminio (born 1751) died in infancy. But five survived infancy: Giovanni (1738–1800), who became a canon of <placeName>San Petronio</placeName> and professor of theology in the <orgName>Collegio Montalto</orgName>; Ciro (1744–1827); Caterina (1745–1768), who became a nun; Giacomo (1749–1818), who became a canon; and Paolo (1753–1831), who became a doctor and professor of experimental physics at the <orgName ref="#institute_of_sciences">Institute of Science</orgName> and the only one to produce heirs.</p>
+      </div>
+
+      <div type="section" n="4">
+        <head>Career</head>
+        <div type="subsection" n="4.1">
+          <head>Early career</head>
+          <p>On <date when="1732-06-27">27 June 1732</date>, about six weeks after receiving her doctorate, Bassi defended twelve additional theses at the <placeName ref="#archiginnasio">Archiginnasio</placeName>, then the main building of the <orgName ref="#unibo">University of Bologna</orgName>. The defence formed part of her petition for a university teaching position. Her theses covered chemistry, physics, hydraulics, mathematics, mechanics and technical subjects.</p>
+          <p>On <date when="1732-10-29">29 October</date>, her twenty-first birthday, the university senate approved her candidacy, and <rs type="event" ref="#appointment_1732">in <date when="1732-12">December</date> she was appointed professor of <term ref="#natural_philosophy">natural philosophy</term></rs>. The position was largely honorary, but made Bassi the first salaried woman lecturer in the world.</p>
+          <p>Bassi's first university lecture was titled <title ref="#de_aqua" xml:lang="la">De aqua corpore naturali elemento aliorum corporum parte universi</title> ("Water as a natural element of all other bodies"). Despite her appointment, the university restricted her public teaching because she was a woman and was not permitted to lecture to all-male classes.</p>
+          <p>Bassi also had a public ceremonial role at the university. Beginning in <date when="1734">1734</date>, two years after her appointment, she attended the annual Carnival Anatomy, a public dissection that was a major event in university and civic life and attracted visitors and prominent members of the community.</p>
+          <p>In <date when="1739">1739</date>, seven years after her appointment, Bassi sought permission to undertake the same teaching duties as her male colleagues. Her request was supported by <persName ref="#benedict_xiv">Prospero Lambertini</persName> and <persName>Flaminio Scarselli</persName>, secretary to the Bolognese ambassador at the papal court, but was denied.</p>
+        </div>
+        <div type="subsection" n="4.2">
+          <head>Experimental physics and teaching</head>
+          <p>After her marriage in <date when="1738">1738</date>, Bassi gained greater freedom to teach and conduct experiments in her home. Her principal interest was <term ref="#newtonianism">Newtonian physics</term>, the study of motion, forces and other physical phenomena based on the work of <persName ref="#isaac_newton">Isaac Newton</persName>. She taught the subject for 28 years and became an important figure in introducing Newtonian physics and <term ref="#natural_philosophy">natural philosophy</term> in Italy.</p>
+          <p>In <date when="1749">1749</date>, aged 37, Bassi established a private school of <term ref="#experimental_physics">experimental physics</term> in her home with the assistance of her husband, physician and university lecturer <persName ref="#giuseppe_veratti">Giuseppe Veratti</persName>. Her courses included Newtonian physics and Franklinian theories of <term ref="#electricity">electricity</term>. Bassi taught for eight months each year, giving daily lessons accompanied by experiments. By <date when="1755">1755</date>, she reported that her classes were attracting educated adults, including visitors from outside Italy, rather than primarily younger students. Bassi also developed a laboratory for teaching and research, acquiring scientific instruments at her own expense. In a letter to <persName>Flaminio Scarselli</persName>, Bologna's representative at the papal court, on <date when="1755-06-14">14 June 1755</date>, she described the continuing expense of equipping her courses.</p>
+          <p>Bassi's home laboratory became a meeting place for students, researchers and visiting scholars from Italy and elsewhere in Europe. She conducted experimental research there, including work on <term ref="#electricity">electricity</term>, and other scientists also used the laboratory for experiments. In <date when="1766">1766</date>, aged 54, Bassi received another formal appointment to teach experimental physics at the <orgName>Collegio Montalto</orgName>, a residential college in Bologna.</p>
+          <p>Bassi also collaborated with other scientists on experimental research. In <date when="1769">1769</date>, her former student <persName ref="#lazzaro_spallanzani">Lazzaro Spallanzani</persName> asked her to repeat experiments investigating whether decapitated snails and leeches could regenerate their heads. He sent Bassi a special microscope for the work, which formed part of his research into regeneration in animals.</p>
+          <p>In <date when="1772">1772</date>, <persName>Paolo Balbi</persName>, professor of experimental physics at the <orgName ref="#institute_of_sciences">Institute of Sciences</orgName>, died, leaving his chair vacant. Bassi sought the position repeatedly during the following years while the institute debated how to reorganize its experimental physics course. <rs type="event" ref="#chair_1776">In <date when="1776">1776</date>, aged 65, she was appointed professor of <term ref="#experimental_physics">experimental physics</term> at the <orgName ref="#institute_of_sciences">Institute of Sciences</orgName></rs>. Veratti, who had previously served as Balbi's assistant, became Bassi's assistant. She held the chair until her death two years later, in <date when="1778">1778</date>.</p>
+        </div>
+        <div type="subsection" n="4.3">
+          <head>Benedettini</head>
+          <p>In <date when="1745">1745</date>, <persName ref="#benedict_xiv">Pope Benedict XIV</persName> established a new class of 24 scholars within the <orgName ref="#academy_sciences_bologna">Academy of Sciences of the Institute of Bologna</orgName>, known as the <orgName ref="#benedettini">Benedettini</orgName> after the pope. Intended to increase the academy's scientific activity, membership carried an annual pension of 100 Bolognese lire and an obligation to present at least one original dissertation each year.</p>
+          <p>Bassi was not among the 24 scholars initially selected. After learning of her exclusion, she wrote to <persName>Flaminio Scarselli</persName>, Bologna's representative at the papal court, asking him to approach Benedict XIV on her behalf. Rather than displace one of the existing members, Bassi proposed that she be admitted as an additional member. Despite opposition from some members of the academy, <rs type="event" ref="#benedettini_1745"><persName ref="#benedict_xiv">Benedict XIV</persName> created a twenty-fifth position for her, making Bassi the only woman among the <orgName ref="#benedettini">Benedettini</orgName></rs>.</p>
+          <p>Her status as an additional member soon produced another dispute. At a meeting in <date when="1745-11">November 1745</date>, several members argued that Bassi should not be allowed to vote. Bassi, who had not attended the meeting, again appealed through Scarselli, pointing out that she already held voting rights within the Academy of Sciences and in university doctoral proceedings. Benedict XIV ruled in her favour, and two weeks later Bassi thanked Scarselli for resolving the dispute.</p>
+          <p>From <date when="1746">1746</date> to <date when="1777">1777</date>, Bassi presented a dissertation annually as part of her responsibilities as a member of the Benedettini. Her research during this period included subjects such as fluid dynamics, <term ref="#electricity">electricity</term> and the properties of gases. A nineteenth-century catalogue compiled from the academy's records lists 32 titles of works presented by Bassi during these years. Texts or accounts of only four appear in the academy's published <title xml:lang="la">Commentarii</title>.</p>
+        </div>
+      </div>
+
+      <div type="section" n="5">
+        <head>Correspondence</head>
+        <p>One of her most important patrons was Cardinal <persName ref="#benedict_xiv">Prospero Lambertini</persName>, who encouraged her scientific work. He continually supported the <orgName ref="#unibo">University of Bologna</orgName> and intervened when other members of the institute tried to segregate Bassi from the rest of the professors.</p>
+        <p>Only a limited number of her scientific works survive, but her scientific impact is evident through her many correspondents including <persName ref="#voltaire">Voltaire</persName>, <persName>Cesare Beccaria</persName>, <persName ref="#francesco_algarotti">Francesco Algarotti</persName>, <persName>Roger Boscovich</persName>, <persName>Charles Bonnet</persName>, <persName>Jean-Antoine Nollet</persName>, <persName>Paolo Frisi</persName>, <persName ref="#lazzaro_spallanzani">Lazzaro Spallanzani</persName> and <persName ref="#alessandro_volta">Alessandro Volta</persName>. <persName ref="#voltaire">Voltaire</persName> once wrote to her saying, <q xml:id="voltaire_quote" who="#voltaire" type="letter">"There is no Bassi in <placeName>London</placeName>, and I would be much happier to be added to your <orgName ref="#academy_sciences_bologna">Academy of Bologna</orgName> than that of the English, even though it has produced a <persName ref="#isaac_newton">Newton</persName>"</q>.</p>
+        <p><persName ref="#francesco_algarotti">Francesco Algarotti</persName>, who published his <title ref="#newtonianismo_dame" xml:lang="it">Neutonianismo per le dame</title> ("Newtonism for Ladies") in <date when="1737">1737</date> wrote several poems regarding her degree ceremonies.</p>
+      </div>
+
+      <div type="section" n="6">
+        <head>Death</head>
+        <p>Bassi died on <date when="1778-02-20">20 February 1778</date> at the age of 66. She had deteriorating health attributed to her many pregnancies and childbirth complications. The cause of her death was recorded as <foreign xml:lang="it">attacco di petto</foreign> (an "attack in the chest", likely heart attack). Her funeral was held at the <placeName ref="#corpus_domini">Church of Corpus Domini</placeName>, <placeName ref="#bologna">Bologna</placeName>, where silver laurels were put on her head and she was paid tribute by members of the Benedettina. She was interred in the church in <placeName>Via Tagliapietre</placeName>, in front of the tomb of her fellow scientist <persName ref="#luigi_galvani">Luigi Galvani</persName>.</p>
+      </div>
+
+      <div type="section" n="7">
+        <head>Legacy</head>
+        <div type="subsection" n="7.1">
+          <head>Academic honours</head>
+          <p>Bassi was elected to learned societies across the Italian peninsula throughout her career:</p>
+          <list>
+            <item><orgName ref="#academy_sciences_bologna">Academy of Sciences of the Institute of Bologna</orgName>: first woman member, in <date when="1732">1732</date>.</item>
+            <item><orgName>Accademia dei Dissonanti</orgName> in <placeName>Modena</placeName> and <orgName>Università degli Apatisti</orgName> in <placeName>Florence</placeName>, in <date when="1732">1732</date>.</item>
+            <item><orgName ref="#arcadian_academy">Accademia degli Arcadi</orgName> in <placeName>Rome</placeName>, in <date when="1737">1737</date>.</item>
+            <item><orgName>Accademia dei Fluttuanti</orgName> in <placeName>Finale Emilia</placeName>, in <date when="1745">1745</date>.</item>
+            <item><orgName ref="#benedettini">Accademia Benedettina</orgName>: an additional 25th position created for Bassi by <persName ref="#benedict_xiv">Pope Benedict XIV</persName>, alongside its 24 regular members, in <date when="1745">1745</date>.</item>
+            <item><orgName>Accademia degli Ipocondriaci</orgName> in <placeName>Reggio Emilia</placeName>, <orgName>Accademia degli Ardenti</orgName> in <placeName ref="#bologna">Bologna</placeName>, <orgName>Accademia degli Agiati</orgName> in <placeName>Rovereto</placeName>, <orgName>Accademia dell'Emonia</orgName> in <placeName>Busseto</placeName>, <orgName>Accademia degli Erranti</orgName> in <placeName>Fermo</placeName>, <orgName>Accademia degli Amanti della Botanica</orgName> in <placeName>Cortona</placeName>, <orgName>Accademia Fulginia</orgName> in <placeName>Foligno</placeName>, and <orgName>Accademia dei Teopneusti</orgName> in <placeName>Correggio</placeName>, between <date from="1750" to="1763">1750 and 1763</date>.</item>
+            <item><orgName>Accademia dei Placidi</orgName> in <placeName>Recanati</placeName>, in <date when="1774">1774</date>.</item>
+          </list>
+        </div>
+        <div type="subsection" n="7.2">
+          <head>Memorials</head>
+          <list>
+            <item>A bronze medal engraved by <persName>Antonio Lazzari</persName> showed a portrait of Bassi on the obverse and an inscription referring to <term ref="#minerva">Minerva</term>, the Roman goddess of wisdom, on the reverse, in <date when="1732">1732</date>.</item>
+            <item>A marble statue of Bassi was made after her death and placed above the entrance to the Nautical Room of the <orgName ref="#institute_of_sciences">Institute of Sciences</orgName> in <placeName ref="#bologna">Bologna</placeName>.</item>
+          </list>
+        </div>
+        <div type="subsection" n="7.3">
+          <head>Places, institutions and objects bearing her name</head>
+          <list>
+            <item>Bassi is a 31 km (19 mi) impact crater on <placeName>Venus</placeName>. The <orgName>International Astronomical Union</orgName> approved the name in <date when="1991">1991</date>.</item>
+            <item><placeName>Via Laura Bassi Veratti</placeName> is a street in <placeName ref="#bologna">Bologna</placeName>.</item>
+            <item><orgName>Liceo Laura Bassi</orgName> is a secondary school in <placeName ref="#bologna">Bologna</placeName>.</item>
+            <item>The Laura Bassi Scholarship provides editorial assistance to postgraduate students and early-career academics researching subjects that have received relatively little attention in their disciplines. It was established in <date when="2018">2018</date>.</item>
+            <item>The <orgName ref="#unibo">University of Bologna</orgName> awards a Laura Bassi Medal as one of its Alumni Awards.</item>
+            <item><name type="ship">Laura Bassi</name> is an Italian icebreaking research vessel used for scientific and logistical work in <placeName>Antarctica</placeName> by the <orgName>Italian National Antarctic Research Program</orgName> since <date when="2019">2019</date>. It is the only Italian research vessel certified to operate in polar waters.</item>
+          </list>
+        </div>
+        <div type="subsection" n="7.4">
+          <head>Other commemorations</head>
+          <list>
+            <item><orgName>Google</orgName> marked the anniversary of Bassi's public defence of 49 theses with a Google Doodle, on <date when="2021-04-17">17 April 2021</date>.</item>
+            <item>American poet <persName>Jessy Randall</persName> included a poem about Bassi in her collection <title level="m">Mathematics for Ladies: Poems on Women in Science</title>, published in <date when="2022">2022</date>.</item>
+          </list>
+        </div>
+      </div>
+
+      <div type="section" n="8">
+        <head>Published works</head>
+        <p>Owing to her administrative duties, family problems and frequent diseases during childbirth, Bassi published only a few works, which reflect a small fraction of her contributions to the <orgName ref="#unibo">University of Bologna</orgName>. Her scientific works were best summed up in <persName>Domenico Piani</persName>'s treatise <title xml:lang="it">Catalogo dei Lavori dell'Antica Accademia, raccolti sotto i singoli autori</title>, published in <date when="1852">1852</date>. Her published works were:</p>
+        <list>
+          <item><title ref="#de_aqua" xml:lang="la">De acqua corpore naturali elemento aliorum corporum parte universi</title> (Concerning bodies of water as natural elements of other parts of the universe, a collection of theses for university appointment, was published in <date when="1732">1732</date>)</item>
+          <item>Four works that appeared in <title xml:lang="la">De Bononiensi Scientiarum et Artium Instituto atque Academia Commentarii</title> (Commentaries of the Bologna Institute and the Academy of Arts and Sciences), namely
+            <list>
+              <item><title ref="#de_aeris_compressione" xml:lang="la">De aeris compressione</title> (Concerning air pressure, <date when="1745">1745</date>)</item>
+              <item><title xml:lang="la">De problemate quodam hydrometrico</title> (Concerning certain problems in hydrometrics, <date when="1757">1757</date>)</item>
+              <item><title xml:lang="la">De problemate quodam mechanico</title> (Concerning certain problems in mechanics, <date when="1757">1757</date>)</item>
+              <item><title xml:lang="la">De immixto fluidis aere</title> (Concerning intermixed gaseous fluid, posthumously published in <date when="1792">1792</date>)</item>
+            </list>
+          </item>
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>
