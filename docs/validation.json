@@ -1,0 +1,132 @@
+{
+ "triples": 426,
+ "checks": [
+  {
+   "check": "Every resource has a type",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "Every resource has an rdfs:label",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "schema:spouse used 2× with domain foaf:Person and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "schema:colleague used 2× with domain foaf:Person and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "rel:mentorOf used 4× with domain foaf:Person and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "lbo:patronOf used 1× with domain foaf:Person and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "lbo:correspondedWith used 8× with domain foaf:Person and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "lbo:precededBy used 1× with domain foaf:Person and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "schema:memberOf used 3× with domain foaf:Person and range foaf:Organization",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "schema:birthPlace used 1× with domain foaf:Person and range crm:E53_Place",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "dbo:restingPlace used 1× with domain foaf:Person and range crm:E53_Place",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "schema:knowsAbout used 4× with domain foaf:Person and range skos:Concept",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "crm:P11_had_participant used 8× with domain crm:E5_Event and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "crm:P14_carried_out_by used 6× with domain crm:E5_Event and range foaf:Organization/foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "crm:P7_took_place_at used 6× with domain crm:E5_Event and range crm:E53_Place",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "crm:P16_used_specific_object used 1× with domain crm:E5_Event and range fabio:Thesis/fabio:Expression",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "crm:P89_falls_within used 5× with domain crm:E53_Place and range crm:E53_Place",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "dcterms:creator used 10× with domain fabio:Thesis/fabio:Expression/fabio:Book/fabio:JournalArticle/schema:Quotation and range foaf:Person",
+   "ok": true,
+   "failures": []
+  },
+  {
+   "check": "dcterms:isPartOf used 3× with domain fabio:JournalArticle and range fabio:Journal",
+   "ok": true,
+   "failures": []
+  }
+ ],
+ "authority": {
+  "foaf:Person": {
+   "total": 15,
+   "wikidata": 15
+  },
+  "foaf:Organization": {
+   "total": 5,
+   "wikidata": 3
+  },
+  "crm:E53_Place": {
+   "total": 6,
+   "wikidata": 5
+  },
+  "skos:Concept": {
+   "total": 9,
+   "wikidata": 9
+  }
+ },
+ "reasoning": {
+  "asserted": 478,
+  "after_closure": 2328,
+  "inferred": 1850,
+  "inconsistencies": [],
+  "expected_inferences": {
+   "Laura Bassi is also a crm:E21_Person (owl:equivalentClass)": true,
+   "Voltaire lbo:correspondedWith Laura Bassi (symmetric property)": true,
+   "Benedict XIV foaf:knows Laura Bassi (lbo:patronOf ⊑ foaf:knows)": true,
+   "Bologna is a schema:Place (owl:equivalentClass)": true,
+   "The 1732 theses are a fabio:Expression (rdfs:subClassOf)": true
+  }
+ },
+ "ok": true
+}

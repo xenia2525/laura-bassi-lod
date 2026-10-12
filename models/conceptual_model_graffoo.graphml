@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:y="http://www.yworks.com/xml/graphml"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <key for="node" id="d0" yfiles.type="nodegraphics"/>
+  <key for="edge" id="d1" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <node id="P"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="108" x="706" y="542"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">foaf:Person</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="P2"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="108" x="706" y="152"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">foaf:Person</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="O"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="153" x="1313" y="312"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">foaf:Organization</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="PL"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="123" x="1329" y="782"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">crm:E53_Place</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="EV"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="115" x="702" y="982"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">crm:E5_Event</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="EX"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="146" x="177" y="542"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">fabio:Expression</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="TH"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="115" x="37" y="352"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">fabio:Thesis</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="BK"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="100" x="195" y="352"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">fabio:Book</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="JA"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="176" x="332" y="352"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">fabio:JournalArticle</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="JO"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="123" x="359" y="212"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">fabio:Journal</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="Q"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="146" x="227" y="102"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">schema:Quotation</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="CO"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="115" x="192" y="982"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">skos:Concept</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="DOC"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="36" width="123" x="469" y="1192"/>
+      <y:Fill color="#FFFF99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">foaf:Document</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="D1"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="34" width="112" x="414" y="703"/>
+      <y:Fill color="#99CC99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">xsd:date</y:NodeLabel>
+      <y:Shape type="parallelogram"/></y:ShapeNode></data></node>
+    <node id="D2"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="34" width="112" x="1044" y="1113"/>
+      <y:Fill color="#99CC99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">xsd:date</y:NodeLabel>
+      <y:Shape type="parallelogram"/></y:ShapeNode></data></node>
+    <node id="L1"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="34" width="131" x="14" y="683"/>
+      <y:Fill color="#99CC99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">rdfs:Literal</y:NodeLabel>
+      <y:Shape type="parallelogram"/></y:ShapeNode></data></node>
+    <node id="L2"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="34" width="131" x="24" y="103"/>
+      <y:Fill color="#99CC99" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Dialog" fontSize="13" fontStyle="bold" textColor="#000000" alignment="center">rdfs:Literal</y:NodeLabel>
+      <y:Shape type="parallelogram"/></y:ShapeNode></data></node>
+    <node id="ax0"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="48" width="240" x="30" y="1225"/>
+      <y:Fill color="#CCE5FF" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Monospaced" fontSize="11" textColor="#000000" alignment="left">Class: foaf:Person
+  EquivalentTo: crm:E21_Person</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="ax1"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="48" width="233" x="1250" y="160"/>
+      <y:Fill color="#CCE5FF" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Monospaced" fontSize="11" textColor="#000000" alignment="left">Class: foaf:Organization
+  EquivalentTo: crm:E74_Group</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="ax2"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="48" width="226" x="1250" y="905"/>
+      <y:Fill color="#CCE5FF" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Monospaced" fontSize="11" textColor="#000000" alignment="left">Class: crm:E53_Place
+  EquivalentTo: schema:Place</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="ax3"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="133" width="283" x="1000" y="20"/>
+      <y:Fill color="#CCE5FF" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Monospaced" fontSize="11" textColor="#000000" alignment="left">ObjectProperty: lbo:patronOf
+  SubPropertyOf: foaf:knows
+ObjectProperty: lbo:correspondedWith
+  Characteristics: Symmetric
+  SubPropertyOf: foaf:knows
+ObjectProperty: lbo:precededBy
+  SubPropertyOf: dcterms:relation</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="ax4"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="65" width="355" x="30" y="1130"/>
+      <y:Fill color="#CCE5FF" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Monospaced" fontSize="11" textColor="#000000" alignment="left">Every individual is linked to authority files:
+  owl:sameAs  → Wikidata, VIAF
+  skos:exactMatch → LCSH (concepts)</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <node id="prefixes"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="194" width="515" x="1225" y="1018"/>
+      <y:Fill color="#FFFFFF" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel fontFamily="Monospaced" fontSize="11" textColor="#000000" alignment="left">Prefixes
+lbo:     &lt;https://xenia2525.github.io/laura-bassi-lod/ontology#&gt;
+foaf:    &lt;http://xmlns.com/foaf/0.1/&gt;
+schema:  &lt;https://schema.org/&gt;
+crm:     &lt;http://www.cidoc-crm.org/cidoc-crm/&gt;
+fabio:   &lt;http://purl.org/spar/fabio/&gt;
+skos:    &lt;http://www.w3.org/2004/02/skos/core#&gt;
+dcterms: &lt;http://purl.org/dc/terms/&gt;
+rel:     &lt;http://purl.org/vocab/relationship/&gt;
+dbo:     &lt;http://dbpedia.org/ontology/&gt;
+xsd:     &lt;http://www.w3.org/2001/XMLSchema#&gt;</y:NodeLabel>
+      <y:Shape type="rectangle"/></y:ShapeNode></data></node>
+    <edge id="e0" source="P" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:spouse</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e1" source="P" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:colleague</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e2" source="P" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">rel:mentorOf</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e3" source="P" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">lbo:patronOf</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e4" source="P" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">lbo:correspondedWith</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e5" source="P" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">lbo:precededBy</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e6" source="P" target="O"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:memberOf</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e7" source="P" target="PL"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:birthPlace</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e8" source="P" target="PL"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:deathPlace</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e9" source="P" target="PL"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dbo:restingPlace</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e10" source="P" target="PL"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:nationality</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e11" source="O" target="PL"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:location</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e12" source="PL" target="PL"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">crm:P89_falls_within</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e13" source="EV" target="P"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">crm:P11_had_participant</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e14" source="EV" target="O"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">crm:P14_carried_out_by</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e15" source="EV" target="PL"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">crm:P7_took_place_at</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e16" source="EV" target="EX"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">crm:P16_used_specific_object</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e17" source="EV" target="CO"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dcterms:subject</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e18" source="EX" target="P"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dcterms:creator</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e19" source="EX" target="CO"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dcterms:subject</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e20" source="JA" target="JO"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dcterms:isPartOf</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e21" source="Q" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dcterms:creator</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e22" source="Q" target="P2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:about</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e23" source="P" target="CO"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">schema:knowsAbout</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e24" source="DOC" target="CO"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dcterms:subject</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e25" source="DOC" target="P"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#0000FF" type="line" width="1.0"/><y:Arrows source="circle" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#0000FF">dcterms:subject</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e26" source="P" target="D1"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#339966" type="line" width="1.0"/><y:Arrows source="transparent_circle" target="white_delta"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#339966">schema:birthDate</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e27" source="P" target="D1"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#339966" type="line" width="1.0"/><y:Arrows source="transparent_circle" target="white_delta"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#339966">schema:deathDate</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e28" source="EX" target="D1"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#339966" type="line" width="1.0"/><y:Arrows source="transparent_circle" target="white_delta"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#339966">dcterms:date</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e29" source="EV" target="D2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#339966" type="line" width="1.0"/><y:Arrows source="transparent_circle" target="white_delta"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#339966">dcterms:date</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e30" source="EX" target="L1"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#339966" type="line" width="1.0"/><y:Arrows source="transparent_circle" target="white_delta"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#339966">dcterms:title</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e31" source="Q" target="L2"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#339966" type="line" width="1.0"/><y:Arrows source="transparent_circle" target="white_delta"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#339966">schema:text</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e32" source="TH" target="EX"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#000000" type="line" width="1.0"/><y:Arrows source="none" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#000000">rdfs:subClassOf</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e33" source="BK" target="EX"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#000000" type="line" width="1.0"/><y:Arrows source="none" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#000000">rdfs:subClassOf</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+    <edge id="e34" source="JA" target="EX"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="#000000" type="line" width="1.0"/><y:Arrows source="none" target="standard"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="#000000">rdfs:subClassOf</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>
+  </graph>
+</graphml>

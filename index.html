@@ -22,8 +22,15 @@
 <header class="hero" id="top">
   <div class="hero-text">
     <p class="hero-kicker">A linked open data project for Information Science and Cultural Heritage</p>
-    <h1>Laura<br>Bassi</h1>
-    <p class="hero-lede">In 1732 Bologna gave her a doctorate and a university chair, the first ever held by a woman in Europe. This project takes her Wikipedia page and turns it into linked open data: a model, a TEI edition and an RDF graph.</p>
+    <div class="hero-title">
+      <figure class="portrait">
+        <a href="https://commons.wikimedia.org/wiki/File:Laura_Bassi_-_Carlo_Vandi.jpg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Laura_Bassi_-_Carlo_Vandi.jpg?width=420" alt="Portrait of Laura Bassi by Carlo Vandi, about 1750"></a>
+        <figcaption>Carlo Vandi, c. 1750. Public domain</figcaption>
+      </figure>
+      <h1>Laura<br>Bassi</h1>
+    </div>
+    <p class="hero-question">How did a woman build a scientific career in eighteenth-century Bologna?</p>
+    <p class="hero-lede">In 1732 Bologna gave her a doctorate and a university chair, the first held by a woman in Europe. This project follows the people, institutions and events that made it possible, turning her Wikipedia page into linked open data: a model, a TEI edition and an RDF graph.</p>
     <p class="hero-author">Polyxeni Chasanai<br><span>DHDK, University of Bologna, 2025/2026<br>Prof. Francesca Tomasi and Prof. Marilena Daquino</span></p>
     <nav class="hero-links" aria-label="Main files">
       <a href="output/laura_bassi.html">Read the encoded text</a>
@@ -63,7 +70,9 @@
       <li><a href="#tei"><span>4</span>XML/TEI encoding</a></li>
       <li><a href="#html"><span>5</span>From XML to HTML</a></li>
       <li><a href="#rdf"><span>6</span>From TEI to RDF</a></li>
-      <li><a href="#files"><span>7</span>All the files</a></li>
+      <li><a href="#validation"><span>7</span>Validation</a></li>
+      <li><a href="#files"><span>8</span>All the files</a></li>
+      <li><a href="#conclusions"><span>9</span>Conclusions</a></li>
     </ol>
   </nav>
 
@@ -74,15 +83,18 @@
       <div class="prose">
         <p>The starting point is the English Wikipedia page <a href="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911"><cite>Laura Bassi</cite></a>, frozen at revision 1372047911 of 30 August 2026 so that every annotation refers to a stable text.</p>
         <p>Laura Bassi (1711–1778) suits a linked data project because her life is made of documented relations: a patron who became pope, a husband who was her laboratory partner, students, correspondents across Europe, academies, a sequence of dated appointments and a small body of Latin works. Almost all of these people and institutions already exist in Wikidata and VIAF, so the local data can be connected to the wider web.</p>
+        <p>The project is guided by one question: <em>how did a woman build a scientific career in eighteenth-century Bologna?</em> The model therefore gives most weight to what the page tells about her career: patronage, teachers and students, academies, appointments and the institutions that granted them.</p>
       </div>
       <dl class="readout" id="readout"></dl>
       <div class="prose">
         <p>Entities were chosen among those explicitly mentioned in the page, plus a few indirect ones taken from Wikidata (her membership of the Arcadian Academy, her burial place) and the works cited in its bibliography. Each one was reconciled by hand with Wikidata, VIAF and the Library of Congress; subjects were matched to Library of Congress Subject Headings.</p>
       </div>
+      <h3 class="sub">The dossiers</h3>
       <div class="entity-browser">
         <div class="chips" role="group" aria-label="Filter entities by type" id="chips"></div>
-        <ul class="entity-list" id="entity-list"></ul>
+        <div class="dossiers" id="entity-list"></div>
       </div>
+      <p class="file-note">Descriptions and images come from Wikidata and Wikimedia Commons; each image links to its source and licence.</p>
       <p class="file-note">Full table: <a href="docs/entities.csv">docs/entities.csv</a></p>
     </section>
 
@@ -118,7 +130,7 @@
       </table>
       <figure class="plate plate-wide">
         <a href="models/conceptual_model_graffoo.svg"><img src="models/conceptual_model_graffoo.png" alt="Conceptual model in Graffoo notation"></a>
-        <figcaption>The conceptual model in Graffoo notation. See <a href="models/ontology.ttl">ontology.ttl</a> and <a href="models/conceptual_model.md">the full mapping table</a>.</figcaption>
+        <figcaption>The conceptual model in Graffoo notation, also available as a <a href="models/conceptual_model_graffoo.graphml">yEd file</a>. See <a href="models/ontology.ttl">ontology.ttl</a> and <a href="models/conceptual_model.md">the full mapping table</a>.</figcaption>
       </figure>
     </section>
 
@@ -184,27 +196,68 @@
     </section>
 
     <!-- 7 ============================================================ -->
+    <section id="validation" class="step">
+      <header class="step-head"><span class="step-n">7</span><h2>Validation</h2></header>
+      <div class="prose">
+        <p>The TEI was checked for well-formedness and for broken pointers (every <code>@ref</code>, <code>@active</code> and <code>@passive</code> points to an existing <code>xml:id</code>), and run through the TEIGarage validator. The RDF was then checked by a script against the conceptual model: every resource must be typed and labelled, and every property must be used with the domain and range the model declares. Finally an OWL 2 RL reasoner computed the closure of ontology and data, to make sure there are no contradictions and that the alignments produce the expected inferences.</p>
+      </div>
+      <div id="validation-report" class="validation"></div>
+      <p class="file-note">Full report: <a href="docs/validation.md">docs/validation.md</a>, produced by <a href="scripts/validate.py">scripts/validate.py</a></p>
+    </section>
+
+    <!-- 8 ============================================================ -->
     <section id="files" class="step">
-      <header class="step-head"><span class="step-n">7</span><h2>All the files</h2></header>
+      <header class="step-head"><span class="step-n">8</span><h2>All the files</h2></header>
       <table class="files">
         <thead><tr><th scope="col">File</th><th scope="col">What it is</th></tr></thead>
         <tbody>
           <tr><td><a href="docs/entities.csv">docs/entities.csv</a></td><td>The entities with their Wikidata, VIAF and LC identifiers</td></tr>
+          <tr><td><a href="docs/wikidata_cache.json">docs/wikidata_cache.json</a></td><td>Descriptions and images retrieved from Wikidata and Wikimedia Commons</td></tr>
           <tr><td><a href="models/theoretical_model.md">models/theoretical_model.md</a></td><td>Theoretical model: relations in natural language and as a mind map (<a href="models/theoretical_model.png">PNG</a>, <a href="models/theoretical_model.mmd">Mermaid source</a>)</td></tr>
           <tr><td><a href="models/conceptual_model.md">models/conceptual_model.md</a></td><td>Conceptual model: reused vocabularies and the mapping from the theoretical model</td></tr>
           <tr><td><a href="models/ontology.ttl">models/ontology.ttl</a></td><td>The ontology in OWL (Turtle)</td></tr>
-          <tr><td><a href="models/conceptual_model_graffoo.svg">models/conceptual_model_graffoo.svg</a></td><td>Graffoo diagram (<a href="models/graffoo_diagram.py">generator</a>)</td></tr>
+          <tr><td><a href="models/conceptual_model_graffoo.svg">models/conceptual_model_graffoo.svg</a></td><td>Graffoo diagram, also as a <a href="models/conceptual_model_graffoo.graphml">yEd file</a> (<a href="models/graffoo_diagram.py">generator</a>)</td></tr>
           <tr><td><a href="data/laura_bassi.xml">data/laura_bassi.xml</a></td><td>The XML/TEI document</td></tr>
           <tr><td><a href="scripts/tei2html.xsl">scripts/tei2html.xsl</a>, <a href="scripts/tei2html.py">tei2html.py</a></td><td>XML to HTML transformation</td></tr>
           <tr><td><a href="output/laura_bassi.html">output/laura_bassi.html</a></td><td>The HTML produced by the transformation</td></tr>
           <tr><td><a href="scripts/tei2rdf.py">scripts/tei2rdf.py</a></td><td>XML/TEI to RDF transformation</td></tr>
           <tr><td><a href="data/laura_bassi.ttl">data/laura_bassi.ttl</a>, <a href="data/laura_bassi.jsonld">.jsonld</a></td><td>The RDF dataset</td></tr>
+          <tr><td><a href="scripts/validate.py">scripts/validate.py</a></td><td>Validation of the dataset and OWL reasoning (<a href="docs/validation.md">report</a>)</td></tr>
           <tr><td><a href="scripts/build_site.py">scripts/build_site.py</a></td><td>Builds the data shown on this page from the files above</td></tr>
         </tbody>
       </table>
       <div class="prose">
-        <p>To reproduce everything: <code>pip install lxml rdflib</code>, then run <code>python scripts/tei2html.py</code>, <code>python scripts/tei2rdf.py</code> and <code>python scripts/build_site.py</code> from the repository root.</p>
+        <p>To reproduce everything: <code>pip install lxml rdflib owlrl</code>, then run <code>python scripts/tei2html.py</code>, <code>python scripts/tei2rdf.py</code>, <code>python scripts/validate.py</code> and <code>python scripts/build_site.py</code> from the repository root.</p>
       </div>
+    </section>
+
+    <!-- 9 ============================================================ -->
+    <section id="conclusions" class="step">
+      <header class="step-head"><span class="step-n">9</span><h2>Conclusions</h2></header>
+      <div class="prose">
+        <p>Back to the question. Read as data, Laura Bassi's career is a network more than a ladder. Of the seven events in the dataset, six were carried out by an institution of Bologna (the university, the Academy of Sciences, the Institute of Sciences) or by her patron, Prospero Lambertini, who appears as archbishop, cardinal and pope in the same story. Her teachers, her husband and her students are bound to the same institutions, and her correspondence reaches Voltaire, Algarotti and Volta. Patronage, the academies and the laboratory she shared with Giuseppe Veratti are what the graph shows holding her career together.</p>
+        <p>On the method side, the decision that mattered most was to write the URI of the ontology property in every TEI <code>relation</code>. It ties the edition to the conceptual model and lets the same file produce the HTML, the RDF and this website, so that each output stays consistent with the others. The limits are those of the source: a Wikipedia page gives few details about her own works, and three organisations and places had no authority record and received local URIs.</p>
+      </div>
+      <h3 class="sub">Tools</h3>
+      <ul class="tools">
+        <li><b>Python</b> with lxml, rdflib and owlrl: transformations, RDF and reasoning</li>
+        <li><b>XSLT 1.0</b>: the HTML edition</li>
+        <li><b>Wikidata Query Service</b> and Wikimedia Commons: reconciliation, descriptions, images</li>
+        <li><b>TEIGarage</b>: TEI validation</li>
+        <li><b>Graffoo</b> (as SVG and yEd file) and <b>Mermaid</b>: the diagrams</li>
+        <li><b>GitHub</b> and GitHub Pages: versioning and publication</li>
+      </ul>
+      <h3 class="sub">References</h3>
+      <ol class="refs">
+        <li>"Laura Bassi". <cite>Wikipedia, The Free Encyclopedia</cite>, revision 1372047911, 30 August 2026. <a href="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911">en.wikipedia.org</a></li>
+        <li>Findlen, P. (1993). Science as a career in Enlightenment Italy: The strategies of Laura Bassi. <cite>Isis</cite>, 84(3), 441–469. <a href="https://doi.org/10.1086/356547">doi:10.1086/356547</a></li>
+        <li>Cavazza, M. (2009). Laura Bassi and Giuseppe Veratti: an electric couple during the Enlightenment. <cite>Contributions to Science</cite>, 5(1), 115–124. <a href="https://doi.org/10.2436/20.7010.01.67">doi:10.2436/20.7010.01.67</a></li>
+        <li>Frize, M. (2013). <cite>Laura Bassi and Science in 18th Century Europe</cite>. Springer. <a href="https://doi.org/10.1007/978-3-642-38685-5">doi:10.1007/978-3-642-38685-5</a></li>
+        <li>Falco, R., Gangemi, A., Peroni, S., Shotton, D., Vitali, F. (2014). Modelling OWL ontologies with Graffoo. <cite>The Semantic Web: ESWC 2014 Satellite Events</cite>, 320–325. Springer.</li>
+        <li>Peroni, S., Shotton, D. (2012). FaBiO and CiTO: ontologies for describing bibliographic resources and citations. <cite>Journal of Web Semantics</cite>, 17, 33–43.</li>
+        <li>CIDOC CRM Special Interest Group. <cite>Definition of the CIDOC Conceptual Reference Model</cite>. <a href="https://www.cidoc-crm.org/">cidoc-crm.org</a></li>
+        <li>TEI Consortium. <cite>TEI P5: Guidelines for Electronic Text Encoding and Interchange</cite>. <a href="https://tei-c.org/guidelines/p5/">tei-c.org</a></li>
+      </ol>
     </section>
   </main>
 </div>

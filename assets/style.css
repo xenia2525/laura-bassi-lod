@@ -226,3 +226,49 @@ pre code { display: block; background: none; color: #d6e0ea; padding: 18px 20px;
   .vocab th, .vocab td { display: block; border: 0; padding: 2px 0; }
   .files td { word-break: break-all; }
 }
+
+/* ------------------------------------------------------------ portrait (hero) */
+.hero-title { display: flex; align-items: center; gap: clamp(18px, 3vw, 36px); margin-bottom: 26px; }
+.hero-title h1 { margin: 0; }
+.portrait { margin: 0; flex: none; text-align: center; }
+.portrait img {
+  display: block; width: clamp(110px, 12vw, 170px); aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 18%;
+  border-radius: 50%; filter: grayscale(1) contrast(1.12) brightness(1.02);
+  box-shadow: 0 0 0 1px var(--brass), 0 0 0 7px rgba(8, 27, 49, .9), 0 0 0 8px rgba(200, 160, 70, .55);
+}
+.portrait figcaption { font-size: 12px; color: #8ea2b7; margin-top: 14px; }
+.hero-question { font-family: var(--display); font-style: italic; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.25; color: var(--brass-soft); max-width: 24ch; margin: 0 0 18px; }
+
+/* ------------------------------------------------------------ dossiers */
+h3.sub { font-family: var(--display); font-weight: 400; font-size: 28px; margin: 40px 0 6px; }
+.dossiers { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 28px 24px; }
+.dossier { border-top: 3px solid var(--c); background: #fff; display: flex; flex-direction: column; }
+.dossier-img { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: #e7eaee; }
+.dossier-img img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; filter: grayscale(1) contrast(1.05); display: block; }
+.dossier-blank { display: grid; place-items: center; font-family: var(--display); font-size: 54px; color: var(--prussian);
+  background: repeating-linear-gradient(135deg, #eef1f4 0 6px, #e6eaee 6px 7px); }
+.dossier-body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+.dossier-body h4 { font-family: var(--display); font-weight: 500; font-size: 21px; line-height: 1.15; margin: 0; }
+.dossier-body p { margin: 0; font-size: 14.5px; line-height: 1.45; }
+.dossier-type { color: var(--muted); font-size: 13px !important; }
+.dossier-type i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--c); margin-right: 7px; }
+.dossier-links { margin-top: auto !important; padding-top: 6px; display: flex; gap: 14px; flex-wrap: wrap; font-size: 13.5px !important; }
+.credit { font-size: 12px !important; color: var(--muted); }
+
+/* ------------------------------------------------------------ validation */
+.val-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); margin: 24px 0 8px; }
+.val-grid div { padding: 16px 14px 14px 0; }
+.val-grid b { display: block; font-family: var(--display); font-weight: 400; font-size: 40px; line-height: 1; color: var(--verdigris); }
+.val-grid span { font-size: 14px; color: var(--muted); }
+.validation td:last-child { color: var(--verdigris); font-weight: 600; }
+.auth { font-size: 15px; }
+
+/* ------------------------------------------------------------ conclusions */
+.tools { padding-left: 1.1em; max-width: 68ch; }
+.tools li { margin-bottom: 6px; }
+.refs { padding-left: 1.4em; max-width: 72ch; font-size: 15px; }
+.refs li { margin-bottom: 10px; }
+
+@media (max-width: 860px) {
+  .hero-title { gap: 18px; }
+}

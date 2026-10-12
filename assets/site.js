@@ -151,14 +151,29 @@
     const chips = document.getElementById("chips");
     const order = ["person", "place", "org", "event", "work", "concept"];
     const nodes = S.graph.nodes.slice().sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type) || a.label.localeCompare(b.label));
+    const initials = label => label.replace(/[^A-Za-zÀ-ž ]/g, "").split(" ").filter(w => w.length > 2 || /^[A-Z]/.test(w)).slice(0, 2).map(w => w[0]).join("").toUpperCase();
     const render = type => {
-      list.innerHTML = nodes.filter(n => !type || n.type === type).map(n =>
-        `<li class="k-${n.type}"><span><i></i>${esc(n.label)}</span>${n.wikidata ? `<a href="${n.wikidata}">${n.wikidata.split("/").pop()}</a>` : ""}</li>`).join("");
+      list.innerHTML = nodes.filter(n => !type || n.type === type).map(n => `
+        <article class="dossier k-${n.type}">
+          ${n.image
+            ? `<a class="dossier-img" href="${n.image.page}"><img src="${n.image.src}" alt="${esc(n.label)}" loading="lazy" width="240" height="300"></a>`
+            : `<div class="dossier-img dossier-blank" aria-hidden="true">${esc(initials(n.label))}</div>`}
+          <div class="dossier-body">
+            <p class="dossier-type"><i></i>${TYPE_NAMES[n.type]}${n.dates ? `, ${esc(n.dates)}` : ""}</p>
+            <h4>${esc(n.label)}</h4>
+            ${n.description ? `<p>${esc(n.description)}</p>` : n.role ? `<p>${esc(n.role)}</p>` : ""}
+            <p class="dossier-links">
+              <a href="output/laura_bassi.html#${n.id}">In the edition</a>
+              ${n.wikidata ? `<a href="${n.wikidata}">Wikidata ${n.wikidata.split("/").pop()}</a>` : ""}
+            </p>
+            ${n.image ? `<p class="credit">Image: ${esc(n.image.credit)}</p>` : ""}
+          </div>
+        </article>`).join("");
     };
     const types = [null, ...order];
     chips.innerHTML = types.map(t => {
       const count = t ? nodes.filter(n => n.type === t).length : nodes.length;
-      return `<button type="button" class="${t ? "k-" + t : ""}" data-type="${t || ""}" aria-pressed="${t ? "false" : "true"}">${t ? "<i></i>" : ""}${t ? TYPE_NAMES[t] : "all"} (${count})</button>`;
+      return `<button type="button" class="${t ? "k-" + t : ""}" data-type="${t || ""}" aria-pressed="${t === "person" ? "true" : "false"}">${t ? "<i></i>" : ""}${t ? TYPE_NAMES[t] : "all"} (${count})</button>`;
     }).join("");
     chips.addEventListener("click", ev => {
       const b = ev.target.closest("button");
@@ -166,7 +181,7 @@
       chips.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
       render(b.dataset.type || null);
     });
-    render(null);
+    render("person");
   }
 
   /* ------------------------------------------------------------ code */
@@ -223,5 +238,24 @@
     document.querySelectorAll(".step").forEach(s => io.observe(s));
   }
 
-  orrery(); readout(); entities(); tabs(); timeline(); rail();
+  /* ------------------------------------------------------------ validation */
+  function validation() {
+    const v = S.validation, box = document.getElementById("validation-report");
+    if (!v || !box) return;
+    const r = v.reasoning, auth = v.authority;
+    const passed = v.checks.filter(c => c.ok).length;
+    const names = { "foaf:Person": "people", "foaf:Organization": "organisations", "crm:E53_Place": "places", "skos:Concept": "concepts" };
+    box.innerHTML = `
+      <div class="val-grid">
+        <div><b>${passed}/${v.checks.length}</b><span>structural and domain/range checks passed</span></div>
+        <div><b>${r.inconsistencies.length ? r.inconsistencies.length : "0"}</b><span>inconsistencies after OWL 2 RL reasoning</span></div>
+        <div><b>${r.inferred.toLocaleString("en")}</b><span>triples inferred from ${r.asserted} asserted</span></div>
+      </div>
+      <table><thead><tr><th scope="col">Expected inference</th><th scope="col">Found</th></tr></thead><tbody>
+        ${Object.entries(r.expected_inferences).map(([k, ok]) => `<tr><td>${esc(k)}</td><td>${ok ? "yes" : "no"}</td></tr>`).join("")}
+      </tbody></table>
+      <p class="auth">Linked to Wikidata: ${Object.entries(auth).map(([k, a]) => `${a.wikidata} of ${a.total} ${names[k] || k}`).join(", ")}.</p>`;
+  }
+
+  orrery(); readout(); validation(); entities(); tabs(); timeline(); rail();
 })();

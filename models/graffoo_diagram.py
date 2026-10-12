@@ -234,3 +234,56 @@ out.append("</svg>")
 dest = Path(__file__).with_name("conceptual_model_graffoo.svg")
 dest.write_text("\n".join(out), encoding="utf-8")
 print("written", dest)
+
+
+# ---------------------------------------------------------------- yEd export
+# The same diagram as a yEd .graphml file, styled with the Graffoo conventions,
+# so that it can be opened and edited in yEd (https://www.yworks.com/products/yed).
+def graphml():
+    head = """<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:y="http://www.yworks.com/xml/graphml"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <key for="node" id="d0" yfiles.type="nodegraphics"/>
+  <key for="edge" id="d1" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">"""
+    body = []
+
+    def node(nid, x, y, w, h, label, fill, shape, mono=False):
+        font = 'fontFamily="Monospaced" fontSize="11"' if mono else 'fontFamily="Dialog" fontSize="13" fontStyle="bold"'
+        body.append(f"""    <node id="{nid}"><data key="d0"><y:ShapeNode>
+      <y:Geometry height="{h:.0f}" width="{w:.0f}" x="{x - w / 2:.0f}" y="{y - h / 2:.0f}"/>
+      <y:Fill color="{fill}" transparent="false"/><y:BorderStyle color="#000000" type="line" width="1.0"/>
+      <y:NodeLabel {font} textColor="#000000" alignment="{'left' if mono else 'center'}">{esc(label)}</y:NodeLabel>
+      <y:Shape type="{shape}"/></y:ShapeNode></data></node>""")
+
+    for nid, (label, kind, x, y) in NODES.items():
+        w, h = size(label, kind)
+        if kind == "class":
+            node(nid, x, y, w, h, label, "#FFFF99", "rectangle")
+        else:
+            node(nid, x, y, w, h, label, "#99CC99", "parallelogram")
+    for i, (x, y, lines) in enumerate(AXIOMS):
+        w = max(len(l) for l in lines) * 7.2 + 24
+        h = len(lines) * 17 + 14
+        node(f"ax{i}", x + w / 2, y + h / 2, w, h, "\n".join(lines), "#CCE5FF", "rectangle", mono=True)
+    pw = 515
+    node("prefixes", 1225 + pw / 2, 1015 + 100, pw, len(PREFIXES) * 16 + 34, "Prefixes\n" + "\n".join(PREFIXES), "#FFFFFF", "rectangle", mono=True)
+
+    style = {  # colour, line, source arrow, target arrow
+        "obj": ("#0000FF", "line", "circle", "standard"),
+        "data": ("#339966", "line", "transparent_circle", "white_delta"),
+        "axiom": ("#000000", "line", "none", "standard"),
+        "loop": ("#0000FF", "line", "circle", "standard"),
+    }
+    for k, (a, b, label, kind, *_rest) in enumerate(EDGES):
+        color, line, src, tgt = style[kind]
+        body.append(f"""    <edge id="e{k}" source="{a}" target="{b}"><data key="d1"><y:PolyLineEdge>
+      <y:LineStyle color="{color}" type="{line}" width="1.0"/><y:Arrows source="{src}" target="{tgt}"/>
+      <y:EdgeLabel fontFamily="Dialog" fontSize="11" textColor="{color}">{esc(label)}</y:EdgeLabel>
+      <y:BendStyle smoothed="true"/></y:PolyLineEdge></data></edge>""")
+    return head + "\n" + "\n".join(body) + "\n  </graph>\n</graphml>\n"
+
+
+Path(__file__).with_name("conceptual_model_graffoo.graphml").write_text(graphml(), encoding="utf-8")
+print("written conceptual_model_graffoo.graphml")

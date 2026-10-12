@@ -29,6 +29,9 @@ flowchart LR
   ECP[Elena Cornaro Piscopia]:::person
   NEW[Isaac Newton]:::person
   PF[Paula Findlen]:::person
+  GB[Giuseppe Bassi]:::person
+  TAC[Gaetano Tacconi]:::person
+  BEC[Jacopo Bartolomeo Beccari]:::person
 
   %% places & organisations
   BO[Bologna]:::place
@@ -38,6 +41,10 @@ flowchart LR
   UNI[University of Bologna]:::org
   ACC[Academy of Sciences<br/>of the Institute of Bologna]:::org
   ARC[Arcadian Academy]:::org
+  INS[Institute of Sciences]:::org
+  BEN[Benedettini]:::org
+  SA[Sala degli Anziani]:::place
+  ARCH[Archiginnasio]:::place
 
   %% events
   E1[/Defence of 49 theses<br/>17 Apr 1732/]:::event
@@ -45,12 +52,15 @@ flowchart LR
   E3[/Professorship<br/>Dec 1732/]:::event
   E4[/Marriage<br/>7 Feb 1738/]:::event
   E5[/Chair of Experimental Physics<br/>1776/]:::event
+  E0[/Election to the Academy<br/>20 Mar 1732/]:::event
+  E6[/Admission to the Benedettini<br/>1745/]:::event
 
   %% works
   W1[Philosophica Studia<br/>1732]:::work
   W2[De aeris compressione<br/>1745]:::work
   W3[Il Newtonianismo<br/>per le dame, 1737]:::work
   W4[Findlen 1993<br/>Isis]:::work
+  W5[De aqua corpore naturali<br/>1732]:::work
   Q[["Quotation: 'There is no Bassi in London'"]]:::work
 
   %% concepts
@@ -60,6 +70,7 @@ flowchart LR
   C4{{Electricity}}:::concept
   C5{{Women in science}}:::concept
   C6{{Age of Enlightenment}}:::concept
+  C7{{Minerva}}:::concept
 
   %% relations
   LB -- born / died / worked in --> BO
@@ -76,9 +87,22 @@ flowchart LR
   LB -.member of.-> ARC
   LB -.student of.-> MAN
   LB -.preceded by.-> ECP
+  LB -- daughter of --> GB
+  TAC -- taught --> LB
+  BEC -- taught Newton's works to --> LB
+  LB -- member of --> BEN
+  BEN -- class of --> ACC
+  LB -- nicknamed --> C7
 
   LB -- participant in --> E1
-  E1 -- took place at --> PA
+  E1 -- took place at --> SA
+  SA -.part of.-> PA
+  ARCH -.located in.-> BO
+  LB -- participant in --> E0
+  E0 -- by --> ACC
+  LB -- admitted in --> E6
+  E6 -- by --> B14
+  LB -- author of --> W5
   E1 -- presented --> W1
   E1 -- examined by --> UNI
   LB -- received --> E2
@@ -89,6 +113,7 @@ flowchart LR
   E4 -- with --> GV
   LB -- appointed in --> E5
   E5 -- subject --> C2
+  E5 -- at --> INS
 
   LB -- author of --> W2
   W1 -- subject --> C3
@@ -121,18 +146,22 @@ flowchart LR
 - Cardinal **Prospero Lambertini**, later **Pope Benedict XIV**, was her most important patron.
 - She corresponded with **Voltaire**, **Alessandro Volta** and **Francesco Algarotti**.
 - She was a colleague of **Luigi Galvani** and the teacher of her cousin **Lazzaro Spallanzani**.
-- She studied with **Gabriele Manfredi** (indirect: from Wikidata).
+- She was the daughter of **Giuseppe Bassi**, a lawyer.
+- She was tutored by **Gaetano Tacconi**; after her doctorate she studied Newton with **Jacopo Bartolomeo Beccari** and mathematical analysis with **Gabriele Manfredi**.
 - **Elena Cornaro Piscopia** (Padua, 1678) was the first woman to earn a university degree; Bassi was the second.
 
 **Events (career)**
-- On 17 April 1732 she publicly defended 49 theses (*Philosophica Studia*) in the **Palazzo d'Accursio** (Palazzo Pubblico) before the professors of the **University of Bologna**.
+- On 20 March 1732 she was elected to the **Academy of Sciences of the Institute of Bologna**.
+- On 17 April 1732 she publicly defended 49 theses (*Philosophica Studia*) in the **Sala degli Anziani** of the **Palazzo d'Accursio** (Palazzo Pubblico) before the professors of the **University of Bologna**; on 27 June she defended twelve more at the **Archiginnasio**.
 - She received her doctorate on 12 May 1732.
 - In December 1732 she was appointed professor of natural philosophy.
-- In 1776 she obtained the **Chair of Experimental Physics**, which she held until her death.
+- In 1745 **Benedict XIV** created a 25th place for her among the **Benedettini**.
+- In 1776 she obtained the **Chair of Experimental Physics** at the **Institute of Sciences**, which she held until her death.
 - She was a member of the **Academy of Sciences of the Institute of Bologna** and of the **Arcadian Academy** (indirect: from Wikidata).
 
 **Works and ideas**
-- She wrote the treatise **De aeris compressione** (1745).
+- Her first lecture was *De aqua corpore naturali…* (1732); she wrote the treatise **De aeris compressione** (1745).
+- She was known as the "Bolognese **Minerva**".
 - She was the most important populariser of **Newtonianism** in Italy (indirect link to **Isaac Newton**).
 - Algarotti's **Il Newtonianismo per le dame** (1737) belongs to the same Newtonian context.
 - Her research fields: **experimental physics**, **natural philosophy**, **electricity**.
