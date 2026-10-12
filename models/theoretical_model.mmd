@@ -20,6 +20,9 @@ flowchart LR
   ECP[Elena Cornaro Piscopia]:::person
   NEW[Isaac Newton]:::person
   PF[Paula Findlen]:::person
+  GB[Giuseppe Bassi]:::person
+  TAC[Gaetano Tacconi]:::person
+  BEC[Jacopo Bartolomeo Beccari]:::person
 
   %% places & organisations
   BO[Bologna]:::place
@@ -29,6 +32,10 @@ flowchart LR
   UNI[University of Bologna]:::org
   ACC[Academy of Sciences<br/>of the Institute of Bologna]:::org
   ARC[Arcadian Academy]:::org
+  INS[Institute of Sciences]:::org
+  BEN[Benedettini]:::org
+  SA[Sala degli Anziani]:::place
+  ARCH[Archiginnasio]:::place
 
   %% events
   E1[/Defence of 49 theses<br/>17 Apr 1732/]:::event
@@ -36,12 +43,15 @@ flowchart LR
   E3[/Professorship<br/>Dec 1732/]:::event
   E4[/Marriage<br/>7 Feb 1738/]:::event
   E5[/Chair of Experimental Physics<br/>1776/]:::event
+  E0[/Election to the Academy<br/>20 Mar 1732/]:::event
+  E6[/Admission to the Benedettini<br/>1745/]:::event
 
   %% works
   W1[Philosophica Studia<br/>1732]:::work
   W2[De aeris compressione<br/>1745]:::work
   W3[Il Newtonianismo<br/>per le dame, 1737]:::work
   W4[Findlen 1993<br/>Isis]:::work
+  W5[De aqua corpore naturali<br/>1732]:::work
   Q[["Quotation: 'There is no Bassi in London'"]]:::work
 
   %% concepts
@@ -51,6 +61,7 @@ flowchart LR
   C4{{Electricity}}:::concept
   C5{{Women in science}}:::concept
   C6{{Age of Enlightenment}}:::concept
+  C7{{Minerva}}:::concept
 
   %% relations
   LB -- born / died / worked in --> BO
@@ -67,9 +78,22 @@ flowchart LR
   LB -.member of.-> ARC
   LB -.student of.-> MAN
   LB -.preceded by.-> ECP
+  LB -- daughter of --> GB
+  TAC -- taught --> LB
+  BEC -- taught Newton's works to --> LB
+  LB -- member of --> BEN
+  BEN -- class of --> ACC
+  LB -- nicknamed --> C7
 
   LB -- participant in --> E1
-  E1 -- took place at --> PA
+  E1 -- took place at --> SA
+  SA -.part of.-> PA
+  ARCH -.located in.-> BO
+  LB -- participant in --> E0
+  E0 -- by --> ACC
+  LB -- admitted in --> E6
+  E6 -- by --> B14
+  LB -- author of --> W5
   E1 -- presented --> W1
   E1 -- examined by --> UNI
   LB -- received --> E2
@@ -80,6 +104,7 @@ flowchart LR
   E4 -- with --> GV
   LB -- appointed in --> E5
   E5 -- subject --> C2
+  E5 -- at --> INS
 
   LB -- author of --> W2
   W1 -- subject --> C3

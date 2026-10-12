@@ -11,11 +11,15 @@ import json
 import re
 
 from lxml import etree
-from rdflib import Graph, URIRef
-from rdflib.namespace import OWL, RDF, RDFS, SKOS
+from rdflib import Graph, Namespace, URIRef
+from rdflib.namespace import DCTERMS, OWL, RDF, RDFS, SKOS
+from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parent.parent
 LB = "https://xenia2525.github.io/laura-bassi-lod/resource/"
+SCHEMA = Namespace("https://schema.org/")
+# descriptions and images retrieved from Wikidata / Wikimedia Commons (see docs/wikidata_cache.json)
+CACHE = json.loads((ROOT / "docs" / "wikidata_cache.json").read_text(encoding="utf-8"))
 
 TYPE_OF = {
     "http://xmlns.com/foaf/0.1/Person": "person",
@@ -54,7 +58,28 @@ def build_graph(g):
             label = g.value(s, RDFS.label) or g.value(s, SKOS.prefLabel) or sid
             wd = next((str(o) for o in g.objects(s, OWL.sameAs) if "wikidata" in str(o)), None)
             wd = wd or next((str(o) for o in g.objects(s, SKOS.exactMatch) if "wikidata" in str(o)), None)
-            nodes[sid] = {"id": sid, "label": str(label), "type": TYPE_OF[str(t)], "wikidata": wd}
+            node = {"id": sid, "label": str(label), "type": TYPE_OF[str(t)], "wikidata": wd}
+            born, died = g.value(s, SCHEMA.birthDate), g.value(s, SCHEMA.deathDate)
+            if born and died:
+                node["dates"] = f"{str(born)[:4]}–{str(died)[:4]}"
+            date = g.value(s, DCTERMS.date)
+            if date and node["type"] in ("event", "work"):
+                node["dates"] = str(date)[:10]
+            jobs = sorted(str(j) for j in g.objects(s, SCHEMA.jobTitle))
+            if jobs:
+                node["role"] = ", ".join(jobs)
+            cached = CACHE.get(wd.rsplit("/", 1)[-1], {}) if wd else {}
+            if cached.get("description"):
+                node["description"] = cached["description"]
+            if cached.get("image"):
+                im = cached["image"]
+                name = im["file"].replace(" ", "_")
+                node["image"] = {
+                    "src": "https://commons.wikimedia.org/wiki/Special:FilePath/" + quote(name) + "?width=480",
+                    "page": "https://commons.wikimedia.org/wiki/File:" + quote(name),
+                    "credit": ", ".join(x for x in (im["artist"], im["date"]) if x) + f" ({im['license']})",
+                }
+            nodes[sid] = node
     for s, p, o in g:
         if str(p) in SKIP_PROPS or not isinstance(o, URIRef):
             continue
@@ -136,6 +161,9 @@ def main():
             "ttl": bassi_ttl.strip(),
         },
     }
+    validation = ROOT / "docs" / "validation.json"
+    if validation.exists():
+        site["validation"] = json.loads(validation.read_text(encoding="utf-8"))
     out = ROOT / "assets" / "site-data.js"
     out.parent.mkdir(exist_ok=True)
     out.write_text("window.SITE = " + json.dumps(site, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
