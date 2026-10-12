@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laura Bassi in Linked Open Data</title>
+  <meta name="description" content="A LODLAM project: the Wikipedia page of Laura Bassi modelled, encoded in XML/TEI and published as RDF.">
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+  <meta name="DC.title" content="Laura Bassi in Linked Open Data">
+  <meta name="DC.creator" content="Polyxeni Chasanai">
+  <meta name="DC.subject" content="Laura Bassi; Linked Open Data; TEI; RDF; Cultural heritage">
+  <meta name="DC.language" content="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero" id="top">
+  <div class="hero-text">
+    <p class="hero-kicker">A linked open data project for Information Science and Cultural Heritage</p>
+    <h1>Laura<br>Bassi</h1>
+    <p class="hero-lede">In 1732 Bologna gave her a doctorate and a university chair, the first ever held by a woman in Europe. This project takes her Wikipedia page and turns it into linked open data: a model, a TEI edition and an RDF graph.</p>
+    <p class="hero-author">Polyxeni Chasanai<br><span>DHDK, University of Bologna, 2025/2026<br>Prof. Francesca Tomasi and Prof. Marilena Daquino</span></p>
+    <nav class="hero-links" aria-label="Main files">
+      <a href="output/laura_bassi.html">Read the encoded text</a>
+      <a href="data/laura_bassi.ttl">Download the RDF</a>
+      <a href="https://github.com/xenia2525/laura-bassi-lod">Browse the repository</a>
+    </nav>
+  </div>
+
+  <figure class="orrery-wrap">
+    <svg id="orrery" viewBox="-520 -520 1040 1040" role="img" aria-labelledby="orrery-title orrery-desc">
+      <title id="orrery-title">The knowledge graph of the project</title>
+      <desc id="orrery-desc">Laura Bassi at the centre. Events on the inner orbit, places and organisations on the middle orbit, people, works and concepts on the outer orbit. Lines are relations in the RDF dataset.</desc>
+    </svg>
+    <figcaption>
+      <div id="orrery-info" aria-live="polite">
+        <strong>The graph, as an orrery</strong>
+        <p>Laura Bassi sits at the centre. Events turn on the inner orbit; places and organisations on the middle one; people, works and concepts on the outer one. Hover or tab through the points to read their relations.</p>
+      </div>
+      <ul class="orrery-legend">
+        <li><i class="k-person"></i>person</li>
+        <li><i class="k-place"></i>place</li>
+        <li><i class="k-org"></i>organisation</li>
+        <li><i class="k-event"></i>event</li>
+        <li><i class="k-work"></i>work</li>
+        <li><i class="k-concept"></i>concept</li>
+      </ul>
+    </figcaption>
+  </figure>
+</header>
+
+<div class="layout" id="main">
+  <nav class="rail" aria-label="Project steps">
+    <ol>
+      <li><a href="#domain"><span>1</span>The page and its entities</a></li>
+      <li><a href="#theory"><span>2</span>Theoretical model</a></li>
+      <li><a href="#concept"><span>3</span>Conceptual model</a></li>
+      <li><a href="#tei"><span>4</span>XML/TEI encoding</a></li>
+      <li><a href="#html"><span>5</span>From XML to HTML</a></li>
+      <li><a href="#rdf"><span>6</span>From TEI to RDF</a></li>
+      <li><a href="#files"><span>7</span>All the files</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- 1 ============================================================ -->
+    <section id="domain" class="step">
+      <header class="step-head"><span class="step-n">1</span><h2>The page and its entities</h2></header>
+      <div class="prose">
+        <p>The starting point is the English Wikipedia page <a href="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911"><cite>Laura Bassi</cite></a>, frozen at revision 1372047911 of 30 August 2026 so that every annotation refers to a stable text.</p>
+        <p>Laura Bassi (1711–1778) suits a linked data project because her life is made of documented relations: a patron who became pope, a husband who was her laboratory partner, students, correspondents across Europe, academies, a sequence of dated appointments and a small body of Latin works. Almost all of these people and institutions already exist in Wikidata and VIAF, so the local data can be connected to the wider web.</p>
+      </div>
+      <dl class="readout" id="readout"></dl>
+      <div class="prose">
+        <p>Entities were chosen among those explicitly mentioned in the page, plus a few indirect ones taken from Wikidata (her membership of the Arcadian Academy, her burial place) and the works cited in its bibliography. Each one was reconciled by hand with Wikidata, VIAF and the Library of Congress; subjects were matched to Library of Congress Subject Headings.</p>
+      </div>
+      <div class="entity-browser">
+        <div class="chips" role="group" aria-label="Filter entities by type" id="chips"></div>
+        <ul class="entity-list" id="entity-list"></ul>
+      </div>
+      <p class="file-note">Full table: <a href="docs/entities.csv">docs/entities.csv</a></p>
+    </section>
+
+    <!-- 2 ============================================================ -->
+    <section id="theory" class="step">
+      <header class="step-head"><span class="step-n">2</span><h2>Theoretical model</h2></header>
+      <div class="prose">
+        <p>Before choosing any vocabulary, the relations between Laura Bassi and the entities were drawn as a mind map and written out in natural language: who taught whom, who wrote what, where and when each event took place. Dotted lines mark indirect relations that the page does not state but that follow from Wikidata or from other entities, such as the link between Newtonianism and Isaac Newton.</p>
+      </div>
+      <figure class="plate">
+        <a href="models/theoretical_model.png"><img src="models/theoretical_model.png" alt="Mind map of the relations between Laura Bassi and people, places, events, works and concepts"></a>
+        <figcaption>The theoretical model. Open <a href="models/theoretical_model.md">the description in natural language</a>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 3 ============================================================ -->
+    <section id="concept" class="step">
+      <header class="step-head"><span class="step-n">3</span><h2>Conceptual model</h2></header>
+      <div class="prose">
+        <p>The theoretical model was then formalised by reusing existing ontologies. Only three properties had no existing equivalent (patronage, correspondence and "preceded by"); they are defined in a small local namespace, each as a sub-property of an existing one so that the data stays interoperable.</p>
+      </div>
+      <table class="vocab">
+        <thead><tr><th scope="col">Vocabulary</th><th scope="col">Used for</th><th scope="col">Why</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">CIDOC CRM</th><td>Events, places, participants</td><td>The ISO reference ontology for cultural heritage; its event-centred model fits the steps of her career.</td></tr>
+          <tr><th scope="row">FaBiO</th><td>Theses, treatise, books, articles</td><td>FRBR-based bibliographic types for her works and the bibliography of the page.</td></tr>
+          <tr><th scope="row">FOAF, schema.org</th><td>People, organisations, family and work relations</td><td>Widely adopted, aligned to CIDOC CRM with equivalence axioms.</td></tr>
+          <tr><th scope="row">SKOS</th><td>Subjects and fields of study</td><td>A small concept scheme matched to LCSH and Wikidata.</td></tr>
+          <tr><th scope="row">DC Terms</th><td>Creator, subject, date, title</td><td>The transversal metadata layer.</td></tr>
+          <tr><th scope="row">RELATIONSHIP, DBpedia</th><td>Teacher and student, burial place</td><td>Precise terms that the other vocabularies lack.</td></tr>
+          <tr><th scope="row">lbo: (new)</th><td><code>patronOf</code>, <code>correspondedWith</code>, <code>precededBy</code></td><td>No existing term fits; each is a sub-property of <code>foaf:knows</code> or <code>dcterms:relation</code>.</td></tr>
+        </tbody>
+      </table>
+      <figure class="plate plate-wide">
+        <a href="models/conceptual_model_graffoo.svg"><img src="models/conceptual_model_graffoo.png" alt="Conceptual model in Graffoo notation"></a>
+        <figcaption>The conceptual model in Graffoo notation. See <a href="models/ontology.ttl">ontology.ttl</a> and <a href="models/conceptual_model.md">the full mapping table</a>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 4 ============================================================ -->
+    <section id="tei" class="step">
+      <header class="step-head"><span class="step-n">4</span><h2>XML/TEI encoding</h2></header>
+      <div class="prose">
+        <p>The whole text of the page is encoded in TEI, section by section. People, places, organisations, dates, works and concepts are marked in the text and point, through <code>@ref</code>, to their description in the <code>standOff</code>: <code>listPerson</code>, <code>listOrg</code>, <code>listPlace</code>, <code>listEvent</code>, <code>listBibl</code> and <code>listRelation</code>. Textual phenomena are encoded too: Voltaire's quotation with <code>q</code>, the nickname "Bolognese Minerva" with <code>soCalled</code>, Latin and Italian titles with <code>xml:lang</code>.</p>
+        <p>Every relation carries in <code>@ref</code> the URI of the ontology property that expresses it. This single decision connects the TEI to the conceptual model and lets the RDF be generated without hard-coded mappings.</p>
+      </div>
+      <div class="code-tabs" data-tabs>
+        <div role="tablist" aria-label="TEI examples">
+          <button role="tab" aria-selected="true" data-snippet="tei_text" data-lang="xml">Annotated text</button>
+          <button role="tab" aria-selected="false" data-snippet="tei_person" data-lang="xml">A person</button>
+          <button role="tab" aria-selected="false" data-snippet="tei_relation" data-lang="xml">Relations</button>
+        </div>
+        <pre role="tabpanel" tabindex="0"><code></code></pre>
+      </div>
+      <p class="file-note">Source: <a href="data/laura_bassi.xml">data/laura_bassi.xml</a></p>
+    </section>
+
+    <!-- 5 ============================================================ -->
+    <section id="html" class="step">
+      <header class="step-head"><span class="step-n">5</span><h2>From XML to HTML</h2></header>
+      <div class="prose">
+        <p>An XSLT stylesheet, run from Python with lxml, turns the TEI into a reading edition. Each annotation becomes a link coloured by entity type; the <code>standOff</code> lists become cards with their authority links, a table of events and the bibliography.</p>
+      </div>
+      <div class="code-tabs" data-tabs>
+        <div role="tablist" aria-label="Transformation code">
+          <button role="tab" aria-selected="true" data-snippet="xslt" data-lang="xml">tei2html.xsl</button>
+        </div>
+        <pre role="tabpanel" tabindex="0"><code></code></pre>
+      </div>
+      <figure class="preview">
+        <iframe src="output/laura_bassi.html" title="The HTML edition generated from the TEI"></iframe>
+        <figcaption>The generated page. <a href="output/laura_bassi.html">Open it full screen</a>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 6 ============================================================ -->
+    <section id="rdf" class="step">
+      <header class="step-head"><span class="step-n">6</span><h2>From TEI to RDF</h2></header>
+      <div class="prose">
+        <p>A Python script with rdflib reads the TEI and builds the RDF dataset. Every entry of the <code>standOff</code> becomes a typed resource with labels and <code>owl:sameAs</code> links to Wikidata, VIAF and LC; every <code>relation</code> becomes one triple per pair of participants. Authors without a local record get a URI minted from the MD5 hash of their name. The result is serialised as Turtle and JSON-LD.</p>
+      </div>
+      <div class="code-tabs" data-tabs>
+        <div role="tablist" aria-label="RDF code">
+          <button role="tab" aria-selected="true" data-snippet="python_rdf" data-lang="python">tei2rdf.py</button>
+          <button role="tab" aria-selected="false" data-snippet="ttl" data-lang="turtle">Laura Bassi in Turtle</button>
+        </div>
+        <pre role="tabpanel" tabindex="0"><code></code></pre>
+      </div>
+      <div class="prose">
+        <p>The dataset can be queried. This SPARQL query asks for every event Laura Bassi took part in, with its place and the institution that carried it out; its answer, computed on the real file, is the timeline below.</p>
+      </div>
+      <pre class="query"><code>SELECT ?label ?date ?place ?by WHERE {
+  ?event crm:P11_had_participant lb:laura_bassi ;
+         rdfs:label ?label ; dcterms:date ?date .
+  OPTIONAL { ?event crm:P7_took_place_at/rdfs:label ?place }
+  OPTIONAL { ?event crm:P14_carried_out_by/rdfs:label ?by }
+} ORDER BY ?date</code></pre>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- 7 ============================================================ -->
+    <section id="files" class="step">
+      <header class="step-head"><span class="step-n">7</span><h2>All the files</h2></header>
+      <table class="files">
+        <thead><tr><th scope="col">File</th><th scope="col">What it is</th></tr></thead>
+        <tbody>
+          <tr><td><a href="docs/entities.csv">docs/entities.csv</a></td><td>The entities with their Wikidata, VIAF and LC identifiers</td></tr>
+          <tr><td><a href="models/theoretical_model.md">models/theoretical_model.md</a></td><td>Theoretical model: relations in natural language and as a mind map (<a href="models/theoretical_model.png">PNG</a>, <a href="models/theoretical_model.mmd">Mermaid source</a>)</td></tr>
+          <tr><td><a href="models/conceptual_model.md">models/conceptual_model.md</a></td><td>Conceptual model: reused vocabularies and the mapping from the theoretical model</td></tr>
+          <tr><td><a href="models/ontology.ttl">models/ontology.ttl</a></td><td>The ontology in OWL (Turtle)</td></tr>
+          <tr><td><a href="models/conceptual_model_graffoo.svg">models/conceptual_model_graffoo.svg</a></td><td>Graffoo diagram (<a href="models/graffoo_diagram.py">generator</a>)</td></tr>
+          <tr><td><a href="data/laura_bassi.xml">data/laura_bassi.xml</a></td><td>The XML/TEI document</td></tr>
+          <tr><td><a href="scripts/tei2html.xsl">scripts/tei2html.xsl</a>, <a href="scripts/tei2html.py">tei2html.py</a></td><td>XML to HTML transformation</td></tr>
+          <tr><td><a href="output/laura_bassi.html">output/laura_bassi.html</a></td><td>The HTML produced by the transformation</td></tr>
+          <tr><td><a href="scripts/tei2rdf.py">scripts/tei2rdf.py</a></td><td>XML/TEI to RDF transformation</td></tr>
+          <tr><td><a href="data/laura_bassi.ttl">data/laura_bassi.ttl</a>, <a href="data/laura_bassi.jsonld">.jsonld</a></td><td>The RDF dataset</td></tr>
+          <tr><td><a href="scripts/build_site.py">scripts/build_site.py</a></td><td>Builds the data shown on this page from the files above</td></tr>
+        </tbody>
+      </table>
+      <div class="prose">
+        <p>To reproduce everything: <code>pip install lxml rdflib</code>, then run <code>python scripts/tei2html.py</code>, <code>python scripts/tei2rdf.py</code> and <code>python scripts/build_site.py</code> from the repository root.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="foot">
+  <p>Polyxeni Chasanai, 2026. Code under the licence in the repository; text derived from Wikipedia under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+  <p><a href="#top">Back to the top</a></p>
+</footer>
+
+<script src="assets/site-data.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
