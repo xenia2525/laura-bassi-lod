@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=4">
+  <link rel="stylesheet" href="assets/style.css?v=6">
 </head>
 <body>
 
@@ -87,7 +87,8 @@
       </div>
       <dl class="readout" id="readout"></dl>
       <div class="prose">
-        <p>Entities were chosen among those explicitly mentioned in the page, plus a few indirect ones taken from Wikidata (her membership of the Arcadian Academy, her burial place) and the works cited in its bibliography. Each one was reconciled by hand with Wikidata, VIAF and the Library of Congress; subjects were matched to Library of Congress Subject Headings.</p>
+        <p>All the people, places, organisations, events, works and concepts mentioned in the page were annotated in the TEI and reconciled by hand with Wikidata, VIAF and the Library of Congress; subjects were matched to Library of Congress Subject Headings.</p>
+        <p>From these, <strong>13 core entities</strong> were selected for the models: the ones that best answer the project question, covering every type of entity. They are Laura Bassi; her patron Prospero Lambertini (Pope Benedict XIV), her husband Giuseppe Veratti, her student Lazzaro Spallanzani and her correspondent Voltaire; Bologna and the Palazzo Pubblico; the University of Bologna and the Academy of Sciences of the Institute of Bologna; the defence of her 49 theses (1732) and her Chair of Experimental Physics (1776); her treatise <cite>De aeris compressione</cite> (1745); and Newtonianism. The other entities stay in the edition and in the RDF dataset.</p>
       </div>
       <h3 class="sub">The dossiers</h3>
       <div class="entity-browser">
@@ -102,11 +103,11 @@
     <section id="theory" class="step">
       <header class="step-head"><span class="step-n">2</span><h2>Theoretical model</h2></header>
       <div class="prose">
-        <p>Before choosing any vocabulary, the relations between Laura Bassi and the entities were drawn as a mind map and written out in natural language: who taught whom, who wrote what, where and when each event took place. Dotted lines mark indirect relations that the page does not state but that follow from Wikidata or from other entities, such as the link between Newtonianism and Isaac Newton.</p>
+        <p>Before choosing any vocabulary, the relations between Laura Bassi and the 13 core entities were drawn as a mind map and written out in natural language: who supported, married, taught or wrote to her, where and when the two key events of her career took place, what she wrote and what she taught. Each node carries its Wikidata identifier; dashed lines mark indirect relations that the page does not state directly, such as the places located in Bologna.</p>
       </div>
       <figure class="plate">
         <a href="models/theoretical_model.png"><img src="models/theoretical_model.png" alt="Mind map of the relations between Laura Bassi and people, places, events, works and concepts"></a>
-        <figcaption>The theoretical model. Open <a href="models/theoretical_model.md">the description in natural language</a>.</figcaption>
+        <figcaption>The theoretical model of the 13 core entities. Open <a href="models/theoretical_model.md">the description in natural language</a>.</figcaption>
       </figure>
     </section>
 
@@ -267,7 +268,7 @@
   <p><a href="#top">Back to the top</a></p>
 </footer>
 
-<script src="assets/site-data.js?v=4"></script>
-<script src="assets/site.js?v=4"></script>
+<script src="assets/site-data.js?v=6"></script>
+<script src="assets/site.js?v=6"></script>
 </body>
 </html>

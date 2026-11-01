@@ -153,7 +153,8 @@
     const nodes = S.graph.nodes.slice().sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type) || a.label.localeCompare(b.label));
     const initials = label => label.replace(/[^A-Za-zÀ-ž ]/g, "").split(" ").filter(w => w.length > 2 || /^[A-Z]/.test(w)).slice(0, 2).map(w => w[0]).join("").toUpperCase();
     const render = type => {
-      list.innerHTML = nodes.filter(n => !type || n.type === type).map(n => `
+      const shown = type === "core" ? nodes.filter(n => n.core).sort((a, b) => a.core - b.core) : nodes.filter(n => !type || n.type === type);
+      list.innerHTML = shown.map(n => `
         <article class="dossier k-${n.type}">
           ${n.image
             ? `<a class="dossier-img" href="${n.image.page}"><img src="${n.image.src}" alt="${esc(n.label)}" loading="lazy" width="240" height="300"></a>`
@@ -170,10 +171,11 @@
           </div>
         </article>`).join("");
     };
-    const types = [null, ...order];
+    const types = ["core", null, ...order];
     chips.innerHTML = types.map(t => {
+      if (t === "core") return `<button type="button" data-type="core" aria-pressed="true">core entities of the models (${nodes.filter(n => n.core).length})</button>`;
       const count = t ? nodes.filter(n => n.type === t).length : nodes.length;
-      return `<button type="button" class="${t ? "k-" + t : ""}" data-type="${t || ""}" aria-pressed="${t === "person" ? "true" : "false"}">${t ? "<i></i>" : ""}${t ? TYPE_NAMES[t] : "all"} (${count})</button>`;
+      return `<button type="button" class="${t ? "k-" + t : ""}" data-type="${t || ""}" aria-pressed="false">${t ? "<i></i>" : ""}${t ? TYPE_NAMES[t] : "all"} (${count})</button>`;
     }).join("");
     chips.addEventListener("click", ev => {
       const b = ev.target.closest("button");
@@ -181,7 +183,7 @@
       chips.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
       render(b.dataset.type || null);
     });
-    render("person");
+    render("core");
   }
 
   /* ------------------------------------------------------------ code */

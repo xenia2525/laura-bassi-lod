@@ -20,6 +20,9 @@ LB = "https://xenia2525.github.io/laura-bassi-lod/resource/"
 SCHEMA = Namespace("https://schema.org/")
 # descriptions and images retrieved from Wikidata / Wikimedia Commons (see docs/wikidata_cache.json)
 CACHE = json.loads((ROOT / "docs" / "wikidata_cache.json").read_text(encoding="utf-8"))
+# the core entities selected for the models (column "core" in docs/entities.csv)
+import csv
+CORE = [r["id"] for r in csv.DictReader(open(ROOT / "docs" / "entities.csv", encoding="utf-8")) if r.get("core") == "yes"]
 
 TYPE_OF = {
     "http://xmlns.com/foaf/0.1/Person": "person",
@@ -79,6 +82,8 @@ def build_graph(g):
                     "page": "https://commons.wikimedia.org/wiki/File:" + quote(name),
                     "credit": ", ".join(x for x in (im["artist"], im["date"]) if x) + f" ({im['license']})",
                 }
+            if sid in CORE:
+                node["core"] = CORE.index(sid) + 1
             nodes[sid] = node
     for s, p, o in g:
         if str(p) in SKIP_PROPS or not isinstance(o, URIRef):

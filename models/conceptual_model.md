@@ -1,6 +1,6 @@
 # Conceptual model
 
-The theoretical model ([`theoretical_model.md`](theoretical_model.md)) is formalised here into an ontology.
+The theoretical model of the 13 core entities ([`theoretical_model.md`](theoretical_model.md)) is formalised here into an ontology. Every relation of the theoretical model has its term below; the same classes and properties are then used for the other entities annotated in the TEI.
 Following the project guidelines, **every term is reused from an existing vocabulary** whenever one fits, and new terms are created only where nothing existing expresses the relation.
 
 - Formal model (OWL/Turtle): [`ontology.ttl`](ontology.ttl)

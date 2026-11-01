@@ -114,7 +114,8 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Subleyras_Portrait_of_Benedict_XIV_1746._Metropolitan_Museum_of_Art.jpg?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Pierre_Subleyras_Portrait_of_Benedict_XIV_1746._Metropolitan_Museum_of_Art.jpg",
      "credit": "Pierre Subleyras, 1746 (Public domain)"
-    }
+    },
+    "core": 2
    },
    {
     "id": "elena_cornaro",
@@ -181,7 +182,8 @@ window.SITE = {
     "type": "person",
     "wikidata": "http://www.wikidata.org/entity/Q131245050",
     "role": "physician, lecturer in anatomy",
-    "description": "Italian physician (1707–1793)"
+    "description": "Italian physician (1707–1793)",
+    "core": 3
    },
    {
     "id": "lazzaro_spallanzani",
@@ -194,7 +196,8 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portret_van_bioloog_Lazzaro_Spallanzani%2C_RP-P-1909-5206_%28cropped%29_%28cropped%29.jpg?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Portret_van_bioloog_Lazzaro_Spallanzani%2C_RP-P-1909-5206_%28cropped%29_%28cropped%29.jpg",
      "credit": "Rijksmuseum (CC0)"
-    }
+    },
+    "core": 4
    },
    {
     "id": "voltaire",
@@ -207,7 +210,8 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg",
      "credit": "Nicolas de Largillière, 1718–1724 (CC0)"
-    }
+    },
+    "core": 5
    },
    {
     "id": "laura_bassi",
@@ -221,7 +225,8 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Laura_Bassi_-_Carlo_Vandi.jpg?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Laura_Bassi_-_Carlo_Vandi.jpg",
      "credit": "Carlo Vandi, c. 1750 (Public domain)"
-    }
+    },
+    "core": 1
    },
    {
     "id": "academy_election_1732",
@@ -249,7 +254,8 @@ window.SITE = {
     "label": "Appointment to the Chair of Experimental Physics",
     "type": "event",
     "wikidata": null,
-    "dates": "1776"
+    "dates": "1776",
+    "core": 11
    },
    {
     "id": "doctorate_1732",
@@ -270,7 +276,8 @@ window.SITE = {
     "label": "Public defence of the forty-nine philosophical theses",
     "type": "event",
     "wikidata": null,
-    "dates": "1732-04-17"
+    "dates": "1732-04-17",
+    "core": 10
    },
    {
     "id": "archiginnasio",
@@ -306,7 +313,8 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_-_Palazzo_d%27Accursio_-_Foto_Giovanni_Dall%27Orto_5-3-2005_2.jpg?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Bologna_-_Palazzo_d%27Accursio_-_Foto_Giovanni_Dall%27Orto_5-3-2005_2.jpg",
      "credit": "Giovanni Dall'Orto, 2005 (Attribution)"
-    }
+    },
+    "core": 7
    },
    {
     "id": "sala_anziani",
@@ -336,7 +344,8 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_Panorama.jpg?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Bologna_Panorama.jpg",
      "credit": "Ввласенко, 2016 (CC BY-SA 3.0)"
-    }
+    },
+    "core": 6
    },
    {
     "id": "de_aeris_compressione",
@@ -344,7 +353,8 @@ window.SITE = {
     "type": "work",
     "wikidata": "http://www.wikidata.org/entity/Q96906094",
     "dates": "1745",
-    "description": "1745 treatise by Laura Bassi"
+    "description": "1745 treatise by Laura Bassi",
+    "core": 12
    },
    {
     "id": "de_aqua",
@@ -417,7 +427,8 @@ window.SITE = {
     "label": "Newtonianism (Newtonian mechanics)",
     "type": "concept",
     "wikidata": "http://www.wikidata.org/entity/Q17123497",
-    "description": "philosophical principle of applying Newton's methods in a variety of fields"
+    "description": "philosophical principle of applying Newton's methods in a variety of fields",
+    "core": 13
    },
    {
     "id": "physics",
@@ -467,7 +478,8 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Institute_of_Science_Bologna.png?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Institute_of_Science_Bologna.png",
      "credit": "University of Bologna Library, before 1800 (Public domain)"
-    }
+    },
+    "core": 9
    },
    {
     "id": "unibo",
@@ -479,99 +491,40 @@ window.SITE = {
      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palazzo_Poggi_UniBo.jpg?width=480",
      "page": "https://commons.wikimedia.org/wiki/File:Palazzo_Poggi_UniBo.jpg",
      "credit": "Mattia Barci, 2021 (CC BY-SA 4.0)"
-    }
+    },
+    "core": 8
    }
   ],
   "edges": [
    {
-    "s": "laura_bassi",
-    "t": "academy_sciences_bologna",
-    "p": "schema:memberOf"
-   },
-   {
-    "s": "de_aeris_compressione",
-    "t": "physics",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "newtonianismo_dame",
-    "t": "francesco_algarotti",
-    "p": "dcterms:creator"
-   },
-   {
-    "s": "laura_bassi",
-    "t": "bologna",
-    "p": "schema:birthPlace"
-   },
-   {
-    "s": "academy_election_1732",
-    "t": "academy_sciences_bologna",
-    "p": "crm:P14_carried_out_by"
-   },
-   {
-    "s": "laura_bassi",
-    "t": "alessandro_volta",
-    "p": "lbo:correspondedWith"
-   },
-   {
-    "s": "de_aqua",
-    "t": "laura_bassi",
-    "p": "dcterms:creator"
-   },
-   {
-    "s": "luigi_galvani",
-    "t": "laura_bassi",
-    "p": "schema:colleague"
-   },
-   {
-    "s": "lazzaro_spallanzani",
-    "t": "laura_bassi",
-    "p": "lbo:correspondedWith"
-   },
-   {
-    "s": "de_aqua",
-    "t": "natural_philosophy",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "doctorate_1732",
-    "t": "bologna",
-    "p": "crm:P7_took_place_at"
-   },
-   {
-    "s": "doctorate_1732",
-    "t": "unibo",
-    "p": "crm:P14_carried_out_by"
-   },
-   {
-    "s": "archiginnasio",
-    "t": "bologna",
-    "p": "crm:P89_falls_within"
-   },
-   {
-    "s": "laura_bassi",
-    "t": "arcadian_academy",
-    "p": "schema:memberOf"
-   },
-   {
-    "s": "de_aeris_compressione",
-    "t": "laura_bassi",
-    "p": "dcterms:creator"
-   },
-   {
-    "s": "marriage_1738",
+    "s": "thesis_defence_1732",
     "t": "laura_bassi",
     "p": "crm:P11_had_participant"
    },
    {
-    "s": "francesco_algarotti",
+    "s": "philosophica_studia",
     "t": "laura_bassi",
-    "p": "lbo:correspondedWith"
+    "p": "dcterms:creator"
    },
    {
-    "s": "chair_1776",
+    "s": "palazzo_accursio",
     "t": "bologna",
-    "p": "crm:P7_took_place_at"
+    "p": "crm:P89_falls_within"
+   },
+   {
+    "s": "cavazza_2020",
+    "t": "laura_bassi",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "elena_cornaro",
+    "p": "lbo:precededBy"
+   },
+   {
+    "s": "de_aeris_compressione",
+    "t": "laura_bassi",
+    "p": "dcterms:creator"
    },
    {
     "s": "findlen_1993",
@@ -580,13 +533,33 @@ window.SITE = {
    },
    {
     "s": "laura_bassi",
-    "t": "giuseppe_bassi",
-    "p": "schema:parent"
+    "t": "bologna",
+    "p": "schema:deathPlace"
    },
    {
-    "s": "bologna",
-    "t": "papal_states",
-    "p": "crm:P89_falls_within"
+    "s": "gabriele_manfredi",
+    "t": "laura_bassi",
+    "p": "rel:mentorOf"
+   },
+   {
+    "s": "chair_1776",
+    "t": "experimental_physics",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "newtonianism",
+    "t": "isaac_newton",
+    "p": "dcterms:relation"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "giuseppe_veratti",
+    "p": "schema:spouse"
+   },
+   {
+    "s": "gaetano_tacconi",
+    "t": "laura_bassi",
+    "p": "rel:mentorOf"
    },
    {
     "s": "academy_election_1732",
@@ -594,9 +567,44 @@ window.SITE = {
     "p": "crm:P7_took_place_at"
    },
    {
-    "s": "jacopo_beccari",
+    "s": "laura_bassi",
+    "t": "academy_sciences_bologna",
+    "p": "schema:memberOf"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "natural_philosophy",
+    "p": "schema:knowsAbout"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "newtonianism",
+    "p": "schema:knowsAbout"
+   },
+   {
+    "s": "benedettini_1745",
     "t": "laura_bassi",
-    "p": "rel:mentorOf"
+    "p": "crm:P11_had_participant"
+   },
+   {
+    "s": "appointment_1732",
+    "t": "laura_bassi",
+    "p": "crm:P11_had_participant"
+   },
+   {
+    "s": "appointment_1732",
+    "t": "unibo",
+    "p": "crm:P14_carried_out_by"
+   },
+   {
+    "s": "academy_election_1732",
+    "t": "laura_bassi",
+    "p": "crm:P11_had_participant"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "luigi_galvani",
+    "p": "schema:colleague"
    },
    {
     "s": "appointment_1732",
@@ -604,24 +612,29 @@ window.SITE = {
     "p": "crm:P7_took_place_at"
    },
    {
-    "s": "elena_1991",
-    "t": "laura_bassi",
-    "p": "dcterms:subject"
+    "s": "laura_bassi",
+    "t": "bologna",
+    "p": "schema:birthPlace"
    },
    {
-    "s": "corpus_domini",
-    "t": "bologna",
+    "s": "sala_anziani",
+    "t": "palazzo_accursio",
     "p": "crm:P89_falls_within"
    },
    {
-    "s": "thesis_defence_1732",
-    "t": "unibo",
-    "p": "crm:P14_carried_out_by"
+    "s": "laura_bassi",
+    "t": "voltaire",
+    "p": "lbo:correspondedWith"
    },
    {
-    "s": "laura_bassi",
-    "t": "lazzaro_spallanzani",
-    "p": "rel:mentorOf"
+    "s": "philosophica_studia",
+    "t": "natural_philosophy",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "archiginnasio",
+    "t": "bologna",
+    "p": "crm:P89_falls_within"
    },
    {
     "s": "voltaire_quote",
@@ -630,13 +643,43 @@ window.SITE = {
    },
    {
     "s": "laura_bassi",
-    "t": "papal_states",
-    "p": "schema:nationality"
+    "t": "electricity",
+    "p": "schema:knowsAbout"
    },
    {
-    "s": "marriage_1738",
+    "s": "doctorate_1732",
     "t": "bologna",
     "p": "crm:P7_took_place_at"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "arcadian_academy",
+    "p": "schema:memberOf"
+   },
+   {
+    "s": "thesis_defence_1732",
+    "t": "philosophica_studia",
+    "p": "crm:P16_used_specific_object"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "lazzaro_spallanzani",
+    "p": "rel:mentorOf"
+   },
+   {
+    "s": "doctorate_1732",
+    "t": "doctorate",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "giuseppe_bassi",
+    "p": "schema:parent"
+   },
+   {
+    "s": "chair_1776",
+    "t": "laura_bassi",
+    "p": "crm:P11_had_participant"
    },
    {
     "s": "institute_of_sciences",
@@ -645,38 +688,43 @@ window.SITE = {
    },
    {
     "s": "laura_bassi",
-    "t": "elena_cornaro",
-    "p": "lbo:precededBy"
-   },
-   {
-    "s": "appointment_1732",
-    "t": "unibo",
-    "p": "crm:P14_carried_out_by"
-   },
-   {
-    "s": "gabriele_manfredi",
-    "t": "laura_bassi",
-    "p": "rel:mentorOf"
-   },
-   {
-    "s": "voltaire_quote",
-    "t": "voltaire",
-    "p": "dcterms:creator"
-   },
-   {
-    "s": "giuseppe_veratti",
-    "t": "laura_bassi",
-    "p": "schema:spouse"
-   },
-   {
-    "s": "findlen_1993",
-    "t": "paula_findlen",
-    "p": "dcterms:creator"
+    "t": "benedettini",
+    "p": "schema:memberOf"
    },
    {
     "s": "laura_bassi",
-    "t": "corpus_domini",
-    "p": "dbo:restingPlace"
+    "t": "lazzaro_spallanzani",
+    "p": "lbo:correspondedWith"
+   },
+   {
+    "s": "de_aqua",
+    "t": "natural_philosophy",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "papal_states",
+    "p": "schema:nationality"
+   },
+   {
+    "s": "frize_2013",
+    "t": "laura_bassi",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "chair_1776",
+    "t": "bologna",
+    "p": "crm:P7_took_place_at"
+   },
+   {
+    "s": "de_aqua",
+    "t": "laura_bassi",
+    "p": "dcterms:creator"
+   },
+   {
+    "s": "newtonianismo_dame",
+    "t": "francesco_algarotti",
+    "p": "dcterms:creator"
    },
    {
     "s": "unibo",
@@ -684,59 +732,14 @@ window.SITE = {
     "p": "schema:location"
    },
    {
-    "s": "cavazza_2009",
-    "t": "laura_bassi",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "cavazza_2020",
-    "t": "laura_bassi",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "thesis_defence_1732",
-    "t": "philosophica_studia",
-    "p": "crm:P16_used_specific_object"
-   },
-   {
-    "s": "newtonianism",
-    "t": "isaac_newton",
-    "p": "dcterms:relation"
-   },
-   {
     "s": "benedict_xiv",
     "t": "laura_bassi",
     "p": "lbo:patronOf"
    },
    {
-    "s": "appointment_1732",
-    "t": "natural_philosophy",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "academy_sciences_bologna",
-    "t": "bologna",
-    "p": "schema:location"
-   },
-   {
-    "s": "newtonianismo_dame",
-    "t": "newtonianism",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "laura_bassi",
-    "t": "electricity",
-    "p": "schema:knowsAbout"
-   },
-   {
-    "s": "laura_bassi",
-    "t": "voltaire",
-    "p": "lbo:correspondedWith"
-   },
-   {
-    "s": "marriage_1738",
-    "t": "giuseppe_veratti",
-    "p": "crm:P11_had_participant"
+    "s": "bologna",
+    "t": "papal_states",
+    "p": "crm:P89_falls_within"
    },
    {
     "s": "thesis_defence_1732",
@@ -744,53 +747,43 @@ window.SITE = {
     "p": "crm:P7_took_place_at"
    },
    {
-    "s": "gaetano_tacconi",
+    "s": "laura_bassi",
+    "t": "alessandro_volta",
+    "p": "lbo:correspondedWith"
+   },
+   {
+    "s": "findlen_1993",
+    "t": "paula_findlen",
+    "p": "dcterms:creator"
+   },
+   {
+    "s": "francesco_algarotti",
     "t": "laura_bassi",
-    "p": "rel:mentorOf"
+    "p": "lbo:correspondedWith"
    },
    {
-    "s": "laura_bassi",
-    "t": "experimental_physics",
-    "p": "schema:knowsAbout"
-   },
-   {
-    "s": "laura_bassi",
-    "t": "natural_philosophy",
-    "p": "schema:knowsAbout"
-   },
-   {
-    "s": "philosophica_studia",
-    "t": "natural_philosophy",
+    "s": "newtonianismo_dame",
+    "t": "newtonianism",
     "p": "dcterms:subject"
    },
    {
-    "s": "laura_bassi",
-    "t": "benedettini",
-    "p": "schema:memberOf"
+    "s": "marriage_1738",
+    "t": "bologna",
+    "p": "crm:P7_took_place_at"
    },
    {
-    "s": "chair_1776",
-    "t": "laura_bassi",
+    "s": "marriage_1738",
+    "t": "giuseppe_veratti",
     "p": "crm:P11_had_participant"
-   },
-   {
-    "s": "sala_anziani",
-    "t": "palazzo_accursio",
-    "p": "crm:P89_falls_within"
    },
    {
     "s": "academy_election_1732",
-    "t": "laura_bassi",
-    "p": "crm:P11_had_participant"
+    "t": "academy_sciences_bologna",
+    "p": "crm:P14_carried_out_by"
    },
    {
     "s": "appointment_1732",
-    "t": "laura_bassi",
-    "p": "crm:P11_had_participant"
-   },
-   {
-    "s": "doctorate_1732",
-    "t": "doctorate",
+    "t": "natural_philosophy",
     "p": "dcterms:subject"
    },
    {
@@ -799,44 +792,24 @@ window.SITE = {
     "p": "crm:P14_carried_out_by"
    },
    {
-    "s": "laura_bassi",
-    "t": "newtonianism",
-    "p": "schema:knowsAbout"
-   },
-   {
-    "s": "laura_bassi",
-    "t": "bologna",
-    "p": "schema:deathPlace"
-   },
-   {
-    "s": "frize_2013",
-    "t": "laura_bassi",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "doctorate_1732",
-    "t": "laura_bassi",
-    "p": "crm:P11_had_participant"
-   },
-   {
-    "s": "chair_1776",
-    "t": "experimental_physics",
-    "p": "dcterms:subject"
-   },
-   {
-    "s": "benedettini_1745",
-    "t": "laura_bassi",
-    "p": "crm:P11_had_participant"
-   },
-   {
-    "s": "philosophica_studia",
-    "t": "laura_bassi",
-    "p": "dcterms:creator"
-   },
-   {
     "s": "thesis_defence_1732",
+    "t": "unibo",
+    "p": "crm:P14_carried_out_by"
+   },
+   {
+    "s": "cavazza_2009",
     "t": "laura_bassi",
-    "p": "crm:P11_had_participant"
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "elena_1991",
+    "t": "laura_bassi",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "experimental_physics",
+    "p": "schema:knowsAbout"
    },
    {
     "s": "benedettini_1745",
@@ -844,9 +817,49 @@ window.SITE = {
     "p": "crm:P14_carried_out_by"
    },
    {
-    "s": "palazzo_accursio",
+    "s": "doctorate_1732",
+    "t": "unibo",
+    "p": "crm:P14_carried_out_by"
+   },
+   {
+    "s": "voltaire_quote",
+    "t": "voltaire",
+    "p": "dcterms:creator"
+   },
+   {
+    "s": "marriage_1738",
+    "t": "laura_bassi",
+    "p": "crm:P11_had_participant"
+   },
+   {
+    "s": "academy_sciences_bologna",
+    "t": "bologna",
+    "p": "schema:location"
+   },
+   {
+    "s": "jacopo_beccari",
+    "t": "laura_bassi",
+    "p": "rel:mentorOf"
+   },
+   {
+    "s": "de_aeris_compressione",
+    "t": "physics",
+    "p": "dcterms:subject"
+   },
+   {
+    "s": "corpus_domini",
     "t": "bologna",
     "p": "crm:P89_falls_within"
+   },
+   {
+    "s": "doctorate_1732",
+    "t": "laura_bassi",
+    "p": "crm:P11_had_participant"
+   },
+   {
+    "s": "laura_bassi",
+    "t": "corpus_domini",
+    "p": "dbo:restingPlace"
    }
   ]
  },

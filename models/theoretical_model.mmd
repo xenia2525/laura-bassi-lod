@@ -6,121 +6,33 @@ flowchart LR
   classDef work fill:#ede7f6,stroke:#6a1b9a,color:#000
   classDef concept fill:#e9ecef,stroke:#495057,color:#000
 
-  LB((Laura Bassi<br/>1711–1778)):::person
+  LB((Laura Bassi<br/>1711–1778<br/><small>Q541652</small>)):::person
+  LAM[Prospero Lambertini<br/>Pope Benedict XIV<br/><small>Q126711</small>]:::person
+  VER[Giuseppe Veratti<br/><small>Q131245050</small>]:::person
+  SPA[Lazzaro Spallanzani<br/><small>Q213351</small>]:::person
+  VOL[Voltaire<br/><small>Q9068</small>]:::person
+  BO[Bologna<br/><small>Q1891</small>]:::place
+  PP[Palazzo Pubblico<br/><small>Q2267154</small>]:::place
+  UNI[University of Bologna<br/><small>Q131262</small>]:::org
+  ACC[Academy of Sciences<br/>of the Institute of Bologna<br/><small>Q4671532</small>]:::org
+  E1[/Defence of the 49 theses<br/>17 Apr 1732/]:::event
+  E2[/Chair of Experimental Physics<br/>1776/]:::event
+  W[De aeris compressione<br/>1745<br/><small>Q96906094</small>]:::work
+  NEW{{Newtonianism<br/><small>Q17123497</small>}}:::concept
 
-  %% people
-  GV[Giuseppe Veratti]:::person
-  B14[Prospero Lambertini<br/>Pope Benedict XIV]:::person
-  VOL[Voltaire]:::person
-  SPA[Lazzaro Spallanzani]:::person
-  GAL[Luigi Galvani]:::person
-  VOLTA[Alessandro Volta]:::person
-  ALG[Francesco Algarotti]:::person
-  MAN[Gabriele Manfredi]:::person
-  ECP[Elena Cornaro Piscopia]:::person
-  NEW[Isaac Newton]:::person
-  PF[Paula Findlen]:::person
-  GB[Giuseppe Bassi]:::person
-  TAC[Gaetano Tacconi]:::person
-  BEC[Jacopo Bartolomeo Beccari]:::person
-
-  %% places & organisations
-  BO[Bologna]:::place
-  PA[Palazzo d'Accursio]:::place
-  CD[Santuario del Corpus Domini]:::place
-  PS[Papal States]:::place
-  UNI[University of Bologna]:::org
-  ACC[Academy of Sciences<br/>of the Institute of Bologna]:::org
-  ARC[Arcadian Academy]:::org
-  INS[Institute of Sciences]:::org
-  BEN[Benedettini]:::org
-  SA[Sala degli Anziani]:::place
-  ARCH[Archiginnasio]:::place
-
-  %% events
-  E1[/Defence of 49 theses<br/>17 Apr 1732/]:::event
-  E2[/Doctorate<br/>12 May 1732/]:::event
-  E3[/Professorship<br/>Dec 1732/]:::event
-  E4[/Marriage<br/>7 Feb 1738/]:::event
-  E5[/Chair of Experimental Physics<br/>1776/]:::event
-  E0[/Election to the Academy<br/>20 Mar 1732/]:::event
-  E6[/Admission to the Benedettini<br/>1745/]:::event
-
-  %% works
-  W1[Philosophica Studia<br/>1732]:::work
-  W2[De aeris compressione<br/>1745]:::work
-  W3[Il Newtonianismo<br/>per le dame, 1737]:::work
-  W4[Findlen 1993<br/>Isis]:::work
-  W5[De aqua corpore naturali<br/>1732]:::work
-  Q[["Quotation: 'There is no Bassi in London'"]]:::work
-
-  %% concepts
-  C1{{Newtonianism}}:::concept
-  C2{{Experimental physics}}:::concept
-  C3{{Natural philosophy}}:::concept
-  C4{{Electricity}}:::concept
-  C5{{Women in science}}:::concept
-  C6{{Age of Enlightenment}}:::concept
-  C7{{Minerva}}:::concept
-
-  %% relations
-  LB -- born / died / worked in --> BO
-  LB -- citizen of --> PS
-  LB -- buried in --> CD
-  LB -- married --> GV
-  LB -- patronised by --> B14
-  LB -- corresponded with --> VOL
-  LB -- corresponded with --> VOLTA
-  LB -- corresponded with --> ALG
+  LAM -- patron of --> LB
+  LB -- married --> VER
   LB -- taught --> SPA
-  LB -- colleague of --> GAL
+  VOL -- corresponded with --> LB
+  LB -- born and died in --> BO
   LB -- member of --> ACC
-  LB -.member of.-> ARC
-  LB -.student of.-> MAN
-  LB -.preceded by.-> ECP
-  LB -- daughter of --> GB
-  TAC -- taught --> LB
-  BEC -- taught Newton's works to --> LB
-  LB -- member of --> BEN
-  BEN -- class of --> ACC
-  LB -- nicknamed --> C7
-
   LB -- participant in --> E1
-  E1 -- took place at --> SA
-  SA -.part of.-> PA
-  ARCH -.located in.-> BO
-  LB -- participant in --> E0
-  E0 -- by --> ACC
-  LB -- admitted in --> E6
-  E6 -- by --> B14
-  LB -- author of --> W5
-  E1 -- presented --> W1
+  E1 -- took place at --> PP
   E1 -- examined by --> UNI
-  LB -- received --> E2
-  E2 -- awarded by --> UNI
-  LB -- appointed in --> E3
-  E3 -- at --> UNI
-  LB -- participant in --> E4
-  E4 -- with --> GV
-  LB -- appointed in --> E5
-  E5 -- subject --> C2
-  E5 -- at --> INS
-
-  LB -- author of --> W2
-  W1 -- subject --> C3
-  W2 -- subject --> C2
-  LB -- populariser of --> C1
-  C1 -.named after.-> NEW
-  ALG -- author of --> W3
-  W3 -- subject --> C1
-  LB -- worked on --> C4
-  VOL -- author of --> Q
-  Q -- about --> LB
-  PF -- author of --> W4
-  W4 -- about --> LB
-  LB -.subject.-> C5
-  LB -.period.-> C6
-  PA -.located in.-> BO
+  LB -- appointed to --> E2
+  LB -- author of --> W
+  LB -- populariser of --> NEW
+  LAM -.archbishop of.-> BO
+  PP -.located in.-> BO
   UNI -.located in.-> BO
   ACC -.located in.-> BO
-  BO -.part of.-> PS
