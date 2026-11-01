@@ -21,7 +21,7 @@ Authors without a local entry get a URI minted from the MD5 hash of their name
 Usage (from the repository root):
     pip install lxml rdflib
     python scripts/tei2rdf.py
-Output: data/laura_bassi.ttl and data/laura_bassi.jsonld
+Output: data/laura_bassi.ttl
 """
 from pathlib import Path
 import hashlib
@@ -34,7 +34,6 @@ from rdflib.namespace import DCTERMS, FOAF, OWL, RDF, RDFS, SKOS, XSD
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "data" / "laura_bassi.xml"
 OUT_TTL = ROOT / "data" / "laura_bassi.ttl"
-OUT_JSONLD = ROOT / "data" / "laura_bassi.jsonld"
 
 LB = Namespace("https://xenia2525.github.io/laura-bassi-lod/resource/")
 LBO = Namespace("https://xenia2525.github.io/laura-bassi-lod/ontology#")
@@ -236,10 +235,9 @@ def main():
     tree = etree.parse(str(SOURCE))
     g = build_graph(tree)
     g.serialize(destination=str(OUT_TTL), format="turtle")
-    g.serialize(destination=str(OUT_JSONLD), format="json-ld", indent=2)
     subjects = {s for s in g.subjects() if str(s).startswith(str(LB))}
     print(f"{len(g)} triples about {len(subjects)} resources")
-    print(f"written {OUT_TTL.relative_to(ROOT)} and {OUT_JSONLD.relative_to(ROOT)}")
+    print(f"written {OUT_TTL.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

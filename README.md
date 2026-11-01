@@ -1,38 +1,43 @@
-# Laura Bassi – a LODLAM project
+# Laura Bassi in Linked Open Data
 
-Individual project for **Information Science and Cultural Heritage** (DHDK, University of Bologna, a.y. 2025/2026 — Prof. Francesca Tomasi & Prof. Marilena Daquino).
+LODLAM project for **Information Science and Cultural Heritage** (DHDK, University of Bologna, 2025/2026), Prof. Francesca Tomasi and Prof. Marilena Daquino.
 
-Starting from the Wikipedia page [Laura Bassi](https://en.wikipedia.org/wiki/Laura_Bassi) — the first woman to hold an official university chair in Europe (University of Bologna, 1732) — the project models the page's topic and related entities, encodes the text in XML/TEI, and publishes the result as Linked Open Data.
+**Author:** Polyxeni Chasanai
+**Report (website):** https://xenia2525.github.io/laura-bassi-lod/
 
-## Structure
+Starting from the English Wikipedia page [Laura Bassi](https://en.wikipedia.org/w/index.php?title=Laura_Bassi&oldid=1372047911), the project creates structured data about her and the entities related to her.
 
-| Folder | Content |
+## 1. Study of the domain
+
+| | File |
 |---|---|
-| `data/` | `laura_bassi.xml` (XML/TEI, annotated text) · `laura_bassi.ttl` (RDF dataset) |
-| `scripts/` | `tei2html.xsl` + `tei2html.py` (XML → HTML) · `tei2rdf.py` (XML/TEI → RDF, rdflib) |
-| `output/` | `laura_bassi.html` (HTML generated from the TEI) |
-| `models/` | Theoretical model (mind map) · Conceptual model (Graffoo diagram) |
-| `docs/` | Notes, entity table, sources |
-| `index.html` | Project report (published with GitHub Pages) |
+| **Idea:** Laura Bassi (1711–1778), physicist, the first woman with a university chair in Europe (Bologna, 1732) | [index.html](index.html) |
+| **Entities:** 13 selected entities (people, places, organisations, events, a work, a concept), linked to Wikidata and VIAF | [docs/entities.csv](docs/entities.csv) (column `core`) |
 
-## Workflow
+## 2. Knowledge organisation
 
-1. **Domain study** – topic and ≥ 10 related entities
-2. **Theoretical model** – relations between the topic and the entities (mind map)
-3. **Conceptual model** – formal ontology reusing existing vocabularies + Graffoo diagram
-4. **XML/TEI** – text of the page with annotated entities, `listPerson`, `listPlace`, `listOrg`, `listEvent`, `listBibl`, `listRelation`, reconciled to Wikidata / VIAF / LCSH / WorldCat
-5. **XML → HTML** – XSLT run from Python (lxml)
-6. **XML/TEI → RDF** – Python + rdflib, Turtle serialization
-7. **Report** – web page linking all the files
+| | File |
+|---|---|
+| **Theoretical model:** relations between Laura Bassi and the 13 entities | [models/theoretical_model.png](models/theoretical_model.png), [models/theoretical_model.md](models/theoretical_model.md) |
+| **Conceptual model:** the ontology, reusing CIDOC CRM, FOAF, schema.org, FaBiO, SKOS and DC Terms | [models/ontology.ttl](models/ontology.ttl), [models/conceptual_model.md](models/conceptual_model.md) |
+| **Graffoo diagram** of the conceptual model | [models/conceptual_model_graffoo.svg](models/conceptual_model_graffoo.svg) |
 
-## Requirements
+## 3. Knowledge representation
+
+| | File |
+|---|---|
+| **XML/TEI** document: the text of the page with the annotated entities, `listPerson`, `listOrg`, `listPlace`, `listEvent`, `listBibl`, `listRelation`, linked to Wikidata/VIAF | [data/laura_bassi.xml](data/laura_bassi.xml) |
+| **XML → HTML** transformation (XSLT, run with Python) and its output | [scripts/tei2html.xsl](scripts/tei2html.xsl), [scripts/tei2html.py](scripts/tei2html.py) → [output/laura_bassi.html](output/laura_bassi.html) |
+| **XML/TEI → RDF** transformation (Python, rdflib) and the dataset | [scripts/tei2rdf.py](scripts/tei2rdf.py) → [data/laura_bassi.ttl](data/laura_bassi.ttl) |
+
+## How to run the scripts
 
 ```bash
 pip install lxml rdflib
-python scripts/tei2html.py
-python scripts/tei2rdf.py
+python scripts/tei2html.py   # creates output/laura_bassi.html
+python scripts/tei2rdf.py    # creates data/laura_bassi.ttl
 ```
 
 ## License
 
-Code under the license in `LICENSE`. Text derived from Wikipedia is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Code under the license in `LICENSE`. Text derived from Wikipedia under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
