@@ -12,163 +12,181 @@
   <meta name="DC.language" content="en">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=7">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css?v=9">
 </head>
 <body>
 
 <a class="skip" href="#main">Skip to content</a>
 
-<nav class="top" aria-label="Sections">
-  <a class="top-logo" href="#top">Laura Bassi / LOD</a>
-  <ul>
-    <li><a href="#domain">Domain</a></li>
-    <li><a href="#models">Models</a></li>
-    <li><a href="#data">Data</a></li>
-    <li><a href="#files">Files</a></li>
-  </ul>
-  <span class="top-count">DHDK 2025/26</span>
-</nav>
-
-<header class="hero" id="top">
-  <svg class="arc" viewBox="0 0 1000 1000" aria-hidden="true"><circle cx="500" cy="500" r="499"/></svg>
-  <h1 class="display">Laura Bassi,<br>in linked<br>open data</h1>
-  <figure class="hero-portrait">
-    <a href="https://commons.wikimedia.org/wiki/File:Laura_Bassi_-_Carlo_Vandi.jpg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Laura_Bassi_-_Carlo_Vandi.jpg?width=600" alt="Portrait of Laura Bassi by Carlo Vandi, about 1750"></a>
-    <figcaption class="mono">Carlo Vandi, Laura Bassi, c. 1750. Public domain</figcaption>
-  </figure>
-  <p class="hero-question">How did a woman build a scientific career in eighteenth-century Bologna?</p>
-  <dl class="meta">
-    <div><dt>Author</dt><dd>Polyxeni Chasanai</dd></div>
-    <div><dt>Course</dt><dd>Information Science and Cultural Heritage, DHDK, University of Bologna, 2025/2026</dd></div>
-    <div><dt>Professors</dt><dd>Francesca Tomasi, Marilena Daquino</dd></div>
-    <div><dt>Source</dt><dd><a href="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911">English Wikipedia, revision 1372047911</a></dd></div>
-  </dl>
-  <p class="hero-links mono">
-    <a href="output/laura_bassi.html">Read the encoded text</a>
-    <a href="data/laura_bassi.ttl">RDF dataset</a>
-    <a href="https://github.com/xenia2525/laura-bassi-lod">Repository</a>
-  </p>
+<header class="top">
+  <a class="mono-mark" href="#top" aria-label="Back to the top">LB</a>
+  <nav aria-label="Sections">
+    <a href="#domain">Domain</a>
+    <a href="#models">Models</a>
+    <a href="#data">Data</a>
+    <a href="#files">Files</a>
+  </nav>
 </header>
+
+<!-- ======================================================= HERO (putty) -->
+<section class="hero" id="top">
+  <div class="hero-grid">
+    <div class="hero-cluster">
+      <p class="small-label">A linked open data project</p>
+      <p class="hero-question">How did a woman build a scientific career in eighteenth-century Bologna?</p>
+      <p class="hero-by">Polyxeni Chasanai<br>Information Science and Cultural Heritage, DHDK, University of Bologna, 2025/2026</p>
+      <dl class="stats">
+        <div><dt>Professors</dt><dd>Francesca Tomasi, Marilena Daquino</dd></div>
+        <div><dt>Source</dt><dd><a href="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911">Wikipedia, rev. 1372047911</a></dd></div>
+        <div><dt>Entities</dt><dd>13 selected</dd></div>
+      </dl>
+      <p class="buttons">
+        <a class="btn" href="output/laura_bassi.html">Read the encoded text</a>
+        <a class="btn btn-ghost" href="https://github.com/xenia2525/laura-bassi-lod">Repository</a>
+      </p>
+    </div>
+    <figure class="hero-portrait">
+      <a href="https://commons.wikimedia.org/wiki/File:Carlo_Vandi_-_Ritratto_di_Laura_Bassi_-_Museo_Europeo_degli_Studenti.png"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Carlo_Vandi_-_Ritratto_di_Laura_Bassi_-_Museo_Europeo_degli_Studenti.png?width=900" alt="Portrait of Laura Bassi by Carlo Vandi, mid 18th century"></a>
+      <figcaption>Carlo Vandi, <cite>Portrait of Laura Bassi</cite>, mid 18th century. Museo Europeo degli Studenti, University of Bologna. Public domain</figcaption>
+    </figure>
+  </div>
+  <h1 class="wordmark">Laura Bassi</h1>
+</section>
+
+<!-- ======================================================= GALLERY (ink) -->
+<section class="dark gallery-sec" aria-labelledby="gal-title">
+  <header class="sec-head">
+    <p class="small-label">Bologna, 1732–1778</p>
+    <h2 id="gal-title">A life in Bologna</h2>
+  </header>
+  <ul class="gallery">
+    <li><figure><a href="https://commons.wikimedia.org/wiki/File:Laura_Bassi_(Bertolli).jpg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Laura_Bassi_%28Bertolli%29.jpg?width=800" alt="Lithograph portrait of Laura Bassi" loading="lazy"></a><figcaption><b>Laura Bassi</b>Lithograph after Bertolli. Public domain</figcaption></figure></li>
+    <li><figure><a href="https://commons.wikimedia.org/wiki/File:2017-03_Bologna_Mattes_Pana_(109).JPG"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2017-03_Bologna_Mattes_Pana_%28109%29.JPG?width=1000" alt="Laura Bassi defending her thesis" loading="lazy"></a><figcaption><b>The defence of her theses, 1732</b>Photo: Mattes, CC BY-SA 4.0</figcaption></figure></li>
+    <li><figure><a href="https://commons.wikimedia.org/wiki/File:Lazari,_Antonio-_Laura_Bassi_-_M%C3%BCnzkabinett,_Berlin_-_5527614.jpg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lazari%2C_Antonio-_Laura_Bassi_-_M%C3%BCnzkabinett%2C_Berlin_-_5527614.jpg?width=1000" alt="Silver medal for Laura Bassi, 1732" loading="lazy"></a><figcaption><b>The medal of 1732</b>Antonio Lazzari. Münzkabinett Berlin, photo R. Saczewski. Public domain</figcaption></figure></li>
+    <li><figure><a href="https://commons.wikimedia.org/wiki/File:Palazzo_Poggi_UniBo.jpg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palazzo_Poggi_UniBo.jpg?width=800" alt="Palazzo Poggi, University of Bologna" loading="lazy"></a><figcaption><b>Palazzo Poggi, University of Bologna</b>Photo: Mattia Barci, CC BY-SA 4.0</figcaption></figure></li>
+    <li><figure><a href="https://commons.wikimedia.org/wiki/File:Monumento_a_Laura_Bassi_-_Palazzo_Poggi_(Bologna).jpeg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monumento_a_Laura_Bassi_-_Palazzo_Poggi_%28Bologna%29.jpeg?width=1000" alt="Monument to Laura Bassi in Palazzo Poggi" loading="lazy"></a><figcaption><b>Her monument in Palazzo Poggi</b>Photo: Patafisik and Elena Tartaglione. Public domain</figcaption></figure></li>
+    <li><figure><a href="https://commons.wikimedia.org/wiki/File:Archiginnasio_ora_blu_Bologna.jpg"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Archiginnasio_ora_blu_Bologna.jpg?width=1000" alt="The Archiginnasio of Bologna at dusk" loading="lazy"></a><figcaption><b>The Archiginnasio</b>Photo: Wwikiwalter, CC BY-SA 4.0</figcaption></figure></li>
+  </ul>
+</section>
 
 <main id="main">
 
-<!-- ======================================================= STUDY OF THE DOMAIN -->
-<section class="chapter g-maroon" id="domain">
-  <p class="label mono">Part 1</p>
-  <h2 class="display">Study of<br>the domain</h2>
-  <dl class="meta">
-    <div><dt>Idea</dt><dd>Laura Bassi (1711–1778)</dd></div>
-    <div><dt>Source</dt><dd>Wikipedia page</dd></div>
-    <div><dt>Entities</dt><dd>13 selected</dd></div>
-    <div><dt>Authorities</dt><dd>Wikidata, VIAF</dd></div>
-  </dl>
+<!-- ======================================================= 1 STUDY OF THE DOMAIN -->
+<section class="band" id="domain" style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_Panorama.jpg?width=2000')">
+  <div class="band-card">
+    <p class="small-label">Part 1</p>
+    <h2>Study of the domain</h2>
+  </div>
+  <p class="band-credit">Bologna from San Petronio. Photo: Ввласенко, CC BY-SA 3.0</p>
 </section>
-
-<section class="block">
-  <p class="label mono">01 Idea</p>
-  <div class="prose">
-    <p>The project starts from the English Wikipedia page <a href="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911"><cite>Laura Bassi</cite></a>. Laura Bassi was an Italian physicist and, in 1732, the first woman to receive a university chair in Europe, at the University of Bologna.</p>
-    <p>Her life is made of clear relations: a patron who became pope, a husband who worked with her, students, correspondents, academies and dated appointments. The question behind the project is: <em>how did a woman build a scientific career in eighteenth-century Bologna?</em></p>
+<section class="light">
+  <div class="cols">
+    <h3 class="col-label">Idea</h3>
+    <div class="prose">
+      <p>The project starts from the English Wikipedia page <a href="https://en.wikipedia.org/w/index.php?title=Laura_Bassi&amp;oldid=1372047911"><cite>Laura Bassi</cite></a>. Laura Bassi was an Italian physicist and, in 1732, the first woman to receive a university chair in Europe, at the University of Bologna.</p>
+      <p>Her life is made of clear relations: a patron who became pope, a husband who worked with her, students, correspondents, academies and dated appointments. The question behind the project is: <em>how did a woman build a scientific career in eighteenth-century Bologna?</em></p>
+    </div>
   </div>
 </section>
 
-<section class="block">
-  <p class="label mono">02 Entities</p>
-  <div class="prose">
-    <p>Thirteen entities mentioned in the page were selected, covering people, places, organisations, events, a work and a concept. Each one is linked to an authority file (Wikidata and VIAF).</p>
-  </div>
-</section>
-<section class="index-wrap">
-  <ol class="index ent">
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Laura_Bassi_-_Carlo_Vandi.jpg?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">Laura Bassi</span><span class="i-mid">Person<br>Topic of the page, 1711–1778</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q541652">Wikidata Q541652</a> <a href="https://viaf.org/viaf/42647435">VIAF 42647435</a></span></li>
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Subleyras_Portrait_of_Benedict_XIV_1746._Metropolitan_Museum_of_Art.jpg?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">Prospero Lambertini (Pope Benedict XIV)</span><span class="i-mid">Person<br>Her patron</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q126711">Wikidata Q126711</a> <a href="https://viaf.org/viaf/76327169">VIAF 76327169</a></span></li>
-      <li><span class="thumb thumb-none" aria-hidden="true">03</span><span class="i-title">Giuseppe Veratti</span><span class="i-mid">Person<br>Her husband</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q131245050">Wikidata Q131245050</a> <a href="https://viaf.org/viaf/275491168">VIAF 275491168</a></span></li>
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Portret_van_bioloog_Lazzaro_Spallanzani%2C_RP-P-1909-5206_%28cropped%29_%28cropped%29.jpg?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">Lazzaro Spallanzani</span><span class="i-mid">Person<br>Her student</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q213351">Wikidata Q213351</a> <a href="https://viaf.org/viaf/7405452">VIAF 7405452</a></span></li>
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">Voltaire</span><span class="i-mid">Person<br>Her correspondent</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q9068">Wikidata Q9068</a> <a href="https://viaf.org/viaf/36925746">VIAF 36925746</a></span></li>
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_Panorama.jpg?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">Bologna</span><span class="i-mid">Place<br>Where she was born, worked and died</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q1891">Wikidata Q1891</a> <a href="https://viaf.org/viaf/144875967">VIAF 144875967</a></span></li>
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_-_Palazzo_d%27Accursio_-_Foto_Giovanni_Dall%27Orto_5-3-2005_2.jpg?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">Palazzo Pubblico (Palazzo d&#x27;Accursio)</span><span class="i-mid">Place<br>Where she defended her theses</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q2267154">Wikidata Q2267154</a></span></li>
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Palazzo_Poggi_UniBo.jpg?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">University of Bologna</span><span class="i-mid">Organisation<br>Doctorate and professorship</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q131262">Wikidata Q131262</a> <a href="https://viaf.org/viaf/155886025">VIAF 155886025</a></span></li>
-      <li><img class="thumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Institute_of_Science_Bologna.png?width=240" alt="" loading="lazy" width="64" height="64"><span class="i-title">Academy of Sciences of the Institute of Bologna</span><span class="i-mid">Organisation<br>First woman member, 1732</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q4671532">Wikidata Q4671532</a> <a href="https://viaf.org/viaf/127702994">VIAF 127702994</a></span></li>
-      <li><span class="thumb thumb-none" aria-hidden="true">10</span><span class="i-title">Public defence of the 49 theses</span><span class="i-mid">Event<br>17 April 1732</span><span class="i-end">Local URI</span></li>
-      <li><span class="thumb thumb-none" aria-hidden="true">11</span><span class="i-title">Chair of Experimental Physics</span><span class="i-mid">Event<br>1776</span><span class="i-end">Local URI</span></li>
-      <li><span class="thumb thumb-none" aria-hidden="true">12</span><span class="i-title"><cite>De aeris compressione</cite></span><span class="i-mid">Work<br>Treatise, 1745</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q96906094">Wikidata Q96906094</a></span></li>
-      <li><span class="thumb thumb-none" aria-hidden="true">13</span><span class="i-title">Newtonianism</span><span class="i-mid">Concept<br>She was its main populariser in Italy</span><span class="i-end"><a href="http://www.wikidata.org/entity/Q17123497">Wikidata Q17123497</a></span></li>
+<section class="dark" aria-labelledby="ent-title">
+  <header class="sec-head">
+    <p class="small-label">Entities</p>
+    <h2 id="ent-title">Thirteen entities</h2>
+    <p class="sec-intro">Selected from the page, covering people, places, organisations, events, a work and a concept. Each one is linked to its authority files.</p>
+  </header>
+  <ol class="vignettes">
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Carlo_Vandi_-_Ritratto_di_Laura_Bassi_-_Museo_Europeo_degli_Studenti.png?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Person</p><h3 class="vig-name">Laura Bassi</h3><p class="vig-note">Topic of the page, 1711–1778</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q541652">Wikidata Q541652</a> <a href="https://viaf.org/viaf/42647435">VIAF 42647435</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Subleyras_Portrait_of_Benedict_XIV_1746._Metropolitan_Museum_of_Art.jpg?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Person</p><h3 class="vig-name">Prospero Lambertini (Pope Benedict XIV)</h3><p class="vig-note">Her patron</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q126711">Wikidata Q126711</a> <a href="https://viaf.org/viaf/76327169">VIAF 76327169</a></p></li>
+      <li class="vig"><div class="vig-pic"><span class="vig-num" aria-hidden="true">3</span></div><p class="vig-type">Person</p><h3 class="vig-name">Giuseppe Veratti</h3><p class="vig-note">Her husband</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q131245050">Wikidata Q131245050</a> <a href="https://viaf.org/viaf/275491168">VIAF 275491168</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Portret_van_bioloog_Lazzaro_Spallanzani%2C_RP-P-1909-5206_%28cropped%29_%28cropped%29.jpg?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Person</p><h3 class="vig-name">Lazzaro Spallanzani</h3><p class="vig-note">Her student</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q213351">Wikidata Q213351</a> <a href="https://viaf.org/viaf/7405452">VIAF 7405452</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_mus%C3%A9e_Carnavalet_-_5_%28cropped%29.jpg?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Person</p><h3 class="vig-name">Voltaire</h3><p class="vig-note">Her correspondent</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q9068">Wikidata Q9068</a> <a href="https://viaf.org/viaf/36925746">VIAF 36925746</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_Panorama.jpg?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Place</p><h3 class="vig-name">Bologna</h3><p class="vig-note">Where she was born, worked and died</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q1891">Wikidata Q1891</a> <a href="https://viaf.org/viaf/144875967">VIAF 144875967</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_-_Palazzo_d%27Accursio_-_Foto_Giovanni_Dall%27Orto_5-3-2005_2.jpg?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Place</p><h3 class="vig-name">Palazzo Pubblico (Palazzo d&#x27;Accursio)</h3><p class="vig-note">Where she defended her theses</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q2267154">Wikidata Q2267154</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Palazzo_Poggi_UniBo.jpg?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Organisation</p><h3 class="vig-name">University of Bologna</h3><p class="vig-note">Doctorate and professorship</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q131262">Wikidata Q131262</a> <a href="https://viaf.org/viaf/155886025">VIAF 155886025</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Institute_of_Science_Bologna.png?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Organisation</p><h3 class="vig-name">Academy of Sciences of the Institute of Bologna</h3><p class="vig-note">First woman member, 1732</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q4671532">Wikidata Q4671532</a> <a href="https://viaf.org/viaf/127702994">VIAF 127702994</a></p></li>
+      <li class="vig"><div class="vig-pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/2017-03_Bologna_Mattes_Pana_%28109%29.JPG?width=360" alt="" loading="lazy" width="180" height="180"></div><p class="vig-type">Event</p><h3 class="vig-name">Public defence of the 49 theses</h3><p class="vig-note">17 April 1732</p><p class="vig-links"><span>Local URI</span></p></li>
+      <li class="vig"><div class="vig-pic"><span class="vig-num" aria-hidden="true">11</span></div><p class="vig-type">Event</p><h3 class="vig-name">Chair of Experimental Physics</h3><p class="vig-note">1776</p><p class="vig-links"><span>Local URI</span></p></li>
+      <li class="vig"><div class="vig-pic"><span class="vig-num" aria-hidden="true">12</span></div><p class="vig-type">Work</p><h3 class="vig-name"><cite>De aeris compressione</cite></h3><p class="vig-note">Treatise, 1745</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q96906094">Wikidata Q96906094</a></p></li>
+      <li class="vig"><div class="vig-pic"><span class="vig-num" aria-hidden="true">13</span></div><p class="vig-type">Concept</p><h3 class="vig-name">Newtonianism</h3><p class="vig-note">She was its main populariser in Italy</p><p class="vig-links"><a href="http://www.wikidata.org/entity/Q17123497">Wikidata Q17123497</a></p></li>
   </ol>
-  <p class="note mono">Full table: <a href="docs/entities.csv">docs/entities.csv</a>. Images: Wikimedia Commons.</p>
+  <p class="note">Full table: <a href="docs/entities.csv">docs/entities.csv</a>. Images: Wikimedia Commons.</p>
 </section>
 
-<!-- ======================================================= KNOWLEDGE ORGANIZATION -->
-<section class="chapter g-crimson" id="models">
-  <p class="label mono">Part 2</p>
-  <h2 class="display">Knowledge<br>organisation</h2>
-  <dl class="meta">
-    <div><dt>Theoretical model</dt><dd>Mind map of the 13 entities</dd></div>
-    <div><dt>Conceptual model</dt><dd>Ontology, Graffoo diagram</dd></div>
-    <div><dt>Reused</dt><dd>CIDOC CRM, FaBiO, FOAF, schema.org, SKOS, DC Terms</dd></div>
-    <div><dt>New terms</dt><dd>3 properties</dd></div>
-  </dl>
-</section>
-
-<section class="block">
-  <p class="label mono">03 Theoretical model</p>
-  <div class="prose">
-    <p>The theoretical model shows how the 13 entities are related to Laura Bassi. Each node has its Wikidata identifier. Dashed lines are indirect relations, not written in the page (for example, that the university is located in Bologna).</p>
+<!-- ======================================================= 2 KNOWLEDGE ORGANISATION -->
+<section class="band" id="models" style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Archiginnasio_ora_blu_Bologna.jpg?width=2000')">
+  <div class="band-card">
+    <p class="small-label">Part 2</p>
+    <h2>Knowledge organisation</h2>
   </div>
+  <p class="band-credit">The Archiginnasio. Photo: Wwikiwalter, CC BY-SA 4.0</p>
 </section>
-<figure class="plate">
-  <a href="models/theoretical_model.png"><img src="models/theoretical_model.png" alt="Theoretical model: Laura Bassi and the 13 selected entities"></a>
-  <figcaption class="mono">Theoretical model. <a href="models/theoretical_model.md">Relations in natural language</a></figcaption>
-</figure>
+<section class="light">
 
-<section class="block">
-  <p class="label mono">04 Conceptual model</p>
-  <div class="prose">
-    <p>The theoretical model is then written as an ontology, reusing existing vocabularies. For three relations no existing term was found, so three new properties were created: <code>patronOf</code>, <code>correspondedWith</code> and <code>precededBy</code>.</p>
+  <div class="cols">
+    <h3 class="col-label">Theoretical model</h3>
+    <div class="prose">
+      <p>The theoretical model shows how the 13 entities are related to Laura Bassi. Each node has its Wikidata identifier. Dashed lines are indirect relations, not written in the page (for example, that the university is located in Bologna).</p>
+    </div>
   </div>
-</section>
-<section class="index-wrap">
-  <ol class="index vocab">
-    <li><span class="i-title">CIDOC CRM</span><span class="i-mid">Events and places</span><span class="i-end">crm:E5_Event, crm:E53_Place, P11_had_participant, P7_took_place_at</span></li>
-    <li><span class="i-title">FOAF, schema.org</span><span class="i-mid">People and organisations</span><span class="i-end">foaf:Person, foaf:Organization, schema:spouse, schema:memberOf, schema:birthPlace</span></li>
-    <li><span class="i-title">FaBiO</span><span class="i-mid">Works</span><span class="i-end">fabio:Expression, fabio:Thesis, fabio:Book</span></li>
-    <li><span class="i-title">SKOS</span><span class="i-mid">Concepts</span><span class="i-end">skos:Concept</span></li>
-    <li><span class="i-title">DC Terms</span><span class="i-mid">General metadata</span><span class="i-end">dcterms:creator, dcterms:date, dcterms:subject</span></li>
-    <li><span class="i-title">lbo: (new)</span><span class="i-mid">Missing relations</span><span class="i-end">lbo:patronOf, lbo:correspondedWith, lbo:precededBy</span></li>
-  </ol>
-</section>
-<figure class="plate">
-  <a href="models/conceptual_model_graffoo.svg"><img src="models/conceptual_model_graffoo.png" alt="Conceptual model in Graffoo notation"></a>
-  <figcaption class="mono">Conceptual model in Graffoo notation. <a href="models/ontology.ttl">ontology.ttl</a> <a href="models/conceptual_model.md">Mapping table</a></figcaption>
-</figure>
+  <figure class="card plate">
+    <a href="models/theoretical_model.png"><img src="models/theoretical_model.png" alt="Theoretical model: Laura Bassi and the 13 selected entities"></a>
+    <figcaption>Theoretical model. <a href="models/theoretical_model.md">Relations in natural language</a></figcaption>
+  </figure>
 
-<!-- ======================================================= KNOWLEDGE REPRESENTATION -->
-<section class="chapter g-plum" id="data">
-  <p class="label mono">Part 3</p>
-  <h2 class="display">Knowledge<br>representation</h2>
-  <dl class="meta">
-    <div><dt>05</dt><dd>XML/TEI document</dd></div>
-    <div><dt>06</dt><dd>XML to HTML, XSLT + Python</dd></div>
-    <div><dt>07</dt><dd>XML/TEI to RDF, Python</dd></div>
-    <div><dt>Output</dt><dd>HTML page, Turtle dataset</dd></div>
-  </dl>
-</section>
-
-<section class="block">
-  <p class="label mono">05 XML/TEI</p>
-  <div class="prose">
-    <p>The text of the Wikipedia page is encoded in TEI. The entities are marked in the text (<code>persName</code>, <code>placeName</code>, <code>orgName</code>, <code>date</code>, <code>title</code>, <code>term</code>) and described in dedicated lists: <code>listPerson</code>, <code>listOrg</code>, <code>listPlace</code>, <code>listEvent</code>, <code>listBibl</code> and <code>listRelation</code>. Each one is linked to its authority files (Wikidata, VIAF). Voltaire's quotation is encoded with <code>q</code>.</p>
+  <div class="cols">
+    <h3 class="col-label">Conceptual model</h3>
+    <div class="prose">
+      <p>The theoretical model is then written as an ontology, reusing existing vocabularies. For three relations no existing term was found, so three new properties were created: <code>patronOf</code>, <code>correspondedWith</code> and <code>precededBy</code>.</p>
+    </div>
   </div>
+  <table class="vocab">
+    <thead><tr><th scope="col">Vocabulary</th><th scope="col">Used for</th><th scope="col">Terms</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">CIDOC CRM</th><td>Events and places</td><td>crm:E5_Event, crm:E53_Place, P11_had_participant, P7_took_place_at</td></tr>
+      <tr><th scope="row">FOAF, schema.org</th><td>People and organisations</td><td>foaf:Person, foaf:Organization, schema:spouse, schema:memberOf, schema:birthPlace</td></tr>
+      <tr><th scope="row">FaBiO</th><td>Works</td><td>fabio:Expression, fabio:Thesis, fabio:Book</td></tr>
+      <tr><th scope="row">SKOS</th><td>Concepts</td><td>skos:Concept</td></tr>
+      <tr><th scope="row">DC Terms</th><td>General metadata</td><td>dcterms:creator, dcterms:date, dcterms:subject</td></tr>
+      <tr><th scope="row">lbo: (new)</th><td>Missing relations</td><td>lbo:patronOf, lbo:correspondedWith, lbo:precededBy</td></tr>
+    </tbody>
+  </table>
+  <figure class="card plate">
+    <a href="models/conceptual_model_graffoo.svg"><img src="models/conceptual_model_graffoo.png" alt="Conceptual model in Graffoo notation"></a>
+    <figcaption>Conceptual model in Graffoo notation. <a href="models/ontology.ttl">ontology.ttl</a> · <a href="models/conceptual_model.md">Mapping table</a></figcaption>
+  </figure>
 </section>
-<section class="code-wrap">
-  <p class="code-label mono">The text, annotated</p>
-  <pre><code>&lt;p&gt;&lt;rs type=&quot;event&quot; ref=&quot;#academy_election_1732&quot;&gt;On
+
+<!-- ======================================================= 3 KNOWLEDGE REPRESENTATION -->
+<section class="band" id="data" style="--img: url('https://commons.wikimedia.org/wiki/Special:FilePath/Palazzo_Poggi_UniBo.jpg?width=2000')">
+  <div class="band-card">
+    <p class="small-label">Part 3</p>
+    <h2>Knowledge representation</h2>
+  </div>
+  <p class="band-credit">Palazzo Poggi, University of Bologna. Photo: Mattia Barci, CC BY-SA 4.0</p>
+</section>
+<section class="dark">
+
+  <div class="cols">
+    <h3 class="col-label">XML/TEI</h3>
+    <div class="prose">
+      <p>The text of the Wikipedia page is encoded in TEI. The entities are marked in the text (<code>persName</code>, <code>placeName</code>, <code>orgName</code>, <code>date</code>, <code>title</code>, <code>term</code>) and described in dedicated lists: <code>listPerson</code>, <code>listOrg</code>, <code>listPlace</code>, <code>listEvent</code>, <code>listBibl</code> and <code>listRelation</code>. Each one is linked to its authority files (Wikidata, VIAF). Voltaire's quotation is encoded with <code>q</code>.</p>
+    </div>
+  </div>
+  <div class="code-grid">
+    <figure class="card code"><figcaption>The text, annotated</figcaption><pre><code>&lt;p&gt;&lt;rs type=&quot;event&quot; ref=&quot;#academy_election_1732&quot;&gt;On
   &lt;date when=&quot;1732-03-20&quot;&gt;20 March 1732&lt;/date&gt;, aged twenty,
   Bassi became the first woman elected to the
   &lt;orgName ref=&quot;#academy_sciences_bologna&quot;&gt;Academy of Sciences
-  of the Institute of Bologna&lt;/orgName&gt;&lt;/rs&gt;. …&lt;/p&gt;</code></pre>
-  <p class="code-label mono">The description of a person</p>
-  <pre><code>&lt;person xml:id=&quot;laura_bassi&quot; sex=&quot;F&quot; sameAs=&quot;http://www.wikidata.org/entity/Q541652&quot;&gt;
+  of the Institute of Bologna&lt;/orgName&gt;&lt;/rs&gt;. …&lt;/p&gt;</code></pre></figure>
+    <figure class="card code"><figcaption>Relations</figcaption><pre><code>&lt;relation name=&quot;spouse&quot; ref=&quot;https://schema.org/spouse&quot;
+          mutual=&quot;#laura_bassi #giuseppe_veratti&quot;/&gt;
+&lt;relation name=&quot;patronOf&quot; ref=&quot;https://xenia2525.github.io/laura-bassi-lod/ontology#patronOf&quot;
+          active=&quot;#benedict_xiv&quot; passive=&quot;#laura_bassi&quot;/&gt;
+&lt;relation name=&quot;tookPlaceAt&quot; ref=&quot;http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at&quot;
+          active=&quot;#thesis_defence_1732&quot; passive=&quot;#sala_anziani&quot;/&gt;</code></pre></figure>
+    <figure class="card code wide"><figcaption>The description of a person</figcaption><pre><code>&lt;person xml:id=&quot;laura_bassi&quot; sex=&quot;F&quot; sameAs=&quot;http://www.wikidata.org/entity/Q541652&quot;&gt;
   &lt;persName type=&quot;full&quot;&gt;&lt;forename&gt;Laura&lt;/forename&gt; &lt;forename&gt;Maria&lt;/forename&gt; &lt;forename&gt;Caterina&lt;/forename&gt; &lt;surname&gt;Bassi&lt;/surname&gt; &lt;surname&gt;Veratti&lt;/surname&gt;&lt;/persName&gt;
   &lt;persName type=&quot;short&quot;&gt;Laura Bassi&lt;/persName&gt;
   &lt;birth when=&quot;1711-10-29&quot;&gt;&lt;placeName ref=&quot;#bologna&quot;&gt;Bologna&lt;/placeName&gt;&lt;/birth&gt;
@@ -177,48 +195,38 @@
   &lt;occupation&gt;university professor&lt;/occupation&gt;
   &lt;idno type=&quot;VIAF&quot;&gt;https://viaf.org/viaf/42647435&lt;/idno&gt;
   &lt;idno type=&quot;LC&quot;&gt;http://id.loc.gov/authorities/names/n85824830&lt;/idno&gt;
-&lt;/person&gt;</code></pre>
-  <p class="code-label mono">Relations</p>
-  <pre><code>&lt;relation name=&quot;spouse&quot; ref=&quot;https://schema.org/spouse&quot;
-          mutual=&quot;#laura_bassi #giuseppe_veratti&quot;/&gt;
-&lt;relation name=&quot;patronOf&quot; ref=&quot;https://xenia2525.github.io/laura-bassi-lod/ontology#patronOf&quot;
-          active=&quot;#benedict_xiv&quot; passive=&quot;#laura_bassi&quot;/&gt;
-&lt;relation name=&quot;tookPlaceAt&quot; ref=&quot;http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at&quot;
-          active=&quot;#thesis_defence_1732&quot; passive=&quot;#sala_anziani&quot;/&gt;</code></pre>
-  <p class="note mono">Full document: <a href="data/laura_bassi.xml">data/laura_bassi.xml</a></p>
-</section>
-
-<section class="block">
-  <p class="label mono">06 XML to HTML</p>
-  <div class="prose">
-    <p>An XSLT stylesheet transforms the TEI into HTML. It is run with a short Python script (lxml). In the HTML, every annotated entity becomes a link to its description.</p>
+&lt;/person&gt;</code></pre></figure>
   </div>
-</section>
-<section class="code-wrap">
-  <p class="code-label mono">tei2html.xsl (excerpt)</p>
-  <pre><code>&lt;xsl:template match=&quot;tei:body/tei:div/tei:head&quot;&gt;
+  <p class="note">Full document: <a href="data/laura_bassi.xml">data/laura_bassi.xml</a></p>
+
+  <div class="cols">
+    <h3 class="col-label">XML to HTML</h3>
+    <div class="prose">
+      <p>An XSLT stylesheet transforms the TEI into HTML. It is run with a short Python script (lxml). In the HTML, every annotated entity becomes a link to its description.</p>
+    </div>
+  </div>
+  <div class="code-grid">
+    <figure class="card code wide"><figcaption>tei2html.xsl (excerpt)</figcaption><pre><code>&lt;xsl:template match=&quot;tei:body/tei:div/tei:head&quot;&gt;
   &lt;h2&gt;&lt;xsl:apply-templates/&gt;&lt;/h2&gt;
 &lt;/xsl:template&gt;
 &lt;xsl:template match=&quot;tei:div/tei:div/tei:head&quot;&gt;
   &lt;h3&gt;&lt;xsl:apply-templates/&gt;&lt;/h3&gt;
 &lt;/xsl:template&gt;
-&lt;xsl:template match=&quot;tei:p&quot;&gt;&lt;p&gt;&lt;xsl:apply-templates/&gt;&lt;/p&gt;&lt;/xsl:template&gt;</code></pre>
-  <p class="note mono"><a href="scripts/tei2html.xsl">tei2html.xsl</a> <a href="scripts/tei2html.py">tei2html.py</a></p>
-</section>
-<figure class="plate">
-  <iframe src="output/laura_bassi.html" title="The HTML generated from the TEI" loading="lazy"></iframe>
-  <figcaption class="mono">The HTML output. <a href="output/laura_bassi.html">Open it full screen</a></figcaption>
-</figure>
-
-<section class="block">
-  <p class="label mono">07 XML/TEI to RDF</p>
-  <div class="prose">
-    <p>A Python script (rdflib) reads the TEI and creates the RDF dataset, using the classes and properties of the conceptual model. Each relation in <code>listRelation</code> becomes a triple. The dataset is saved in Turtle.</p>
+&lt;xsl:template match=&quot;tei:p&quot;&gt;&lt;p&gt;&lt;xsl:apply-templates/&gt;&lt;/p&gt;&lt;/xsl:template&gt;</code></pre></figure>
   </div>
-</section>
-<section class="code-wrap">
-  <p class="code-label mono">laura_bassi.ttl (excerpt)</p>
-  <pre><code>lb:laura_bassi a foaf:Person ;
+  <figure class="card plate frame">
+    <iframe src="output/laura_bassi.html" title="The HTML generated from the TEI" loading="lazy"></iframe>
+    <figcaption>The HTML output. <a href="output/laura_bassi.html">Open it full screen</a> · <a href="scripts/tei2html.xsl">tei2html.xsl</a> · <a href="scripts/tei2html.py">tei2html.py</a></figcaption>
+  </figure>
+
+  <div class="cols">
+    <h3 class="col-label">XML/TEI to RDF</h3>
+    <div class="prose">
+      <p>A Python script (rdflib) reads the TEI and creates the RDF dataset, using the classes and properties of the conceptual model. Each relation in <code>listRelation</code> becomes a triple. The dataset is saved in Turtle.</p>
+    </div>
+  </div>
+  <div class="code-grid">
+    <figure class="card code wide"><figcaption>laura_bassi.ttl (excerpt)</figcaption><pre><code>lb:laura_bassi a foaf:Person ;
     rdfs:label &quot;Laura Bassi&quot;@en ;
     schema:birthDate &quot;1711-10-29&quot;^^xsd:date ;
     schema:birthPlace lb:bologna ;
@@ -235,31 +243,34 @@ lb:thesis_defence_1732 a crm:E5_Event ;
     dcterms:date &quot;1732-04-17&quot;^^xsd:date ;
     crm:P11_had_participant lb:laura_bassi ;
     crm:P14_carried_out_by lb:unibo ;
-    crm:P7_took_place_at lb:sala_anziani .</code></pre>
-  <p class="note mono"><a href="scripts/tei2rdf.py">tei2rdf.py</a> <a href="data/laura_bassi.ttl">laura_bassi.ttl</a></p>
+    crm:P7_took_place_at lb:sala_anziani .</code></pre></figure>
+  </div>
+  <p class="note"><a href="scripts/tei2rdf.py">tei2rdf.py</a> · <a href="data/laura_bassi.ttl">laura_bassi.ttl</a></p>
 </section>
 
-<!-- ======================================================= FILES -->
-<section class="block block-top" id="files">
-  <p class="label mono">All the files</p>
-  <h2 class="h-big">Files</h2>
-</section>
-<section class="index-wrap">
-  <ol class="index files">
-    <li><a class="i-title" href="docs/entities.csv">entities.csv</a><span class="i-mid">docs/</span><span class="i-end">The entities and their Wikidata and VIAF identifiers</span></li>
-    <li><a class="i-title" href="models/theoretical_model.png">theoretical_model.png</a><span class="i-mid">models/</span><span class="i-end">Theoretical model (and <a href="models/theoretical_model.md">description</a>)</span></li>
-    <li><a class="i-title" href="models/conceptual_model_graffoo.svg">conceptual_model_graffoo.svg</a><span class="i-mid">models/</span><span class="i-end">Conceptual model in Graffoo</span></li>
-    <li><a class="i-title" href="models/ontology.ttl">ontology.ttl</a><span class="i-mid">models/</span><span class="i-end">The ontology</span></li>
-    <li><a class="i-title" href="data/laura_bassi.xml">laura_bassi.xml</a><span class="i-mid">data/</span><span class="i-end">XML/TEI document</span></li>
-    <li><a class="i-title" href="scripts/tei2html.xsl">tei2html.xsl</a><span class="i-mid">scripts/</span><span class="i-end">XML to HTML (XSLT), run by <a href="scripts/tei2html.py">tei2html.py</a></span></li>
-    <li><a class="i-title" href="output/laura_bassi.html">laura_bassi.html</a><span class="i-mid">output/</span><span class="i-end">HTML output</span></li>
-    <li><a class="i-title" href="scripts/tei2rdf.py">tei2rdf.py</a><span class="i-mid">scripts/</span><span class="i-end">XML/TEI to RDF (Python, rdflib)</span></li>
-    <li><a class="i-title" href="data/laura_bassi.ttl">laura_bassi.ttl</a><span class="i-mid">data/</span><span class="i-end">RDF dataset (Turtle)</span></li>
-  </ol>
+<!-- ======================================================= FILES (chalk) -->
+<section class="chalk" id="files">
+  <header class="sec-head">
+    <p class="small-label">All the files</p>
+    <h2>Files</h2>
+  </header>
+  <table class="files">
+    <tbody>
+      <tr><td><a href="docs/entities.csv">docs/entities.csv</a></td><td>The entities and their Wikidata and VIAF identifiers</td></tr>
+      <tr><td><a href="models/theoretical_model.png">models/theoretical_model.png</a></td><td>Theoretical model (and <a href="models/theoretical_model.md">description</a>)</td></tr>
+      <tr><td><a href="models/conceptual_model_graffoo.svg">models/conceptual_model_graffoo.svg</a></td><td>Conceptual model in Graffoo</td></tr>
+      <tr><td><a href="models/ontology.ttl">models/ontology.ttl</a></td><td>The ontology</td></tr>
+      <tr><td><a href="data/laura_bassi.xml">data/laura_bassi.xml</a></td><td>XML/TEI document</td></tr>
+      <tr><td><a href="scripts/tei2html.xsl">scripts/tei2html.xsl</a></td><td>XML to HTML (XSLT), run by <a href="scripts/tei2html.py">tei2html.py</a></td></tr>
+      <tr><td><a href="output/laura_bassi.html">output/laura_bassi.html</a></td><td>HTML output</td></tr>
+      <tr><td><a href="scripts/tei2rdf.py">scripts/tei2rdf.py</a></td><td>XML/TEI to RDF (Python, rdflib)</td></tr>
+      <tr><td><a href="data/laura_bassi.ttl">data/laura_bassi.ttl</a></td><td>RDF dataset (Turtle)</td></tr>
+    </tbody>
+  </table>
 </section>
 </main>
 
-<footer class="foot mono">
+<footer class="foot">
   <span>Polyxeni Chasanai, 2026</span>
   <span>Text from Wikipedia, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span>
   <a href="#top">Back to the top</a>
